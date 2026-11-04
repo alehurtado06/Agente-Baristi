@@ -1,0 +1,66 @@
+[
+ {
+  "competidor": "Baristi (tus precios promedio)",
+  "zona": "Todas",
+  "posicion": "tu cadena",
+  "promo": "Rosarito (Tijuana): Promoción de 2x1 (artículos seleccionados); Pacífico: Ahorra $40 gastando más de $299",
+  "latte": 107,
+  "frappe": 136
+ },
+ {
+  "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
+  "zona": "Etu (Tijuana), Macroplaza",
+  "posicion": "económico ($)",
+  "promo": "30% en artículos seleccionados (frappés Rockaccino, brownie); 25% en bebidas de temporada Pan de Muerto",
+  "latte": 73,
+  "frappe": 76
+ },
+ {
+  "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
+  "zona": "Pacífico, Rosarito (Tijuana)",
+  "posicion": "económico ($)",
+  "promo": "30% en artículos seleccionados (frappés y brownie)",
+  "latte": 73,
+  "frappe": 76
+ },
+ {
+  "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
+  "zona": "Etu (Tijuana), Macroplaza",
+  "posicion": "medio ($$)",
+  "promo": "30% en Caramel Macchiato, Flat White, Caramel Frappuccino, Chip Frappuccino y combos (Latte Lunch, Working Lunch, Pareja Perfecta)",
+  "latte": 94,
+  "frappe": 119
+ },
+ {
+  "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
+  "zona": "Pacífico, Rosarito (Tijuana)",
+  "posicion": "medio ($$)",
+  "promo": "25% en artículos seleccionados",
+  "latte": 94,
+  "frappe": 119
+ },
+ {
+  "competidor": "Café de la Flor (Pacífico)",
+  "zona": "Pacífico, Rosarito (Tijuana)",
+  "posicion": "premium ($$$$)",
+  "promo": "15% a 25% solo en comida (chilaquiles, ensaladas, combos con limonada); bebidas a precio completo",
+  "latte": null,
+  "frappe": 145
+ },
+ {
+  "competidor": "Blue Luna (Pacífico, Santa Fe)",
+  "zona": "Pacífico, Rosarito (Tijuana)",
+  "posicion": "alto ($$$)",
+  "promo": "$64 de descuento en artículos seleccionados",
+  "latte": null,
+  "frappe": null
+ },
+ {
+  "competidor": "Nómada Coffee Crew",
+  "zona": "Etu (Tijuana), Macroplaza",
+  "posicion": "independiente",
+  "promo": "25% en lattes fríos y chai",
+  "latte": 60,
+  "frappe": 140
+ }
+]
