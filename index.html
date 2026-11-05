@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baristi en Uber Eats</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <style>
+    :root {
+      --cds-gap-xl: 2rem;
+      --cds-gap-lg: 1.5rem;
+      --cds-gap-md: 1rem;
+      --cds-gap-sm: 0.5rem;
+      --cds-gap-xs: 0.25rem;
+      --font-anthropic-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-anthropic-serif: Georgia, 'Times New Roman', serif;
+      --color-fg: #1c1917;
+      --color-fg-muted: #78716c;
+      --cds-font-size-title: 1.75rem;
+      --cds-font-size-heading: 1rem;
+      --cds-font-size-caption: 0.8125rem;
+      --cds-font-weight-medium: 500;
+      --color-panel: #ffffff;
+      --color-border-line: #e7e3df;
+      --cds-radius: 8px;
+      --cds-pad-lg: 1.25rem;
+      --cds-pad-md: 0.875rem;
+      --cds-pad-sm: 0.5rem;
+      --cds-pad-xs: 0.3125rem;
+      --color-ok: #16a34a;
+      --color-bad: #dc2626;
+      --color-warn: #d97706;
+      --cds-chart-muted: #d4c5b8;
+      --cds-chart-grid: #ede8e3;
+      --cds-surface-popover: #fff;
+      --cds-border: #e7e3df;
+      --cds-shadow-popover: 0 4px 16px rgba(0,0,0,0.1);
+      --cds-dur-slow: 300ms;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; padding: 1.5rem 1.5rem 4rem; background: #f5f1ed; }
+
+    .bx { display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); max-width: 72rem; margin: 0 auto; }
+    .bx-head { display: grid; gap: var(--cds-gap-xs); }
+    .bx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+    .bx-sub { color: var(--color-fg-muted); margin: 0; }
+    .bx-section { display: grid; gap: var(--cds-gap-md); }
+    .bx-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+    .bx-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; }
+    .bx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); min-width: 0; align-content: start; }
+    .bx-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+    .bx-grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+    .bx-tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); }
+    .bx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+    .bx-tile-label { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+    .bx-tile-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; overflow-wrap: anywhere; }
+    .bx-tile-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+    .bx-status { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); }
+    .bx-pill { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); border: 1px solid var(--color-border-line); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-md); font-weight: var(--cds-font-weight-medium); min-height: 1.75rem; min-width: 7rem; }
+    .bx-pill .dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--cds-chart-muted); }
+    .bx-pill.st-ok { color: var(--color-ok); } .bx-pill.st-ok .dot { background: var(--color-ok); }
+    .bx-pill.st-late { color: var(--color-bad); } .bx-pill.st-late .dot { background: var(--color-bad); }
+    .bx-pill.st-closed { color: var(--color-warn); } .bx-pill.st-closed .dot { background: var(--color-warn); }
+    .bx-table-wrap { overflow: auto; max-height: 26rem; }
+    .bx-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+    .bx-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; background: var(--color-panel); white-space: nowrap; }
+    .bx-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+    .bx-table .num { text-align: right; }
+    .bx-table td.wrap { min-width: 14rem; }
+    .bx-ok { color: var(--color-ok); } .bx-bad { color: var(--color-bad); }
+    .bx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+    .bx-legend span { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+    .bx-legend i { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; }
+    .bx-chart { position: relative; min-height: 15rem; }
+    .bx-chart svg { display: block; }
+    .bx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+    .bx-tip .k { color: var(--color-fg-muted); }
+    .bx-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; }
+    .bx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+    .bx-refresh { position: fixed; bottom: 1.25rem; right: 1.25rem; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 999px; padding: .4rem 1rem; font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); color: var(--color-fg-muted); cursor: pointer; box-shadow: var(--cds-shadow-popover); }
+    .bx-refresh:hover { color: var(--color-fg); }
+  </style>
+</head>
+<body>
+
+<div class="bx" lang="es">
+  <header class="bx-head">
+    <h1 class="bx-title">Baristi en Uber Eats</h1>
+    <p class="bx-sub">Si el agente de promociones está corriendo, qué propuso y cuánto deja cada tienda en Uber Eats.</p>
+  </header>
+
+  <section class="bx-section" id="agente">
+    <h2 class="bx-h2">¿El agente está operando?</h2>
+    <div class="bx-card" id="estado-agente">
+      <div class="bx-status">
+        <span class="bx-pill"><i class="dot"></i><span class="bx-lbl" data-st="ok" hidden>Operando</span><span class="bx-lbl" data-st="late" hidden>Atrasado</span><span class="bx-lbl" data-st="closed" hidden>Fuera de horario</span><span class="bx-lbl" data-st="none" hidden>Sin corridas</span></span>
+        <span data-draw="estado-frase" data-source="estado"></span>
+        <span class="bx-msg" data-msg="ok" hidden>La última corrida fue hace <b data-draw="hace" data-source="estado">—</b>, dentro del límite de <b data-draw="limite">—</b> minutos.</span>
+        <span class="bx-msg" data-msg="late" hidden>Lleva <b data-draw="hace" data-source="estado">—</b> sin correr en horario de tiendas (el límite es <b data-draw="limite">—</b> minutos). Revisa que la Mac esté prendida y que el agente esté programado.</span>
+        <span class="bx-msg" data-msg="closed" hidden>Fuera del horario de promociones (5:00 a 22:00, hora de Tijuana). La última corrida fue hace <b data-draw="hace" data-source="estado">—</b>.</span>
+        <span class="bx-msg" data-msg="none" hidden>Todavía no hay corridas registradas.</span>
+      </div>
+      <p class="bx-note">Hora de Tijuana. El agente corre cada 10 minutos de 5:00 a 22:00; cada corrida revisa las 4 tiendas. Solo vuelve a consultar a Claude si cambió el clima, el inventario, la competencia o el bloque horario, o si pasó una hora.</p>
+    </div>
+
+    <div class="bx-tiles">
+      <div class="bx-tile" id="t-ultima">
+        <span class="bx-tile-label">Última corrida</span>
+        <span class="bx-tile-value" data-draw="ultima" data-source="estado" data-field="ultima">—</span>
+        <span class="bx-tile-foot">Bloque: <span data-draw="bloque" data-source="estado" data-field="bloque">—</span></span>
+      </div>
+      <div class="bx-tile" id="t-motor">
+        <span class="bx-tile-label">Quién decidió</span>
+        <span class="bx-tile-value" data-draw="motor" data-source="estado" data-field="motor">—</span>
+        <span class="bx-tile-foot">Claude, o reglas si Claude no respondió</span>
+      </div>
+      <div class="bx-tile" id="t-aprobadas">
+        <span class="bx-tile-label">Promos aprobadas, última corrida</span>
+        <span class="bx-tile-value" data-draw="aprobadas" data-source="estado" data-field="aprobadas">—</span>
+        <span class="bx-tile-foot">Pasaron el filtro financiero</span>
+      </div>
+      <div class="bx-tile" id="t-bloqueadas">
+        <span class="bx-tile-label">Promos bloqueadas, última corrida</span>
+        <span class="bx-tile-value" data-draw="bloqueadas" data-source="estado" data-field="bloqueadas">—</span>
+        <span class="bx-tile-foot">Perdían dinero o rompían una regla</span>
+      </div>
+      <div class="bx-tile" id="t-whatsapp">
+        <span class="bx-tile-label">Alertas por WhatsApp</span>
+        <span class="bx-tile-value" data-draw="whatsapp" data-source="estado" data-field="whatsapp">—</span>
+        <span class="bx-tile-foot">De la última corrida</span>
+      </div>
+    </div>
+
+    <div class="bx-card" id="promos">
+      <h3>Promociones propuestas</h3>
+      <p class="bx-note">La más reciente primero. En modo "proponer" el agente no cambia nada en Uber Eats: solo sugiere.</p>
+      <div class="bx-table-wrap">
+        <table class="bx-table" data-source="promociones" data-row-key="promo">
+          <thead><tr>
+            <th data-field="corrida_at">Cuándo</th>
+            <th data-field="tienda">Tienda</th>
+            <th data-field="aprobada">Filtro</th>
+            <th data-field="precio" class="num">Precio</th>
+            <th data-field="margen_pct" class="num">Margen</th>
+            <th data-field="mecanica">Promoción</th>
+            <th data-field="motivo">Motivo del bloqueo</th>
+          </tr></thead>
+          <tbody data-draw="promos-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bx-card" id="corridas">
+      <h3>Historial de corridas</h3>
+      <p class="bx-note">Una fila por tienda en cada corrida.</p>
+      <div class="bx-table-wrap">
+        <table class="bx-table" data-source="corridas" data-row-key="corrida">
+          <thead><tr>
+            <th data-field="corrida_at">Cuándo</th>
+            <th data-field="tienda">Tienda</th>
+            <th data-field="bloque">Bloque</th>
+            <th data-field="motor">Decidió</th>
+            <th data-field="aprobadas" class="num">Aprobadas</th>
+            <th data-field="bloqueadas" class="num">Bloqueadas</th>
+          </tr></thead>
+          <tbody data-draw="corridas-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bx-section" id="competencia">
+    <h2 class="bx-h2">Competencia en Uber Eats</h2>
+    <p class="bx-note">Se revisa cada día a las 6:30 am en Uber Eats, como cliente. Precios de lista; los descuentos aplican a artículos seleccionados. La primera fila son tus precios promedio y tus promos activas.</p>
+
+    <div class="bx-card" id="tabla-competencia">
+      <h3>Precios y promociones de la zona</h3>
+      <div class="bx-table-wrap">
+        <table class="bx-table" data-source="competencia" data-row-key="competidor">
+          <thead><tr>
+            <th data-field="competidor">Cafetería</th>
+            <th data-field="zona">Compite con</th>
+            <th data-field="posicion">Precio</th>
+            <th data-field="latte" class="num">Latte</th>
+            <th data-field="frappe" class="num">Frappé</th>
+            <th data-field="promo">Promoción activa</th>
+          </tr></thead>
+          <tbody data-draw="competencia-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bx-card" id="respuesta-agente">
+      <h3>Qué responde el agente a la competencia</h3>
+      <p class="bx-note">Lo que escribió Claude en la última corrida de cada tienda.</p>
+      <div class="bx-table-wrap">
+        <table class="bx-table" data-source="analisis" data-row-key="tienda">
+          <thead><tr>
+            <th data-field="tienda">Tienda</th>
+            <th data-field="corrida_at">Cuándo</th>
+            <th data-field="respuesta_competencia">Respuesta a la competencia</th>
+          </tr></thead>
+          <tbody data-draw="analisis-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bx-section" id="rentabilidad">
+    <h2 class="bx-h2">Rentabilidad en Uber Eats</h2>
+    <p class="bx-note" id="renta-nota">Reporte de Uber Eats. El costo de insumos es estimado por familia de producto.</p>
+
+    <div class="bx-tiles">
+      <div class="bx-tile" id="t-venta">
+        <span class="bx-tile-label">Venta</span>
+        <span class="bx-tile-value" data-draw="tot-venta" data-source="totales" data-field="venta">—</span>
+        <span class="bx-tile-foot"><span data-draw="tot-pedidos" data-source="totales" data-field="pedidos">—</span> pedidos</span>
+      </div>
+      <div class="bx-tile" id="t-comision">
+        <span class="bx-tile-label">Comisión de Uber (con IVA)</span>
+        <span class="bx-tile-value" data-draw="tot-comision" data-source="totales" data-field="comision_uber">—</span>
+        <span class="bx-tile-foot"><span data-draw="tot-comision-pct" data-source="totales" data-field="comision_pct">—</span> de la venta</span>
+      </div>
+      <div class="bx-tile" id="t-publicidad">
+        <span class="bx-tile-label">Publicidad en Uber</span>
+        <span class="bx-tile-value" data-draw="tot-publicidad" data-source="totales" data-field="publicidad">—</span>
+        <span class="bx-tile-foot"><span data-draw="tot-publicidad-pct" data-source="totales" data-field="publicidad_pct">—</span> de la venta</span>
+      </div>
+      <div class="bx-tile" id="t-utilidad">
+        <span class="bx-tile-label">Te queda</span>
+        <span class="bx-tile-value" data-draw="tot-utilidad" data-source="totales" data-field="utilidad">—</span>
+        <span class="bx-tile-foot">Margen <span data-draw="tot-margen" data-source="totales" data-field="margen_pct">—</span>, después de Uber, publicidad e insumos</span>
+      </div>
+    </div>
+
+    <div class="bx-card" id="peso-por-tienda">
+      <h3>A dónde se va cada peso, por tienda</h3>
+      <p class="bx-note">Cada barra es la venta de la tienda. Lo verde es lo que te queda.</p>
+      <div class="bx-legend"><span><i data-seg="0"></i>Insumos (estimado)</span><span><i data-seg="1"></i>Comisión de Uber</span><span><i data-seg="2"></i>Publicidad</span><span><i data-seg="3"></i>Te queda</span></div>
+      <div class="bx-chart" data-draw="chart-tiendas" data-source="tiendas"></div>
+    </div>
+
+    <div class="bx-grid">
+      <div class="bx-card" id="pedidos-hora">
+        <h3>Pedidos por hora</h3>
+        <p class="bx-note">Hora de Tijuana, suma del periodo.</p>
+        <div class="bx-chart" data-draw="chart-horas" data-source="horas"></div>
+      </div>
+      <div class="bx-card" id="familias">
+        <h3>Venta y margen por familia</h3>
+        <p class="bx-note">Margen antes de publicidad, con costo de insumos estimado.</p>
+        <div class="bx-table-wrap">
+          <table class="bx-table" data-source="familias" data-row-key="familia">
+            <thead><tr>
+              <th data-field="familia">Familia</th>
+              <th data-field="unidades" class="num">Unidades</th>
+              <th data-field="venta" class="num">Venta</th>
+              <th data-field="margen_pct" class="num">Margen</th>
+            </tr></thead>
+            <tbody data-draw="familias-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<button class="bx-refresh" onclick="location.reload()">↺ Actualizar</button>
+
+<script>
+  // ── dash polyfill ─────────────────────────────────────────────────────────
+  const dash = (() => {
+    const store = {}, calcs = {}, drawFns = {}, dataListeners = [];
+    return {
+      colors: ['#7c3aed', '#2563eb', '#d97706', '#16a34a'],
+      calc(id, { inputs, fn }) { calcs[id] = { inputs, fn }; },
+      draw(id, fn) { drawFns[id] = fn; },
+      data(id) { return store[id] || { status: 'loading', data: [] }; },
+      onData(cb) { dataListeners.push(cb); },
+      async init(jsonIds) {
+        await Promise.all(jsonIds.map(async id => {
+          try {
+            const r = await fetch(id + '.json?' + Date.now());
+            if (!r.ok) throw new Error(r.status);
+            store[id] = { status: 'ok', data: await r.json() };
+          } catch (e) {
+            console.warn('No se pudo cargar', id, e.message);
+            store[id] = { status: 'error', data: [] };
+          }
+        }));
+        for (const [id, { inputs, fn }] of Object.entries(calcs)) {
+          try { store[id] = { status: 'ok', data: fn(...inputs.map(i => store[i]?.data || [])) }; }
+          catch (e) { store[id] = { status: 'error', data: [] }; }
+        }
+        dataListeners.forEach(cb => { try { cb(); } catch(_) {} });
+        for (const [id, fn] of Object.entries(drawFns)) {
+          const el = document.querySelector(`[data-draw="${id}"]`);
+          try { fn(el); } catch (e) { console.warn('draw', id, e); }
+        }
+      }
+    };
+  })();
+  // ── fin polyfill ──────────────────────────────────────────────────────────
+
+  const LIMITE_MIN = 30;
+  const APERTURA = 5, CIERRE = 22;
+  const TZ = 'America/Tijuana';
+
+  const money = d3.format('$,.0f');
+  const money2 = d3.format('$,.2f');
+  const int = d3.format(',');
+  const pct = (v) => d3.format('.1f')(v) + '%';
+  const when = (iso) => new Date(iso).toLocaleString('es-MX', { timeZone: TZ, day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const tijuanaHour = () => Number(new Intl.DateTimeFormat('en-US', { timeZone: TZ, hour: 'numeric', hourCycle: 'h23' }).format(new Date()));
+  const ago = (iso) => {
+    const min = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+    if (min < 60) return min + ' min';
+    const h = Math.floor(min / 60);
+    return h < 48 ? h + ' h ' + (min % 60) + ' min' : Math.round(h / 24) + ' días';
+  };
+
+  dash.calc('estado', {
+    inputs: ['corridas'],
+    title: 'Estado del agente',
+    description: 'La corrida más reciente.',
+    fn: (corridas) => {
+      if (!corridas.length) return [];
+      const ultima = d3.max(corridas, (r) => r.corrida_at);
+      const ronda = corridas.filter((r) => r.hora_negocio === corridas.find((c) => c.corrida_at === ultima).hora_negocio);
+      const motores = [...new Set(ronda.map((r) => r.motor))];
+      return [{
+        ultima,
+        bloque: ronda[0].bloque,
+        motor: motores.join(', '),
+        tiendas: ronda.length,
+        aprobadas: d3.sum(ronda, (r) => Number(r.aprobadas)),
+        bloqueadas: d3.sum(ronda, (r) => Number(r.bloqueadas)),
+        whatsapp: ronda.some((r) => r.whatsapp_enviado === true || r.whatsapp_enviado === 'true') ? 'Enviadas' : 'No configuradas',
+      }];
+    },
+  });
+
+  dash.calc('totales', {
+    inputs: ['tiendas'],
+    title: 'Totales de las 4 tiendas',
+    description: 'Suma de las tiendas.',
+    fn: (tiendas) => {
+      const s = (k) => d3.sum(tiendas, (r) => Number(r[k]));
+      const venta = s('venta');
+      return [{
+        venta, pedidos: s('pedidos'), comision_uber: s('comision_uber'), publicidad: s('publicidad'), utilidad: s('utilidad'),
+        comision_pct: venta ? s('comision_uber') / venta * 100 : 0,
+        publicidad_pct: venta ? s('publicidad') / venta * 100 : 0,
+        margen_pct: venta ? s('utilidad') / venta * 100 : 0,
+      }];
+    },
+  });
+
+  const one = (id) => { const d = dash.data(id); return d.status === 'ok' && d.data.length ? d.data[0] : null; };
+  const stateOf = () => {
+    const e = one('estado');
+    if (dash.data('estado').status !== 'ok') return null;
+    if (!e) return 'none';
+    const h = tijuanaHour();
+    if (h < APERTURA || h >= CIERRE) return 'closed';
+    return (Date.now() - new Date(e.ultima).getTime()) / 60000 <= LIMITE_MIN ? 'ok' : 'late';
+  };
+  dash.draw('estado-frase', () => {
+    const st = stateOf();
+    document.querySelectorAll('.bx-msg').forEach((m) => { m.hidden = m.dataset.msg !== st; });
+    document.querySelectorAll('.bx-lbl').forEach((m) => { m.hidden = m.dataset.st !== st; });
+    document.querySelectorAll('.bx-pill').forEach((p) => { p.className = 'bx-pill' + (st ? ' st-' + st : ''); });
+  });
+  dash.draw('limite', (el) => { el.textContent = String(LIMITE_MIN); });
+  dash.draw('hace', (el) => { const e = one('estado'); el.textContent = e ? ago(e.ultima) : '—'; });
+
+  const field = (id, key, fmt) => (el) => { const r = one(id); el.textContent = r ? fmt(r[key]) : '—'; };
+  dash.draw('ultima', field('estado', 'ultima', when));
+  dash.draw('bloque', field('estado', 'bloque', String));
+  dash.draw('motor', field('estado', 'motor', (v) => String(v).replace(/^claude/, 'Claude')));
+  dash.draw('aprobadas', field('estado', 'aprobadas', int));
+  dash.draw('bloqueadas', field('estado', 'bloqueadas', int));
+  dash.draw('whatsapp', field('estado', 'whatsapp', String));
+  dash.draw('tot-venta', field('totales', 'venta', money));
+  dash.draw('tot-pedidos', field('totales', 'pedidos', int));
+  dash.draw('tot-comision', field('totales', 'comision_uber', money));
+  dash.draw('tot-comision-pct', field('totales', 'comision_pct', pct));
+  dash.draw('tot-publicidad', field('totales', 'publicidad', money));
+  dash.draw('tot-publicidad-pct', field('totales', 'publicidad_pct', pct));
+  dash.draw('tot-utilidad', field('totales', 'utilidad', money));
+  dash.draw('tot-margen', field('totales', 'margen_pct', pct));
+
+  const cell = (tr, text, cls) => { const td = tr.insertCell(); td.textContent = text; if (cls) td.className = cls; return td; };
+  const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : []; };
+
+  dash.draw('promos-body', (tb) => {
+    const rows = rowsOf('promociones').slice().sort((a, b) => d3.descending(a.corrida_at, b.corrida_at));
+    tb.replaceChildren();
+    rows.forEach((r) => {
+      const tr = tb.insertRow(); tr.dataset.key = r.promo;
+      cell(tr, when(r.corrida_at));
+      cell(tr, r.tienda);
+      const ok = r.aprobada === true || r.aprobada === 'true';
+      cell(tr, ok ? 'Aprobada' : 'Bloqueada', ok ? 'bx-ok' : 'bx-bad');
+      cell(tr, r.precio == null ? '' : money(Number(r.precio)), 'num');
+      cell(tr, r.margen_pct == null ? '' : pct(Number(r.margen_pct)), 'num');
+      cell(tr, r.mecanica, 'wrap');
+      cell(tr, r.motivo || '');
+    });
+  });
+
+  dash.draw('corridas-body', (tb) => {
+    const rows = rowsOf('corridas').slice().sort((a, b) => d3.descending(a.corrida_at, b.corrida_at));
+    tb.replaceChildren();
+    rows.forEach((r) => {
+      const tr = tb.insertRow(); tr.dataset.key = r.corrida;
+      cell(tr, when(r.corrida_at));
+      cell(tr, r.tienda);
+      cell(tr, r.bloque);
+      cell(tr, String(r.motor).replace(/^claude/, 'Claude'));
+      cell(tr, int(Number(r.aprobadas)), 'num');
+      cell(tr, int(Number(r.bloqueadas)), 'num');
+    });
+  });
+
+  dash.draw('competencia-body', (tb) => {
+    tb.replaceChildren();
+    rowsOf('competencia').forEach((r) => {
+      const tr = tb.insertRow();
+      const name = cell(tr, r.competidor);
+      if (r.posicion === 'tu cadena') { name.style.fontWeight = '600'; }
+      cell(tr, r.zona);
+      cell(tr, r.posicion);
+      cell(tr, r.latte == null ? '' : money(Number(r.latte)), 'num');
+      cell(tr, r.frappe == null ? '' : money(Number(r.frappe)), 'num');
+      cell(tr, r.promo, 'wrap');
+    });
+  });
+
+  dash.draw('analisis-body', (tb) => {
+    tb.replaceChildren();
+    rowsOf('analisis').forEach((r) => {
+      const tr = tb.insertRow();
+      cell(tr, r.tienda);
+      cell(tr, when(r.corrida_at));
+      const td = cell(tr, r.respuesta_competencia, 'wrap');
+      td.style.minWidth = '22rem';
+    });
+  });
+
+  dash.draw('familias-body', (tb) => {
+    tb.replaceChildren();
+    rowsOf('familias').forEach((r) => {
+      const tr = tb.insertRow();
+      cell(tr, r.familia);
+      cell(tr, int(Number(r.unidades)), 'num');
+      cell(tr, money(Number(r.venta)), 'num');
+      cell(tr, pct(Number(r.margen_pct)), 'num');
+    });
+  });
+
+  const failed = (el, id) => {
+    if (dash.data(id).status !== 'error') return false;
+    const p = document.createElement('div'); p.className = 'bx-fail'; p.textContent = 'No se pudo cargar';
+    el.replaceChildren(p); return true;
+  };
+
+  const SEGMENTS = [
+    { key: 'costo_insumos', name: 'Insumos (estimado)', color: () => dash.colors[1] },
+    { key: 'comision_uber', name: 'Comisión de Uber', color: () => dash.colors[0] },
+    { key: 'publicidad', name: 'Publicidad', color: () => dash.colors[2] },
+    { key: 'utilidad', name: 'Te queda', color: () => 'var(--color-ok)' },
+  ];
+
+  dash.onData(() => {
+    document.querySelectorAll('.bx-legend i[data-seg]').forEach((sw) => { sw.style.background = SEGMENTS[Number(sw.dataset.seg)].color(); });
+  });
+
+  dash.draw('chart-tiendas', (el) => {
+    el.replaceChildren();
+    if (failed(el, 'tiendas')) return;
+    const rows = rowsOf('tiendas');
+    if (!rows.length) return;
+    const W = Math.max(280, el.clientWidth), rowH = 54, barH = 22, H = rows.length * rowH;
+    const x = d3.scaleLinear([0, 1], [0, W]);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip').style('display', 'none');
+    rows.forEach((r, i) => {
+      const venta = Number(r.venta), y = i * rowH;
+      svg.append('text').attr('x', 0).attr('y', y + 14).attr('fill', 'var(--color-fg)').attr('font-size', 'var(--cds-font-size-caption)').text(r.tienda);
+      svg.append('text').attr('x', W).attr('y', y + 14).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)')
+        .attr('font-size', 'var(--cds-font-size-caption)').text(`${money(venta)} · margen ${pct(Number(r.margen_pct))}`);
+      let acc = 0;
+      SEGMENTS.forEach((s) => {
+        const v = Math.max(0, Number(r[s.key])), share = venta ? v / venta : 0;
+        svg.append('rect').attr('x', x(acc)).attr('y', y + 22).attr('width', Math.max(0, x(share) - 1)).attr('height', barH)
+          .attr('rx', 2).attr('fill', s.color())
+          .on('mousemove', (ev) => {
+            const [mx, my] = d3.pointer(ev, el);
+            tip.style('display', null).html('');
+            tip.append('div').attr('class', 'k').text(r.tienda);
+            tip.append('div').text(`${s.name}: ${money(v)} (${pct(share * 100)})`);
+            const tw = tip.node().offsetWidth;
+            tip.style('left', Math.min(Math.max(0, mx - tw / 2), el.clientWidth - tw) + 'px').style('top', (my - 48) + 'px');
+          })
+          .on('mouseleave', () => tip.style('display', 'none'));
+        acc += share;
+      });
+    });
+  });
+
+  dash.draw('chart-horas', (el) => {
+    el.replaceChildren();
+    if (failed(el, 'horas')) return;
+    const rows = rowsOf('horas').map((r) => ({ hora: Number(r.hora), pedidos: Number(r.pedidos), venta: Number(r.venta) }));
+    if (!rows.length) return;
+    const W = Math.max(260, el.clientWidth), H = 220, m = { t: 10, r: 4, b: 26, l: 0 };
+    const x = d3.scaleBand(rows.map((r) => r.hora), [m.l, W - m.r]).padding(0.25);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.pedidos)], [H - m.b, m.t]).nice();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const ticks = y.ticks(4);
+    const tickW = d3.max(ticks, (t) => String(t).length) * 7 + 6;
+    x.range([tickW, W - m.r]);
+    svg.append('g').selectAll('line').data(ticks).join('line')
+      .attr('x1', tickW).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(ticks).join('text')
+      .attr('x', tickW - 6).attr('y', (t) => y(t) + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)')
+      .attr('font-size', 'var(--cds-font-size-caption)').text((t) => int(t));
+    const peak = d3.max(rows, (r) => r.pedidos);
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip').style('display', 'none');
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.hora)).attr('width', Math.min(32, x.bandwidth())).attr('y', (r) => y(r.pedidos))
+      .attr('height', (r) => y(0) - y(r.pedidos)).attr('rx', 2)
+      .attr('fill', (r) => r.pedidos === peak ? dash.colors[0] : 'var(--cds-chart-muted)')
+      .on('mousemove', (ev, r) => {
+        const [mx, my] = d3.pointer(ev, el);
+        tip.style('display', null).html('');
+        tip.append('div').attr('class', 'k').text(`${r.hora}:00 a ${r.hora + 1}:00`);
+        tip.append('div').text(`${int(r.pedidos)} pedidos · ${money(r.venta)}`);
+        const tw = tip.node().offsetWidth;
+        tip.style('left', Math.min(Math.max(0, mx - tw / 2), el.clientWidth - tw) + 'px').style('top', (my - 52) + 'px');
+      })
+      .on('mouseleave', () => tip.style('display', 'none'));
+    const every = x.bandwidth() < 22 ? 2 : 1;
+    svg.append('g').selectAll('text').data(rows.filter((r, i) => i % every === 0)).join('text')
+      .attr('x', (r) => x(r.hora) + Math.min(32, x.bandwidth()) / 2).attr('y', H - 8).attr('text-anchor', 'middle')
+      .attr('fill', 'var(--color-fg-muted)').attr('font-size', 'var(--cds-font-size-caption)').text((r) => r.hora + 'h');
+  });
+
+  dash.init(['corridas', 'promociones', 'analisis', 'competencia', 'tiendas', 'horas', 'familias']);
+</script>
+</body>
+</html>
