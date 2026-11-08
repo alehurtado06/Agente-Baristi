@@ -1,1 +1,90 @@
-[]
+[
+ {
+  "familia": "Cafruccino / frappé",
+  "unidades": 171,
+  "venta": 25219.0,
+  "costo_insumos": 5472.0,
+  "utilidad_antes_publicidad": 8423.63,
+  "margen_pct": 33.4
+ },
+ {
+  "familia": "Latte / espresso caliente",
+  "unidades": 174,
+  "venta": 21288.0,
+  "costo_insumos": 4002.0,
+  "utilidad_antes_publicidad": 7604.83,
+  "margen_pct": 35.7
+ },
+ {
+  "familia": "Latte / espresso frío",
+  "unidades": 118,
+  "venta": 14184.0,
+  "costo_insumos": 2832.0,
+  "utilidad_antes_publicidad": 5153.77,
+  "margen_pct": 36.3
+ },
+ {
+  "familia": "Tónico / limonata / soda",
+  "unidades": 77,
+  "venta": 8870.0,
+  "costo_insumos": 1540.0,
+  "utilidad_antes_publicidad": 3383.28,
+  "margen_pct": 38.1
+ },
+ {
+  "familia": "Chai / matcha",
+  "unidades": 70,
+  "venta": 8336.0,
+  "costo_insumos": 1890.0,
+  "utilidad_antes_publicidad": 2702.81,
+  "margen_pct": 32.4
+ },
+ {
+  "familia": "Smoothie",
+  "unidades": 45,
+  "venta": 6251.0,
+  "costo_insumos": 1575.0,
+  "utilidad_antes_publicidad": 1911.67,
+  "margen_pct": 30.6
+ },
+ {
+  "familia": "Bagel / comida",
+  "unidades": 55,
+  "venta": 5299.0,
+  "costo_insumos": 1760.0,
+  "utilidad_antes_publicidad": 1168.78,
+  "margen_pct": 22.1
+ },
+ {
+  "familia": "Chocolate",
+  "unidades": 42,
+  "venta": 4245.0,
+  "costo_insumos": 924.0,
+  "utilidad_antes_publicidad": 1430.38,
+  "margen_pct": 33.7
+ },
+ {
+  "familia": "Americano",
+  "unidades": 27,
+  "venta": 2544.0,
+  "costo_insumos": 324.0,
+  "utilidad_antes_publicidad": 1104.54,
+  "margen_pct": 43.4
+ },
+ {
+  "familia": "Repostería",
+  "unidades": 39,
+  "venta": 2150.0,
+  "costo_insumos": 702.0,
+  "utilidad_antes_publicidad": 474.5,
+  "margen_pct": 22.1
+ },
+ {
+  "familia": "Té",
+  "unidades": 2,
+  "venta": 180.0,
+  "costo_insumos": 24.0,
+  "utilidad_antes_publicidad": 77.55,
+  "margen_pct": 43.1
+ }
+]
