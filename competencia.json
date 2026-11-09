@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): Promoción de 2x1 (artículos seleccionados); Pacífico: Ahorra $40 gastando más de $299",
+  "promo": "Rosarito (Tijuana): Ahorra $40 gastando más de $299 (ya no se ve el 2x1); Pacífico: Ahorra $40 gastando más de $299",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en artículos seleccionados (frappés Rockaccino, brownie); 25% en bebidas de temporada Pan de Muerto",
+  "promo": "30% en artículos seleccionados (frappés Rockaccino, brownie); 25% en bebidas de temporada Pan de Muerto (sin cambios: tienda cerrada al revisar; Elías Calles y Vía Poniente muestran \"30% en artículos seleccionados\" en la categoría)",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en artículos seleccionados (frappés y brownie)",
+  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte, capuccino, Rockaccino, Lateada)",
   "latte": 73,
   "frappe": 76
  },
@@ -27,15 +27,15 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato, Flat White, Caramel Frappuccino, Chip Frappuccino y combos (Latte Lunch, Working Lunch, Pareja Perfecta)",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Caramel y Chip Frappuccino, Avellana Shaken Espresso, Mango Dragonfruit Refresher y combos (Working Lunch, Latte Lunch, Pastel con Latte); 25% en Chocolate Caliente; 20% en Toffee Nut Latte",
   "latte": 94,
-  "frappe": 119
+  "frappe": 109
  },
  {
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "25% en artículos seleccionados",
+  "promo": "30% en artículos seleccionados (Caramel Macchiato, Flat White, Caramel y Chip Frappuccino, Mango Dragonfruit Refresher, combos Working Lunch y Latte Lunch); 25% en Chocolate Caliente; 20% en Toffee Nut Latte",
   "latte": 94,
   "frappe": 119
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "15% a 25% solo en comida (chilaquiles, ensaladas, combos con limonada); bebidas a precio completo",
+  "promo": "15% a 25% solo en comida (chilaquiles, ensaladas, combos con limonada); bebidas a precio completo (sin cambios: tienda cerrada al revisar)",
   "latte": null,
   "frappe": 145
  },
@@ -51,16 +51,16 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "$64 de descuento en artículos seleccionados",
-  "latte": null,
-  "frappe": null
+  "promo": "$64 de descuento en artículos seleccionados (sin cambios: tienda cerrada al revisar)",
+  "latte": 101,
+  "frappe": 120
  },
  {
   "competidor": "Nómada Coffee Crew",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en lattes fríos y chai",
-  "latte": 60,
+  "promo": "25% en lattes fríos y chai (sin cambios: tienda cerrada al revisar)",
+  "latte": 80,
   "frappe": 140
  }
 ]
