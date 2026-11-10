@@ -150,6 +150,24 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 /* ── scrollable containers ── */
 .scroll-y{overflow-y:auto;max-height:420px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
 
+/* ── pestañas de plataforma ── */
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-bottom:4px}
+.tab{font:inherit;font-size:13px;font-weight:600;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 14px;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:6px}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--copper2);border-bottom-color:var(--copper)}
+.tab .cnt{font-size:10px;font-weight:600;background:var(--surface);color:var(--muted);border-radius:999px;padding:1px 7px}
+.tab.active .cnt{background:rgba(181,96,47,.12);color:var(--copper2)}
+.plat-empty{text-align:center;padding:48px 20px;display:grid;gap:8px;justify-items:center}
+.plat-empty .big{font-size:32px}
+.plat-empty h3{font-size:16px;font-weight:600}
+.plat-empty p{font-size:13px;color:var(--muted);max-width:460px;line-height:1.6}
+.cmp{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+.cmp th{text-align:right;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+.cmp th:first-child,.cmp td:first-child{text-align:left}
+.cmp td{text-align:right;padding:9px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+.cmp tr.total td{font-weight:700;border-bottom:none;border-top:2px solid var(--text)}
+.cmp td.na{color:var(--muted2);text-align:left}
+
 /* ── Uber: filtros y detalle ── */
 .filters{position:sticky;top:0;z-index:50;background:var(--bg);padding:12px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;border-bottom:1px solid var(--border);margin-bottom:16px}
 .f-field{display:flex;flex-direction:column;gap:3px;min-width:0}
@@ -224,14 +242,31 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
   <!-- ── Uber Eats: todos los pedidos, con filtros ── -->
   <div class="section" id="uber">
-    <div class="section-title">Uber Eats · todos los pedidos</div>
+    <div class="section-title">Ventas por plataforma · todos los pedidos</div>
+    <div class="tabs" role="tablist" id="plat-tabs">
+      <button class="tab" role="tab" data-plat="Uber Eats">Uber Eats <span class="cnt"></span></button>
+      <button class="tab" role="tab" data-plat="Rappi">Rappi <span class="cnt"></span></button>
+      <button class="tab" role="tab" data-plat="DiDi Food">DiDi Food <span class="cnt"></span></button>
+      <button class="tab" role="tab" data-plat="Total">Total <span class="cnt"></span></button>
+    </div>
+    <div class="card plat-empty" id="plat-empty" style="display:none;margin-top:16px">
+      <div class="big">📄</div>
+      <h3 id="plat-empty-title">Aún no hay datos</h3>
+      <p id="plat-empty-text"></p>
+    </div>
+    <div id="plat-body">
+    <div class="card" id="plat-cmp-card" style="display:none;margin-top:16px">
+      <div class="card-title">Comparativo por plataforma</div>
+      <div style="overflow-x:auto"><table class="cmp" id="plat-cmp"></table></div>
+      <p class="card-note">Respeta los filtros de tienda y fechas. "Te deposita" ya descuenta publicidad y cuotas.</p>
+    </div>
     <div class="filters" id="filters">
       <div class="f-field"><label for="f-tienda">Tienda</label><select id="f-tienda"></select></div>
       <div class="f-field"><label for="f-desde">Desde</label><input type="date" id="f-desde"></div>
       <div class="f-field"><label for="f-hasta">Hasta</label><input type="date" id="f-hasta"></div>
       <div class="f-field"><label for="f-estado">Estado</label><select id="f-estado"></select></div>
       <div class="f-field"><label for="f-modo">Entrega</label><select id="f-modo"></select></div>
-      <div class="f-field"><label for="f-canal">Plataforma</label><select id="f-canal"></select></div>
+      <div class="f-field"><label for="f-canal">Dispositivo</label><select id="f-canal"></select></div>
       <div class="f-field"><label for="f-socio">Cliente</label><select id="f-socio"></select></div>
       <button class="f-reset" id="f-reset" type="button">Limpiar filtros</button>
       <span class="f-summary" id="f-summary"></span>
@@ -240,8 +275,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="grid-4">
       <div class="kpi g kpi-sm"><div class="kpi-label">Pedidos</div><div class="kpi-value" id="u-pedidos">—</div><div class="kpi-foot" id="u-pedidos-foot">—</div></div>
       <div class="kpi c kpi-sm"><div class="kpi-label">Venta (con IVA)</div><div class="kpi-value" id="u-venta">—</div><div class="kpi-foot" id="u-ticket">—</div></div>
-      <div class="kpi a kpi-sm"><div class="kpi-label">Comisión Uber (con IVA)</div><div class="kpi-value" id="u-comision">—</div><div class="kpi-foot" id="u-comision-pct">—</div></div>
-      <div class="kpi b kpi-sm"><div class="kpi-label">Pago neto de Uber</div><div class="kpi-value" id="u-pago">—</div><div class="kpi-foot" id="u-pago-pct">—</div></div>
+      <div class="kpi a kpi-sm"><div class="kpi-label">Comisión de la plataforma (con IVA)</div><div class="kpi-value" id="u-comision">—</div><div class="kpi-foot" id="u-comision-pct">—</div></div>
+      <div class="kpi b kpi-sm"><div class="kpi-label">Te deposita la plataforma</div><div class="kpi-value" id="u-pago">—</div><div class="kpi-foot" id="u-pago-pct">—</div></div>
     </div>
 
     <div class="grid-2" style="margin-top:16px">
@@ -270,11 +305,11 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
     <div class="grid-3" style="margin-top:16px">
       <div class="card"><div class="card-title">Por tienda</div><div class="bars" id="u-tiendas"></div></div>
-      <div class="card"><div class="card-title">Plataforma</div><div class="bars" id="u-canal"></div></div>
+      <div class="card"><div class="card-title">Dispositivo del cliente</div><div class="bars" id="u-canal"></div></div>
       <div class="card"><div class="card-title">Tipo de cliente</div><div class="bars" id="u-socio"></div></div>
       <div class="card"><div class="card-title">Estado del pedido</div><div class="bars" id="u-estado"></div></div>
       <div class="card"><div class="card-title">Tiempo de aceptado a entregado</div><div class="bars" id="u-tiempo"></div></div>
-      <div class="card"><div class="card-title">Depósitos de Uber por fecha de pago</div><div class="bars" id="u-depositos"></div></div>
+      <div class="card"><div class="card-title">Depósitos por fecha de pago</div><div class="bars" id="u-depositos"></div></div>
     </div>
 
     <div class="card" style="margin-top:16px">
@@ -293,6 +328,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         </span>
       </div>
     </div>
+    </div><!-- /plat-body -->
   </div>
 
   <!-- ── agente: estado + bloque actual ── -->
@@ -755,7 +791,16 @@ setInterval(()=>{
 },1000);
 
 // ── Uber Eats: filtros + detalle ──
-const UF={ids:['f-tienda','f-desde','f-hasta','f-estado','f-modo','f-canal','f-socio'],ready:false,shown:100,sort:{k:'fecha',dir:-1}};
+const PLATS=['Uber Eats','Rappi','DiDi Food'];
+let savedPlat=null;try{savedPlat=localStorage.getItem('baristi-plat');}catch{}
+const UF={ids:['f-tienda','f-desde','f-hasta','f-estado','f-modo','f-canal','f-socio'],ready:false,shown:100,sort:{k:'fecha',dir:-1},
+  plat:[...PLATS,'Total'].includes(savedPlat)?savedPlat:'Uber Eats'};
+const platOf=r=>r.plataforma||'Uber Eats';
+const inPlat=r=>UF.plat==='Total'||platOf(r)===UF.plat;
+const PLAT_HELP={
+  'Rappi':'Descarga en el portal de Rappi Aliados el reporte de pedidos o de pagos (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
+  'DiDi Food':'Descarga en el portal de DiDi Food para restaurantes el reporte de pedidos o el estado de cuenta (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
+};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmtDate=iso=>iso?new Date(iso+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'short'}):'—';
 const money2=n=>'$'+Number(n).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -772,7 +817,7 @@ function setupUberFilters(P){
   fillSelect('f-estado','Todos',uniq('estado'));
   fillSelect('f-modo','Todas',uniq('modo'));
   fillSelect('f-canal','Todas',uniq('canal'));
-  fillSelect('f-socio','Todos',['Uber One','Sin membresía']);
+  fillSelect('f-socio','Todos',['Con membresía','Sin membresía']);
   const fechas=P.map(p=>p.fecha).filter(Boolean).sort();
   ['f-desde','f-hasta'].forEach(id=>{$(id).min=fechas[0];$(id).max=fechas[fechas.length-1];});
   if(!UF.ready){
@@ -789,14 +834,14 @@ function uberFilters(){
 }
 function filterPedidos(){
   const f=uberFilters();
-  return (DATA.pedidos||[]).filter(p=>
+  return (DATA.pedidos||[]).filter(p=>inPlat(p)&&
     (!f.tienda||p.tienda===f.tienda)&&(!f.desde||p.fecha>=f.desde)&&(!f.hasta||p.fecha<=f.hasta)&&
     (!f.estado||p.estado===f.estado)&&(!f.modo||p.modo===f.modo)&&(!f.canal||p.canal===f.canal)&&
-    (!f.socio||(f.socio==='Uber One')===!!p.uber_one));
+    (!f.socio||(f.socio==='Con membresía')===!!p.uber_one));
 }
 function filterOtros(){
   const f=uberFilters();
-  return (DATA.otros_pagos||[]).filter(o=>
+  return (DATA.otros_pagos||[]).filter(o=>inPlat(o)&&
     (!f.tienda||o.tienda===f.tienda)&&(!f.desde||o.fecha>=f.desde)&&(!f.hasta||o.fecha<=f.hasta));
 }
 const sum=(rows,k)=>rows.reduce((s,r)=>s+(Number(r[k])||0),0);
@@ -815,11 +860,49 @@ function groupBy(rows,keyFn){
   return m;
 }
 
-function renderUber(){
+function renderTabs(){
   const all=DATA.pedidos||[];
-  if(!all.length){$('uber').style.display='none';return;}
+  document.querySelectorAll('#plat-tabs .tab').forEach(t=>{
+    const pl=t.dataset.plat,n=pl==='Total'?all.length:all.filter(p=>platOf(p)===pl).length;
+    t.classList.toggle('active',pl===UF.plat);t.setAttribute('aria-selected',pl===UF.plat);
+    t.querySelector('.cnt').textContent=n?n.toLocaleString('es-MX'):'—';
+    if(!t.dataset.bound){t.dataset.bound=1;t.addEventListener('click',()=>{
+      UF.plat=pl;UF.shown=100;try{localStorage.setItem('baristi-plat',pl);}catch{}
+      ['f-estado','f-modo','f-canal','f-socio'].forEach(id=>$(id).value='');renderUber();});}
+  });
+}
+function renderPlatCmp(){
+  const card=$('plat-cmp-card');
+  if(UF.plat!=='Total'){card.style.display='none';return;}
+  card.style.display='';
+  const f=uberFilters(),inF=r=>(!f.tienda||r.tienda===f.tienda)&&(!f.desde||r.fecha>=f.desde)&&(!f.hasta||r.fecha<=f.hasta);
+  const P=(DATA.pedidos||[]).filter(inF),O=(DATA.otros_pagos||[]).filter(inF);
+  const row=(name,ps,os)=>{
+    if(!ps.length&&!os.length) return `<tr><td>${name}</td><td class="na" colspan="6">Sin datos todavía</td></tr>`;
+    const v=sum(ps,'venta'),c=sum(ps,'comision'),d=sum(ps,'pago')+sum(os,'monto'),n=ps.length;
+    return `<tr><td>${name}</td><td>${n.toLocaleString('es-MX')}</td><td>${money(v)}</td><td>${n?money(v/n):'—'}</td><td>${money(c)} · ${share(c,v)}</td><td>${money(d)}</td><td>${share(d,v)}</td></tr>`;
+  };
+  $('plat-cmp').innerHTML='<thead><tr><th>Plataforma</th><th>Pedidos</th><th>Venta</th><th>Ticket</th><th>Comisión</th><th>Te deposita</th><th>% de la venta</th></tr></thead><tbody>'+
+    PLATS.map(pl=>row(pl,P.filter(p=>platOf(p)===pl),O.filter(o=>platOf(o)===pl))).join('')+
+    row('Total',P,O).replace('<tr>','<tr class="total">')+'</tbody>';
+}
+
+function renderUber(){
+  const every=DATA.pedidos||[];
+  if(!every.length){$('uber').style.display='none';return;}
   $('uber').style.display='';
+  renderTabs();
+  const all=every.filter(inPlat);
+  const empty=!all.length;
+  $('plat-empty').style.display=empty?'':'none';
+  $('plat-body').style.display=empty?'none':'';
+  if(empty){
+    $('plat-empty-title').textContent='Aún no hay datos de '+UF.plat;
+    $('plat-empty-text').textContent=PLAT_HELP[UF.plat]||'';
+    return;
+  }
   setupUberFilters(all);
+  renderPlatCmp();
   const P=filterPedidos(),O=filterOtros();
   const venta=sum(P,'venta'),pago=sum(P,'pago'),com=sum(P,'comision');
   const otros=sum(O,'monto'),deposito=pago+otros;
@@ -835,15 +918,16 @@ function renderUber(){
   $('u-comision-pct').textContent=share(com,venta)+' de la venta';
   $('u-pago').textContent=money(deposito);
   $('u-pago-pct').textContent=share(deposito,venta)+' de la venta · tras publicidad';
+  const pName=UF.plat==='Total'?'las plataformas':UF.plat;
 
   // cascada venta → depósito
   const lines=[
     ['Venta (con IVA)',venta],
     ['Promociones tuyas',-sum(P,'promos')],
-    ['Ajuste de marketing (Uber cofinancia)',sum(P,'ajuste_mkt')],
+    ['Ajuste de marketing (la plataforma cofinancia)',sum(P,'ajuste_mkt')],
     ['Reembolsos / contracargos',-sum(P,'contracargo')],
     ['Cuota por promoción',-sum(P,'cuota_promo')],
-    ['Comisión Uber (con IVA)',-com],
+    ['Comisión de la plataforma (con IVA)',-com],
     ['Retención IVA',-sum(P,'ret_iva')],
     ['Retención ISR',-sum(P,'ret_isr')],
     ['Aportación del cliente / propinas',sum(P,'otros')],
@@ -852,7 +936,7 @@ function renderUber(){
     ['Otras cuotas',sum(O.filter(o=>o.concepto!=='Publicidad'&&o.concepto!=='Crédito de publicidad'),'monto')],
   ].filter((l,i)=>i===0||Math.abs(l[1])>=0.5);
   $('u-flow').innerHTML=lines.map(([k,v])=>`<tr><td>${k}</td><td class="num ${v<0?'neg':''}">${v<0?'−':''}${money2(Math.abs(v))}</td><td class="pct">${share(Math.abs(v),venta)}</td></tr>`).join('')+
-    `<tr class="total"><td>Te deposita Uber</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,venta)}</td></tr>`;
+    `<tr class="total"><td>Te deposita${UF.plat==='Total'?'n las plataformas':' '+esc(UF.plat)}</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,venta)}</td></tr>`;
 
   chartUberDias(P);
   chartUberHoras(P);
@@ -869,7 +953,7 @@ function renderUber(){
   };
   grp('u-tiendas',p=>(p.tienda||'').replace('Baristi ',''));
   grp('u-canal',p=>p.canal+(p.modo==='Recoger'?' · recoger':''));
-  grp('u-socio',p=>p.uber_one?'Uber One':'Sin membresía');
+  grp('u-socio',p=>p.uber_one?(UF.plat==='Total'?'Con membresía':platOf(p)==='Uber Eats'?'Uber One':'Con membresía'):'Sin membresía');
   grp('u-estado',p=>p.estado+(p.contracargo>0?' con reembolso':''));
   const T=[['< 15 min',0,15],['15–30 min',15,30],['30–45 min',30,45],['45–60 min',45,60],['> 60 min',60,1e9]];
   const conT=P.filter(p=>p.minutos!=null);
@@ -931,14 +1015,15 @@ function chartUberHoras(P){
   rows.forEach(r=>svg.append('text').attr('x',x(r.h)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(r.h+'h'));
 }
 
-const UCOLS=[
+const UCOLS_ALL=[
+  {k:'plataforma',t:'Plataforma',total:1,f:p=>esc(platOf(p))},
   {k:'fecha',t:'Fecha',f:p=>fmtDate(p.fecha)},
   {k:'hora',t:'Hora'},
   {k:'tienda',t:'Tienda',f:p=>esc((p.tienda||'').replace('Baristi ',''))},
   {k:'id',t:'Pedido'},
   {k:'estado',t:'Estado',f:p=>`<span class="tag ${p.estado==='Completado'&&!p.contracargo?'ok':p.estado==='Completado'?'':'bad'}">${esc(p.estado)}${p.contracargo?' · reemb.':''}</span>`},
-  {k:'canal',t:'Plataforma'},
-  {k:'uber_one',t:'Uber One',f:p=>p.uber_one?'Sí':'No'},
+  {k:'canal',t:'Dispositivo'},
+  {k:'uber_one',t:'Membresía',f:p=>p.uber_one?'Sí':'No'},
   {k:'minutos',t:'Min',num:1,f:p=>p.minutos??'—'},
   {k:'venta',t:'Venta',num:1,f:p=>money2(p.venta)},
   {k:'promos',t:'Promos',num:1,f:p=>p.promos?money2(p.promos):'—'},
@@ -947,12 +1032,15 @@ const UCOLS=[
   {k:'pago',t:'Pago neto',num:1,f:p=>money2(p.pago)},
   {k:'fecha_pago',t:'Pagado',f:p=>p.fecha_pago?fmtDate(p.fecha_pago):'<span class="tag">pendiente</span>'},
 ];
+let UCOLS=UCOLS_ALL;
 function sortedPedidos(){
   const P=filterPedidos(),{k,dir}=UF.sort,col=UCOLS.find(c=>c.k===k),val=col.v||(p=>p[k]);
   return P.sort((a,b)=>{const x=val(a),y=val(b);if(x==null)return 1;if(y==null)return -1;
     return (x<y?-1:x>y?1:k==='fecha'?(a.hora<b.hora?-1:1):0)*dir;});
 }
 function renderUberTable(){
+  UCOLS=UCOLS_ALL.filter(c=>!c.total||UF.plat==='Total');
+  if(!UCOLS.find(c=>c.k===UF.sort.k)) UF.sort={k:'fecha',dir:-1};
   $('u-head').innerHTML=UCOLS.map(c=>`<th class="${c.num?'num':''}" data-k="${c.k}">${c.t}${UF.sort.k===c.k?(UF.sort.dir>0?' ↑':' ↓'):''}</th>`).join('');
   $('u-head').querySelectorAll('th').forEach(th=>th.onclick=()=>{
     const k=th.dataset.k;UF.sort={k,dir:UF.sort.k===k?-UF.sort.dir:(UCOLS.find(c=>c.k===k).num?-1:1)};renderUberTable();});
@@ -964,12 +1052,12 @@ function renderUberTable(){
 }
 function downloadUberCSV(){
   const P=sortedPedidos();
-  const cols=['fecha','hora','tienda','id','estado','modo','canal','uber_one','minutos','venta','promos','ajuste_mkt','contracargo','cuota_promo','comision','ret_iva','ret_isr','otros','pago','fecha_pago'];
+  const cols=['plataforma','fecha','hora','tienda','id','estado','modo','canal','uber_one','minutos','venta','promos','ajuste_mkt','contracargo','cuota_promo','comision','ret_iva','ret_isr','otros','pago','fecha_pago'];
   const q=v=>{v=v==null?'':String(v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
   const csv='﻿'+cols.join(',')+'\n'+P.map(p=>cols.map(c=>q(p[c])).join(',')).join('\n');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
-  a.download='pedidos_uber_baristi.csv';a.click();
+  a.download='pedidos_'+UF.plat.toLowerCase().replace(/\s+/g,'_')+'_baristi.csv';a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 

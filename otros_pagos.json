@@ -1,5 +1,6 @@
 [
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-10",
   "concepto": "Otra cuota",
@@ -7,6 +8,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-10",
   "concepto": "Publicidad",
@@ -14,6 +16,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-10",
   "concepto": "Publicidad",
@@ -21,6 +24,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-10",
   "concepto": "Publicidad",
@@ -28,6 +32,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-10",
   "concepto": "Otra cuota",
@@ -35,6 +40,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
   "concepto": "Publicidad",
@@ -42,6 +48,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-09",
   "concepto": "Otra cuota",
@@ -49,6 +56,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-09",
   "concepto": "Publicidad",
@@ -56,6 +64,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-09",
   "concepto": "Otra cuota",
@@ -63,6 +72,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
   "concepto": "Publicidad",
@@ -70,6 +80,7 @@
   "fecha_pago": null
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -77,6 +88,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -84,6 +96,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -91,6 +104,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Crédito de publicidad",
@@ -98,6 +112,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -105,6 +120,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -112,6 +128,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -119,6 +136,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -126,6 +144,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
@@ -133,6 +152,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
   "concepto": "Publicidad",
@@ -140,6 +160,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
   "concepto": "Crédito de publicidad",
@@ -147,6 +168,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
   "concepto": "Publicidad",
@@ -154,6 +176,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
   "concepto": "Crédito de publicidad",
@@ -161,6 +184,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
   "concepto": "Publicidad",
@@ -168,6 +192,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-04",
   "concepto": "Publicidad",
@@ -175,6 +200,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-04",
   "concepto": "Crédito de publicidad",
@@ -182,6 +208,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -189,6 +216,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -196,6 +224,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -203,6 +232,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Crédito de publicidad",
@@ -210,6 +240,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Publicidad",
@@ -217,6 +248,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -224,6 +256,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -231,6 +264,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -238,6 +272,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -245,6 +280,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
@@ -252,6 +288,7 @@
   "fecha_pago": "2026-11-09"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
   "concepto": "Publicidad",
@@ -259,6 +296,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
   "concepto": "Crédito de publicidad",
@@ -266,6 +304,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
   "concepto": "Crédito de publicidad",
@@ -273,6 +312,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
   "concepto": "Publicidad",
@@ -280,6 +320,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-31",
   "concepto": "Publicidad",
@@ -287,6 +328,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-31",
   "concepto": "Crédito de publicidad",
@@ -294,6 +336,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -301,6 +344,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -308,6 +352,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
   "concepto": "Crédito de publicidad",
@@ -315,6 +360,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -322,6 +368,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -329,6 +376,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -336,6 +384,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-30",
   "concepto": "Publicidad",
@@ -343,6 +392,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-29",
   "concepto": "Publicidad",
@@ -350,6 +400,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-29",
   "concepto": "Publicidad",
@@ -357,6 +408,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
   "concepto": "Publicidad",
@@ -364,6 +416,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
   "concepto": "Publicidad",
@@ -371,6 +424,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
   "concepto": "Publicidad",
@@ -378,6 +432,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -385,6 +440,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -392,6 +448,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -399,6 +456,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -406,6 +464,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
   "concepto": "Publicidad",
@@ -413,6 +472,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -420,6 +480,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -427,6 +488,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
   "concepto": "Otra cuota",
@@ -434,6 +496,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-26",
   "concepto": "Publicidad",
@@ -441,6 +504,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-26",
   "concepto": "Publicidad",
@@ -448,6 +512,7 @@
   "fecha_pago": "2026-11-02"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-25",
   "concepto": "Publicidad",
@@ -455,6 +520,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-25",
   "concepto": "Publicidad",
@@ -462,6 +528,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-24",
   "concepto": "Publicidad",
@@ -469,6 +536,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-24",
   "concepto": "Publicidad",
@@ -476,6 +544,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
   "concepto": "Publicidad",
@@ -483,6 +552,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
   "concepto": "Publicidad",
@@ -490,6 +560,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
   "concepto": "Publicidad",
@@ -497,6 +568,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-22",
   "concepto": "Publicidad",
@@ -504,6 +576,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
   "concepto": "Publicidad",
@@ -511,6 +584,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
   "concepto": "Publicidad",
@@ -518,6 +592,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
   "concepto": "Publicidad",
@@ -525,6 +600,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -532,6 +608,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -539,6 +616,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -546,6 +624,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -553,6 +632,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -560,6 +640,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
   "concepto": "Publicidad",
@@ -567,6 +648,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -574,6 +656,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
   "concepto": "Otra cuota",
@@ -581,6 +664,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-19",
   "concepto": "Publicidad",
@@ -588,6 +672,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-19",
   "concepto": "Publicidad",
@@ -595,6 +680,7 @@
   "fecha_pago": "2026-10-26"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-18",
   "concepto": "Publicidad",
@@ -602,6 +688,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-18",
   "concepto": "Publicidad",
@@ -609,6 +696,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
   "concepto": "Publicidad",
@@ -616,6 +704,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-17",
   "concepto": "Publicidad",
@@ -623,6 +712,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
   "concepto": "Publicidad",
@@ -630,6 +720,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
   "concepto": "Publicidad",
@@ -637,6 +728,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
   "concepto": "Publicidad",
@@ -644,6 +736,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
   "concepto": "Publicidad",
@@ -651,6 +744,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
   "concepto": "Publicidad",
@@ -658,6 +752,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
   "concepto": "Publicidad",
@@ -665,6 +760,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
   "concepto": "Publicidad",
@@ -672,6 +768,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
   "concepto": "Otra cuota",
@@ -679,6 +776,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
   "concepto": "Otra cuota",
@@ -686,6 +784,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-13",
   "concepto": "Otra cuota",
@@ -693,6 +792,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-13",
   "concepto": "Publicidad",
@@ -700,6 +800,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-13",
   "concepto": "Otra cuota",
@@ -707,6 +808,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-13",
   "concepto": "Otra cuota",
@@ -714,6 +816,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
   "concepto": "Publicidad",
@@ -721,6 +824,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
   "concepto": "Publicidad",
@@ -728,6 +832,7 @@
   "fecha_pago": "2026-10-19"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
   "concepto": "Publicidad",
@@ -735,6 +840,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-11",
   "concepto": "Publicidad",
@@ -742,6 +848,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
   "concepto": "Publicidad",
@@ -749,6 +856,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-10",
   "concepto": "Publicidad",
@@ -756,6 +864,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Crédito de publicidad",
@@ -763,6 +872,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Publicidad",
@@ -770,6 +880,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -777,6 +888,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -784,6 +896,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -791,6 +904,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -798,6 +912,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -805,6 +920,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -812,6 +928,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
   "concepto": "Publicidad",
@@ -819,6 +936,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -826,6 +944,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
   "concepto": "Otra cuota",
@@ -833,6 +952,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
   "concepto": "Publicidad",
@@ -840,6 +960,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-08",
   "concepto": "Publicidad",
@@ -847,6 +968,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
   "concepto": "Publicidad",
@@ -854,6 +976,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-07",
   "concepto": "Publicidad",
@@ -861,6 +984,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
   "concepto": "Publicidad",
@@ -868,6 +992,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
   "concepto": "Otra cuota",
@@ -875,6 +1000,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
   "concepto": "Otra cuota",
@@ -882,6 +1008,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-06",
   "concepto": "Otra cuota",
@@ -889,6 +1016,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-06",
   "concepto": "Otra cuota",
@@ -896,6 +1024,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-06",
   "concepto": "Otra cuota",
@@ -903,6 +1032,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-06",
   "concepto": "Publicidad",
@@ -910,6 +1040,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
   "concepto": "Publicidad",
@@ -917,6 +1048,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
   "concepto": "Publicidad",
@@ -924,6 +1056,7 @@
   "fecha_pago": "2026-10-12"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
   "concepto": "Publicidad",
@@ -931,6 +1064,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
   "concepto": "Publicidad",
@@ -938,6 +1072,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
   "concepto": "Publicidad",
@@ -945,6 +1080,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-03",
   "concepto": "Publicidad",
@@ -952,6 +1088,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
   "concepto": "Publicidad",
@@ -959,6 +1096,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-02",
   "concepto": "Publicidad",
@@ -966,6 +1104,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
   "concepto": "Publicidad",
@@ -973,6 +1112,7 @@
   "fecha_pago": "2026-10-05"
  },
  {
+  "plataforma": "Uber Eats",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-01",
   "concepto": "Publicidad",

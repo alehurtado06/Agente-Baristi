@@ -1,5 +1,6 @@
 [
  {
+  "plataforma": "Uber Eats",
   "id": "#C666A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
@@ -22,6 +23,7 @@
   "pago": 152.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#58C9D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -44,6 +46,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#92A0E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -66,6 +69,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E16F0",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
@@ -88,6 +92,7 @@
   "pago": 69.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#22FB2",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
@@ -110,6 +115,7 @@
   "pago": 251.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3A441",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -132,6 +138,7 @@
   "pago": 176.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B48B2",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
@@ -154,6 +161,7 @@
   "pago": 128.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#76092",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -176,6 +184,7 @@
   "pago": 123.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#146CA",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-09",
@@ -198,6 +207,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#79A38",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -220,6 +230,7 @@
   "pago": 39.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F30A8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -242,6 +253,7 @@
   "pago": 39.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#47393",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-09",
@@ -264,6 +276,7 @@
   "pago": 318.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#18417",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-09",
@@ -286,6 +299,7 @@
   "pago": 125.21
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#77178",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
@@ -308,6 +322,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DD616",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -330,6 +345,7 @@
   "pago": 90.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#83A2A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -352,6 +368,7 @@
   "pago": 148.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6E41C",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-08",
@@ -374,6 +391,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5D8EB",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -396,6 +414,7 @@
   "pago": 148.23
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1257B",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-08",
@@ -418,6 +437,7 @@
   "pago": 64.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0B4EE",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -440,6 +460,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#79FA3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-08",
@@ -462,6 +483,7 @@
   "pago": 164.52
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B45E4",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -484,6 +506,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BF9DE",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-08",
@@ -506,6 +529,7 @@
   "pago": 192.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D06E9",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-08",
@@ -528,6 +552,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#55E69",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-08",
@@ -550,6 +575,7 @@
   "pago": 143.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2EECE",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -572,6 +598,7 @@
   "pago": 186.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#912ED",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-08",
@@ -594,6 +621,7 @@
   "pago": 110.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#24518",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -616,6 +644,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#41E7F",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-08",
@@ -638,6 +667,7 @@
   "pago": 141.61
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#ACF26",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-08",
@@ -660,6 +690,7 @@
   "pago": 95.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DDB81",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
@@ -682,6 +713,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D8017",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
@@ -704,6 +736,7 @@
   "pago": 139.81
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A227C",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-07",
@@ -726,6 +759,7 @@
   "pago": 69.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D3752",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
@@ -748,6 +782,7 @@
   "pago": 213.74
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D617A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
@@ -770,6 +805,7 @@
   "pago": 168.01
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E451D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
@@ -792,6 +828,7 @@
   "pago": 143.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F16D7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
@@ -814,6 +851,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0C540",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
@@ -836,6 +874,7 @@
   "pago": 96.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B45C2",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
@@ -858,6 +897,7 @@
   "pago": 170.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3A900",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -880,6 +920,7 @@
   "pago": 490.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3DF15",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-06",
@@ -902,6 +943,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D60E4",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-06",
@@ -924,6 +966,7 @@
   "pago": 158.74
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A6B8D",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -946,6 +989,7 @@
   "pago": 141.61
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0693B",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-06",
@@ -968,6 +1012,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9A0E5",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
@@ -990,6 +1035,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C4BFB",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-06",
@@ -1012,6 +1058,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1C136",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -1034,6 +1081,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#19DAC",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -1056,6 +1104,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1615F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-06",
@@ -1078,6 +1127,7 @@
   "pago": 176.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7100C",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -1100,6 +1150,7 @@
   "pago": 431.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0A962",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-06",
@@ -1122,6 +1173,7 @@
   "pago": 151.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#39BE5",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
@@ -1144,6 +1196,7 @@
   "pago": 126.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9CDEB",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-06",
@@ -1166,6 +1219,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A6430",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
@@ -1188,6 +1242,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FD498",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
@@ -1210,6 +1265,7 @@
   "pago": 125.77
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8C18E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-05",
@@ -1232,6 +1288,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#03756",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-05",
@@ -1254,6 +1311,7 @@
   "pago": 210.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4FA08",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-05",
@@ -1276,6 +1334,7 @@
   "pago": 98.55
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8B197",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
@@ -1298,6 +1357,7 @@
   "pago": 83.66
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D081A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
@@ -1320,6 +1380,7 @@
   "pago": 196.28
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8136F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-05",
@@ -1342,6 +1403,7 @@
   "pago": 156.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CA485",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
@@ -1364,6 +1426,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4941C",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-05",
@@ -1386,6 +1449,7 @@
   "pago": 72.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E47C3",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
@@ -1408,6 +1472,7 @@
   "pago": 130.27
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BB56E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1430,6 +1495,7 @@
   "pago": 162.35
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7C92D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1452,6 +1518,7 @@
   "pago": 96.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9AE37",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-04",
@@ -1474,6 +1541,7 @@
   "pago": 126.33
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#93D46",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-04",
@@ -1496,6 +1564,7 @@
   "pago": 308.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A0009",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-04",
@@ -1518,6 +1587,7 @@
   "pago": 106.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CC63D",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-04",
@@ -1540,6 +1610,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5B09D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1562,6 +1633,7 @@
   "pago": 153.87
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EB976",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1584,6 +1656,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3DBFF",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-04",
@@ -1606,6 +1679,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CBBA1",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1628,6 +1702,7 @@
   "pago": 72.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E82E8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1650,6 +1725,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F573A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-04",
@@ -1672,6 +1748,7 @@
   "pago": 220.21
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#60755",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1694,6 +1771,7 @@
   "pago": 103.87
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#582E0",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-04",
@@ -1716,6 +1794,7 @@
   "pago": 371.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9B1B9",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
@@ -1738,6 +1817,7 @@
   "pago": 56.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6F2E8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
@@ -1760,6 +1840,7 @@
   "pago": 142.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1E912",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
@@ -1782,6 +1863,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#78023",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-03",
@@ -1804,6 +1886,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#630AA",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-03",
@@ -1826,6 +1909,7 @@
   "pago": 120.16
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E9577",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
@@ -1848,6 +1932,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CD8BE",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
@@ -1870,6 +1955,7 @@
   "pago": 55.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E047C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
@@ -1892,6 +1978,7 @@
   "pago": 135.88
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BBD58",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-02",
@@ -1914,6 +2001,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4AD82",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-02",
@@ -1936,6 +2024,7 @@
   "pago": 91.52
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#95220",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-02",
@@ -1958,6 +2047,7 @@
   "pago": 108.92
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3A772",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-02",
@@ -1980,6 +2070,7 @@
   "pago": 263.33
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E003D",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-02",
@@ -2002,6 +2093,7 @@
   "pago": 128.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DEE54",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-02",
@@ -2024,6 +2116,7 @@
   "pago": 376.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#41198",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-02",
@@ -2046,6 +2139,7 @@
   "pago": 111.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#42600",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-02",
@@ -2068,6 +2162,7 @@
   "pago": 69.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1CBB7",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
@@ -2090,6 +2185,7 @@
   "pago": 143.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#384CD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-01",
@@ -2112,6 +2208,7 @@
   "pago": 147.78
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C89A8",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-01",
@@ -2134,6 +2231,7 @@
   "pago": 246.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9098A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
@@ -2156,6 +2254,7 @@
   "pago": 370.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A09E7",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-01",
@@ -2178,6 +2277,7 @@
   "pago": 202.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8CFCE",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-01",
@@ -2200,6 +2300,7 @@
   "pago": 101.06
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1AF7D",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-01",
@@ -2222,6 +2323,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FC5EE",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
@@ -2244,6 +2346,7 @@
   "pago": 145.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#17ADD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-01",
@@ -2266,6 +2369,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DFC9A",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-01",
@@ -2288,6 +2392,7 @@
   "pago": 310.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#19B68",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-31",
@@ -2310,6 +2415,7 @@
   "pago": 56.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#87E8F",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-31",
@@ -2332,6 +2438,7 @@
   "pago": 224.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#ECD31",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-31",
@@ -2354,6 +2461,7 @@
   "pago": 95.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D632F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-31",
@@ -2376,6 +2484,7 @@
   "pago": 205.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#42B7A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-31",
@@ -2398,6 +2507,7 @@
   "pago": 103.87
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7447F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-31",
@@ -2420,6 +2530,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B74A7",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-31",
@@ -2442,6 +2553,7 @@
   "pago": 65.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2BAAF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-31",
@@ -2464,6 +2576,7 @@
   "pago": 105.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FE850",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-30",
@@ -2486,6 +2599,7 @@
   "pago": 160.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0DB6B",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-30",
@@ -2508,6 +2622,7 @@
   "pago": 72.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E705D",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-30",
@@ -2530,6 +2645,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#03094",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-30",
@@ -2552,6 +2668,7 @@
   "pago": 430.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#01F9B",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
@@ -2574,6 +2691,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#07E4E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-30",
@@ -2596,6 +2714,7 @@
   "pago": 56.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1753B",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
@@ -2618,6 +2737,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8D0F7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-30",
@@ -2640,6 +2760,7 @@
   "pago": 162.35
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#98F42",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-30",
@@ -2662,6 +2783,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FE415",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
@@ -2684,6 +2806,7 @@
   "pago": 128.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#368F3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-30",
@@ -2706,6 +2829,7 @@
   "pago": 93.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2E494",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-30",
@@ -2728,6 +2852,7 @@
   "pago": 155.52
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6DA48",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-29",
@@ -2750,6 +2875,7 @@
   "pago": 238.18
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4058D",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-29",
@@ -2772,6 +2898,7 @@
   "pago": 221.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#49A67",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-29",
@@ -2794,6 +2921,7 @@
   "pago": 98.82
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#004A4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-29",
@@ -2816,6 +2944,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7ED0A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-29",
@@ -2838,6 +2967,7 @@
   "pago": 104.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C378F",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-29",
@@ -2860,6 +2990,7 @@
   "pago": 168.44
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#00391",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-29",
@@ -2882,6 +3013,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F1DE2",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-29",
@@ -2904,6 +3036,7 @@
   "pago": 152.72
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#95858",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-29",
@@ -2926,6 +3059,7 @@
   "pago": 151.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A89C7",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-29",
@@ -2948,6 +3082,7 @@
   "pago": 72.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4058E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-29",
@@ -2970,6 +3105,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F687C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-29",
@@ -2992,6 +3128,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EC34B",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-29",
@@ -3014,6 +3151,7 @@
   "pago": 127.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BC0F4",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-29",
@@ -3036,6 +3174,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C8FB7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-29",
@@ -3058,6 +3197,7 @@
   "pago": 160.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AF834",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-28",
@@ -3080,6 +3220,7 @@
   "pago": 486.24
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6249A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3102,6 +3243,7 @@
   "pago": 254.91
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#87814",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-28",
@@ -3124,6 +3266,7 @@
   "pago": 69.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F3A27",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-28",
@@ -3146,6 +3289,7 @@
   "pago": 63.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#690CA",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3168,6 +3312,7 @@
   "pago": 96.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#70280",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-28",
@@ -3190,6 +3335,7 @@
   "pago": 90.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A801C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3212,6 +3358,7 @@
   "pago": 53.34
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EAB0C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3234,6 +3381,7 @@
   "pago": 76.42
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F93B6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3256,6 +3404,7 @@
   "pago": 203.81
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#000DC",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3278,6 +3427,7 @@
   "pago": 48.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F3247",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3300,6 +3450,7 @@
   "pago": 44.31
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C8D81",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3322,6 +3473,7 @@
   "pago": 96.48
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#73CFE",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3344,6 +3496,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2A370",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3366,6 +3519,7 @@
   "pago": 203.81
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#79D6E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-28",
@@ -3388,6 +3542,7 @@
   "pago": 32.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#96F8B",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3410,6 +3565,7 @@
   "pago": 97.62
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AC922",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-28",
@@ -3432,6 +3588,7 @@
   "pago": 111.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D47D7",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
@@ -3454,6 +3611,7 @@
   "pago": 47.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F0F69",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
@@ -3476,6 +3634,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#13E5E",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-27",
@@ -3498,6 +3657,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CD3CA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
@@ -3520,6 +3680,7 @@
   "pago": 327.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6E8E3",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-27",
@@ -3542,6 +3703,7 @@
   "pago": 157.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5A5C5",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
@@ -3564,6 +3726,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F8596",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
@@ -3586,6 +3749,7 @@
   "pago": 93.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0DE85",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
@@ -3608,6 +3772,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1BCB6",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-27",
@@ -3630,6 +3795,7 @@
   "pago": 109.67
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#42E2D",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-27",
@@ -3652,6 +3818,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CDA41",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-27",
@@ -3674,6 +3841,7 @@
   "pago": 87.21
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#41AF8",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
@@ -3696,6 +3864,7 @@
   "pago": 221.23
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A0013",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
@@ -3718,6 +3887,7 @@
   "pago": 454.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#25E94",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-27",
@@ -3740,6 +3910,7 @@
   "pago": 59.46
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5322C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-27",
@@ -3762,6 +3933,7 @@
   "pago": 137.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4E8AE",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-26",
@@ -3784,6 +3956,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D9A3D",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-26",
@@ -3806,6 +3979,7 @@
   "pago": 266.33
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0DC16",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-26",
@@ -3828,6 +4002,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CA374",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-26",
@@ -3850,6 +4025,7 @@
   "pago": 182.48
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#172B3",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-26",
@@ -3872,6 +4048,7 @@
   "pago": 141.5
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0B8EF",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-26",
@@ -3894,6 +4071,7 @@
   "pago": 96.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0DEC9",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-26",
@@ -3916,6 +4094,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#44489",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-26",
@@ -3938,6 +4117,7 @@
   "pago": 303.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#30E88",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-26",
@@ -3960,6 +4140,7 @@
   "pago": 114.74
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3214A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-26",
@@ -3982,6 +4163,7 @@
   "pago": 47.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2D64C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-26",
@@ -4004,6 +4186,7 @@
   "pago": 108.92
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#55453",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-26",
@@ -4026,6 +4209,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B3535",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-25",
@@ -4048,6 +4232,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#40709",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-25",
@@ -4070,6 +4255,7 @@
   "pago": 380.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A1DC4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-25",
@@ -4092,6 +4278,7 @@
   "pago": 96.01
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#634BC",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-25",
@@ -4114,6 +4301,7 @@
   "pago": 309.85
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2796A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-25",
@@ -4136,6 +4324,7 @@
   "pago": 194.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#76ABC",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-25",
@@ -4158,6 +4347,7 @@
   "pago": 174.06
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D7910",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-25",
@@ -4180,6 +4370,7 @@
   "pago": 135.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DD8A6",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-25",
@@ -4202,6 +4393,7 @@
   "pago": 132.5
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AD494",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-25",
@@ -4224,6 +4416,7 @@
   "pago": 148.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D4483",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-25",
@@ -4246,6 +4439,7 @@
   "pago": 126.33
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AF5D7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-25",
@@ -4268,6 +4462,7 @@
   "pago": 272.73
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0744B",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-25",
@@ -4290,6 +4485,7 @@
   "pago": 115.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4BF14",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-24",
@@ -4312,6 +4508,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E7C33",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-24",
@@ -4334,6 +4531,7 @@
   "pago": 185.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5682A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-24",
@@ -4356,6 +4554,7 @@
   "pago": 128.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#920B4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-24",
@@ -4378,6 +4577,7 @@
   "pago": 266.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0416A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-24",
@@ -4400,6 +4600,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A4FC6",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-24",
@@ -4422,6 +4623,7 @@
   "pago": 113.87
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#05CD4",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-24",
@@ -4444,6 +4646,7 @@
   "pago": 39.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A5D16",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-24",
@@ -4466,6 +4669,7 @@
   "pago": 190.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D56C3",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-24",
@@ -4488,6 +4692,7 @@
   "pago": 98.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#99EBD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-24",
@@ -4510,6 +4715,7 @@
   "pago": 62.61
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#32265",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4532,6 +4738,7 @@
   "pago": 361.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5E6F4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-23",
@@ -4554,6 +4761,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#89346",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4576,6 +4784,7 @@
   "pago": 51.05
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3FA73",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4598,6 +4807,7 @@
   "pago": 120.44
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E1EBB",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4620,6 +4830,7 @@
   "pago": 81.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7C8D9",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4642,6 +4853,7 @@
   "pago": 96.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F00A9",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-23",
@@ -4664,6 +4876,7 @@
   "pago": 237.5
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#938BF",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-23",
@@ -4686,6 +4899,7 @@
   "pago": 335.21
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#65652",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4708,6 +4922,7 @@
   "pago": 113.97
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C8938",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4730,6 +4945,7 @@
   "pago": 124.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8913C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4752,6 +4968,7 @@
   "pago": 165.07
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CA405",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4774,6 +4991,7 @@
   "pago": 128.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4A8A1",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4796,6 +5014,7 @@
   "pago": 55.59
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E1A19",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4818,6 +5037,7 @@
   "pago": 112.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#95AEB",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4840,6 +5060,7 @@
   "pago": 189.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DB3ED",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-23",
@@ -4862,6 +5083,7 @@
   "pago": 124.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7D91F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4884,6 +5106,7 @@
   "pago": 47.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EBB83",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-23",
@@ -4906,6 +5129,7 @@
   "pago": 61.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#90649",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-23",
@@ -4928,6 +5152,7 @@
   "pago": 139.19
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#66C86",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-22",
@@ -4950,6 +5175,7 @@
   "pago": 199.32
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4DB09",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-22",
@@ -4972,6 +5198,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#84468",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-22",
@@ -4994,6 +5221,7 @@
   "pago": 124.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#45041",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5016,6 +5244,7 @@
   "pago": 166.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#81801",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5038,6 +5267,7 @@
   "pago": 140.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#40AD3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5060,6 +5290,7 @@
   "pago": 196.93
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F23C4",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-22",
@@ -5082,6 +5313,7 @@
   "pago": 179.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#74A7C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5104,6 +5336,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B6A29",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-22",
@@ -5126,6 +5359,7 @@
   "pago": 138.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1D328",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-22",
@@ -5148,6 +5382,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#940AF",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-22",
@@ -5170,6 +5405,7 @@
   "pago": 128.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A2AC6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5192,6 +5428,7 @@
   "pago": 58.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8C466",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-22",
@@ -5214,6 +5451,7 @@
   "pago": 141.5
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7DEC6",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5236,6 +5474,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1C774",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5258,6 +5497,7 @@
   "pago": 227.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#66677",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5280,6 +5520,7 @@
   "pago": 138.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#20CB2",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
@@ -5302,6 +5543,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#220D3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
@@ -5324,6 +5566,7 @@
   "pago": 134.61
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F4BF8",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5346,6 +5589,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5972B",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5368,6 +5612,7 @@
   "pago": 160.02
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A3A98",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5390,6 +5635,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#226B8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
@@ -5412,6 +5658,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#65E7C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
@@ -5434,6 +5681,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A63EA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-21",
@@ -5456,6 +5704,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E9F84",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-21",
@@ -5478,6 +5727,7 @@
   "pago": 116.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2391C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5500,6 +5750,7 @@
   "pago": 140.78
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#230C9",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5522,6 +5773,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2DD98",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5544,6 +5796,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D7212",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
@@ -5566,6 +5819,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#10C37",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5588,6 +5842,7 @@
   "pago": 139.24
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#934A9",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
@@ -5610,6 +5865,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#43FD9",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-20",
@@ -5632,6 +5888,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AFA97",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5654,6 +5911,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0E36A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5676,6 +5934,7 @@
   "pago": 117.9
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F04EE",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5698,6 +5957,7 @@
   "pago": 131.95
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F0774",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5720,6 +5980,7 @@
   "pago": 258.84
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#87159",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5742,6 +6003,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BFF73",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5764,6 +6026,7 @@
   "pago": 194.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B16B7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5786,6 +6049,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9E3CA",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5808,6 +6072,7 @@
   "pago": 102.65
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F45BF",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5830,6 +6095,7 @@
   "pago": 122.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#307F6",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-20",
@@ -5852,6 +6118,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C04FD",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-20",
@@ -5874,6 +6141,7 @@
   "pago": 212.24
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#468B9",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-19",
@@ -5896,6 +6164,7 @@
   "pago": 58.39
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C1554",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-19",
@@ -5918,6 +6187,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D7595",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-19",
@@ -5940,6 +6210,7 @@
   "pago": 93.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F7548",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-19",
@@ -5962,6 +6233,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#37DDE",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-19",
@@ -5984,6 +6256,7 @@
   "pago": 131.39
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#982AF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-19",
@@ -6006,6 +6279,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4E0F4",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-19",
@@ -6028,6 +6302,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C7A0E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-19",
@@ -6050,6 +6325,7 @@
   "pago": 168.44
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7EACC",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-18",
@@ -6072,6 +6348,7 @@
   "pago": 115.1
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D0D0F",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-18",
@@ -6094,6 +6371,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#ED652",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-18",
@@ -6116,6 +6394,7 @@
   "pago": 132.35
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CC178",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-18",
@@ -6138,6 +6417,7 @@
   "pago": 118.48
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E2086",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-18",
@@ -6160,6 +6440,7 @@
   "pago": 202.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5003C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-18",
@@ -6182,6 +6463,7 @@
   "pago": 114.16
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#637A4",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-18",
@@ -6204,6 +6486,7 @@
   "pago": 182.48
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2D64D",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-18",
@@ -6226,6 +6509,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C3A01",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-17",
@@ -6248,6 +6532,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#673DE",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
@@ -6270,6 +6555,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C42EA",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-17",
@@ -6292,6 +6578,7 @@
   "pago": 161.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A42DD",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-17",
@@ -6314,6 +6601,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2662D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
@@ -6336,6 +6624,7 @@
   "pago": 96.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8DC27",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
@@ -6358,6 +6647,7 @@
   "pago": 120.72
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E794F",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-17",
@@ -6380,6 +6670,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#94991",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
@@ -6402,6 +6693,7 @@
   "pago": 245.93
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#38D8A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-17",
@@ -6424,6 +6716,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#61747",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-17",
@@ -6446,6 +6739,7 @@
   "pago": 108.92
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#945DC",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6468,6 +6762,7 @@
   "pago": 132.35
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#56720",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6490,6 +6785,7 @@
   "pago": 106.68
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#33295",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-16",
@@ -6512,6 +6808,7 @@
   "pago": 105.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#18BF5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6534,6 +6831,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F87E7",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6556,6 +6854,7 @@
   "pago": 185.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#57FE6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6578,6 +6877,7 @@
   "pago": 96.01
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3755E",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6600,6 +6900,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F6A65",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6622,6 +6923,7 @@
   "pago": 109.49
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2F93A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6644,6 +6946,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C1984",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6666,6 +6969,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#80B27",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-16",
@@ -6688,6 +6992,7 @@
   "pago": 64.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2D787",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6710,6 +7015,7 @@
   "pago": 128.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#CCE67",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6732,6 +7038,7 @@
   "pago": 122.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#544AF",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6754,6 +7061,7 @@
   "pago": 64.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#266CD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6776,6 +7084,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E3E15",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6798,6 +7107,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#16C79",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6820,6 +7130,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F3268",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-16",
@@ -6842,6 +7153,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1488F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-16",
@@ -6864,6 +7176,7 @@
   "pago": 164.52
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#489CD",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-16",
@@ -6886,6 +7199,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7198D",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -6908,6 +7222,7 @@
   "pago": 78.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B7E22",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
@@ -6930,6 +7245,7 @@
   "pago": 131.95
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DA310",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -6952,6 +7268,7 @@
   "pago": 62.88
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7425F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
@@ -6974,6 +7291,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1C952",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -6996,6 +7314,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#13E97",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7018,6 +7337,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#860AA",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -7040,6 +7360,7 @@
   "pago": 53.34
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E5917",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7062,6 +7383,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A5C11",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
@@ -7084,6 +7406,7 @@
   "pago": 185.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#32EDF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7106,6 +7429,7 @@
   "pago": 237.36
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B8C19",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -7128,6 +7452,7 @@
   "pago": 62.88
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#12DCA",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
@@ -7150,6 +7475,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6C22E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7172,6 +7498,7 @@
   "pago": 54.47
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#394D7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7194,6 +7521,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8AD9C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7216,6 +7544,7 @@
   "pago": 136.44
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F6D15",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7238,6 +7567,7 @@
   "pago": 56.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D7D22",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -7260,6 +7590,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6C6F2",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-15",
@@ -7282,6 +7613,7 @@
   "pago": 51.65
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FCB0B",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-15",
@@ -7304,6 +7636,7 @@
   "pago": 192.59
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6FBDF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-15",
@@ -7326,6 +7659,7 @@
   "pago": 127.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BC002",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-15",
@@ -7348,6 +7682,7 @@
   "pago": 99.38
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FE509",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7370,6 +7705,7 @@
   "pago": 132.35
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#707CB",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7392,6 +7728,7 @@
   "pago": 70.19
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A7672",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
@@ -7414,6 +7751,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8BBC6",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
@@ -7436,6 +7774,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EC5B1",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-14",
@@ -7458,6 +7797,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#92E2A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7480,6 +7820,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#902FA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7502,6 +7843,7 @@
   "pago": 120.16
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5837A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7524,6 +7866,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C65AA",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
@@ -7546,6 +7889,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#ED9F5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7568,6 +7912,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#44D38",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7590,6 +7935,7 @@
   "pago": 72.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6A2BF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7612,6 +7958,7 @@
   "pago": 131.95
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#18923",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7634,6 +7981,7 @@
   "pago": 61.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5825B",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7656,6 +8004,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D274A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
@@ -7678,6 +8027,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3E7EE",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-14",
@@ -7700,6 +8050,7 @@
   "pago": 190.34
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EE6CF",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-14",
@@ -7722,6 +8073,7 @@
   "pago": 52.77
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DE33B",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-13",
@@ -7744,6 +8096,7 @@
   "pago": 602.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8B4CD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-13",
@@ -7766,6 +8119,7 @@
   "pago": 61.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4E576",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7788,6 +8142,7 @@
   "pago": 199.32
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2EEAA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7810,6 +8165,7 @@
   "pago": 82.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#06F2C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7832,6 +8188,7 @@
   "pago": 130.11
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#164F9",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7854,6 +8211,7 @@
   "pago": 55.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2A613",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7876,6 +8234,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#481A4",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7898,6 +8257,7 @@
   "pago": 145.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F6C37",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7920,6 +8280,7 @@
   "pago": 69.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6EC3C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-13",
@@ -7942,6 +8303,7 @@
   "pago": 119.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AA4E0",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-13",
@@ -7964,6 +8326,7 @@
   "pago": 102.75
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B9810",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -7986,6 +8349,7 @@
   "pago": 102.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EB5BC",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -8008,6 +8372,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#53D16",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-13",
@@ -8030,6 +8395,7 @@
   "pago": 336.89
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#189D5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8052,6 +8418,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#88B5C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-12",
@@ -8074,6 +8441,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6AE98",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8096,6 +8464,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EBDCA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8118,6 +8487,7 @@
   "pago": 101.06
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A46F8",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
@@ -8140,6 +8510,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4539F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
@@ -8162,6 +8533,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0C03A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
@@ -8184,6 +8556,7 @@
   "pago": 154.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D07E7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8206,6 +8579,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D4F28",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
@@ -8228,6 +8602,7 @@
   "pago": 61.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EE2E6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8250,6 +8625,7 @@
   "pago": 102.75
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E92FF",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8272,6 +8648,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E0F19",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-12",
@@ -8294,6 +8671,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5F9CA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8316,6 +8694,7 @@
   "pago": 104.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AD598",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-12",
@@ -8338,6 +8717,7 @@
   "pago": 180.23
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D7830",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-11",
@@ -8360,6 +8740,7 @@
   "pago": 224.59
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6B5D0",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-11",
@@ -8382,6 +8763,7 @@
   "pago": 84.78
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2C049",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8404,6 +8786,7 @@
   "pago": 143.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#42236",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8426,6 +8809,7 @@
   "pago": 68.49
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#89581",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8448,6 +8832,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E67B0",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8470,6 +8855,7 @@
   "pago": 157.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E956A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8492,6 +8878,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2EC3D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8514,6 +8901,7 @@
   "pago": 167.67
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F6008",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-11",
@@ -8536,6 +8924,7 @@
   "pago": 128.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A5761",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-11",
@@ -8558,6 +8947,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7889F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-11",
@@ -8580,6 +8970,7 @@
   "pago": 356.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F0654",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-10",
@@ -8602,6 +8993,7 @@
   "pago": 140.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#79C41",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-10",
@@ -8624,6 +9016,7 @@
   "pago": 119.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#326FB",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8646,6 +9039,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#597D5",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-10",
@@ -8668,6 +9062,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#75B01",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-10",
@@ -8690,6 +9085,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C9525",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8712,6 +9108,7 @@
   "pago": 84.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B6EB0",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-10",
@@ -8734,6 +9131,7 @@
   "pago": 325.66
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DC85D",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-10",
@@ -8756,6 +9154,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5AF4B",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8778,6 +9177,7 @@
   "pago": 200.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7D6D8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8800,6 +9200,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#88148",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8822,6 +9223,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#46858",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8844,6 +9246,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#80A38",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-10",
@@ -8866,6 +9269,7 @@
   "pago": 148.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1706E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8888,6 +9292,7 @@
   "pago": 116.97
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#03543",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-10",
@@ -8910,6 +9315,7 @@
   "pago": 202.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#463CB",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-10",
@@ -8932,6 +9338,7 @@
   "pago": 95.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A5351",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
@@ -8954,6 +9361,7 @@
   "pago": 131.95
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#00DF0",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -8976,6 +9384,7 @@
   "pago": 230.2
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C58AE",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
@@ -8998,6 +9407,7 @@
   "pago": 227.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6A6F9",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9020,6 +9430,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DF72F",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
@@ -9042,6 +9453,7 @@
   "pago": 114.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2CD0E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9064,6 +9476,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3BE6E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
@@ -9086,6 +9499,7 @@
   "pago": 190.9
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5981C",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-09",
@@ -9108,6 +9522,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#95D00",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9130,6 +9545,7 @@
   "pago": 95.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#09D06",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
@@ -9152,6 +9568,7 @@
   "pago": 55.59
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F649D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9174,6 +9591,7 @@
   "pago": 138.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F4744",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
@@ -9196,6 +9614,7 @@
   "pago": 227.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B4FFF",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
@@ -9218,6 +9637,7 @@
   "pago": 227.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#893A9",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9240,6 +9660,7 @@
   "pago": 140.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EB815",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
@@ -9262,6 +9683,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0D727",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9284,6 +9706,7 @@
   "pago": 108.54
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D96A7",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-09",
@@ -9306,6 +9729,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B8427",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9328,6 +9752,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6834D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9350,6 +9775,7 @@
   "pago": 467.67
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#253F8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9372,6 +9798,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#28AA8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9394,6 +9821,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#59A5A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-09",
@@ -9416,6 +9844,7 @@
   "pago": 112.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#40446",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9438,6 +9867,7 @@
   "pago": 315.55
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1E1B2",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-09",
@@ -9460,6 +9890,7 @@
   "pago": 120.16
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#91811",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-08",
@@ -9482,6 +9913,7 @@
   "pago": 199.32
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#337BF",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-08",
@@ -9504,6 +9936,7 @@
   "pago": 247.05
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#81D68",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9526,6 +9959,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C4850",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9548,6 +9982,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C5421",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9570,6 +10005,7 @@
   "pago": 127.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#971A9",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9592,6 +10028,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#84A2D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9614,6 +10051,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#89F4E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-08",
@@ -9636,6 +10074,7 @@
   "pago": 78.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FF0EC",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-08",
@@ -9658,6 +10097,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C12F8",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-08",
@@ -9680,6 +10120,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FCA56",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9702,6 +10143,7 @@
   "pago": 81.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C907F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9724,6 +10166,7 @@
   "pago": 232.32
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9A939",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-08",
@@ -9746,6 +10189,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#412F6",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-08",
@@ -9768,6 +10212,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C2EF5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9790,6 +10235,7 @@
   "pago": 108.92
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C1350",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-08",
@@ -9812,6 +10258,7 @@
   "pago": 170.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A364C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -9834,6 +10281,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E70FC",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -9856,6 +10304,7 @@
   "pago": 503.08
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5E2F4",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -9878,6 +10327,7 @@
   "pago": 174.06
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#23C40",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -9900,6 +10350,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4FCE3",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -9922,6 +10373,7 @@
   "pago": 95.45
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#58D29",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -9944,6 +10396,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#08516",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -9966,6 +10419,7 @@
   "pago": 202.87
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1E3D3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -9988,6 +10442,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#98B99",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10010,6 +10465,7 @@
   "pago": 129.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D5201",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10032,6 +10488,7 @@
   "pago": 64.01
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E40F4",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10054,6 +10511,7 @@
   "pago": 39.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0748B",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -10076,6 +10534,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#07594",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10098,6 +10557,7 @@
   "pago": 95.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#24398",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10120,6 +10580,7 @@
   "pago": 345.89
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E2E83",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10142,6 +10603,7 @@
   "pago": 190.34
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7F350",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-07",
@@ -10164,6 +10626,7 @@
   "pago": 96.58
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C3964",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-07",
@@ -10186,6 +10649,7 @@
   "pago": 41.55
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A2762",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-06",
@@ -10208,6 +10672,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#30D09",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-06",
@@ -10230,6 +10695,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#20D3F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10252,6 +10718,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3E7EB",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10274,6 +10741,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0997A",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10296,6 +10764,7 @@
   "pago": 263.89
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E7E75",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10318,6 +10787,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#60009",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10340,6 +10810,7 @@
   "pago": 174.06
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#70619",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-06",
@@ -10362,6 +10833,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#EEFF3",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10384,6 +10856,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BB636",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-06",
@@ -10406,6 +10879,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1B71C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10428,6 +10902,7 @@
   "pago": 46.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FCDA2",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10450,6 +10925,7 @@
   "pago": 50.85
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5E773",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-06",
@@ -10472,6 +10948,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#51BF8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
@@ -10494,6 +10971,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#810A6",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10516,6 +10994,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9D46C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-05",
@@ -10538,6 +11017,7 @@
   "pago": 168.08
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8A388",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-05",
@@ -10560,6 +11040,7 @@
   "pago": 80.29
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D9E40",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10582,6 +11063,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#99C3E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10604,6 +11086,7 @@
   "pago": 57.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#90FF4",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10626,6 +11109,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8143D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
@@ -10648,6 +11132,7 @@
   "pago": 400.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#ED80B",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10670,6 +11155,7 @@
   "pago": 58.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#271E6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
@@ -10692,6 +11178,7 @@
   "pago": 222.9
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A93A1",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
@@ -10714,6 +11201,7 @@
   "pago": 82.53
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D3701",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-05",
@@ -10736,6 +11224,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E871D",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-05",
@@ -10758,6 +11247,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DFB5A",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
@@ -10780,6 +11270,7 @@
   "pago": 106.12
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#44BBA",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-04",
@@ -10802,6 +11293,7 @@
   "pago": 87.03
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AF73B",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-04",
@@ -10824,6 +11316,7 @@
   "pago": 240.73
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#30A4C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-04",
@@ -10846,6 +11339,7 @@
   "pago": 84.56
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#41A11",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
@@ -10868,6 +11362,7 @@
   "pago": 88.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#15A1F",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -10890,6 +11385,7 @@
   "pago": 120.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0B414",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-04",
@@ -10912,6 +11408,7 @@
   "pago": 151.6
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6F3D3",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
@@ -10934,6 +11431,7 @@
   "pago": 143.17
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5FF86",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -10956,6 +11454,7 @@
   "pago": 241.43
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#31C84",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-04",
@@ -10978,6 +11477,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F919C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -11000,6 +11500,7 @@
   "pago": 244.24
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7F84C",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
@@ -11022,6 +11523,7 @@
   "pago": 62.88
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5E44D",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-04",
@@ -11044,6 +11546,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4978E",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-04",
@@ -11066,6 +11569,7 @@
   "pago": 107.25
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F61B7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -11088,6 +11592,7 @@
   "pago": 159.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A1E28",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -11110,6 +11615,7 @@
   "pago": 188.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#27823",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -11132,6 +11638,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#115C6",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-04",
@@ -11154,6 +11661,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3C7CD",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-03",
@@ -11176,6 +11684,7 @@
   "pago": 152.01
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#73625",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11198,6 +11707,7 @@
   "pago": 75.8
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7E662",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11220,6 +11730,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#F752B",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11242,6 +11753,7 @@
   "pago": 90.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C7E8C",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11264,6 +11776,7 @@
   "pago": 198.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3E736",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11286,6 +11799,7 @@
   "pago": 235.82
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#40B81",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11308,6 +11822,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BBD5D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11330,6 +11845,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#045D4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11352,6 +11868,7 @@
   "pago": 64.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#03C28",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11374,6 +11891,7 @@
   "pago": 129.14
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#05D06",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11396,6 +11914,7 @@
   "pago": 204.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FD4A0",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11418,6 +11937,7 @@
   "pago": 72.99
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6447C",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11440,6 +11960,7 @@
   "pago": 90.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#6A00E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11462,6 +11983,7 @@
   "pago": 58.96
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BBAEF",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11484,6 +12006,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#9A18D",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11506,6 +12029,7 @@
   "pago": 95.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#E7075",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-03",
@@ -11528,6 +12052,7 @@
   "pago": 193.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0556E",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-03",
@@ -11550,6 +12075,7 @@
   "pago": 101.49
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3C78F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-02",
@@ -11572,6 +12098,7 @@
   "pago": 555.86
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#2F6ED",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-02",
@@ -11594,6 +12121,7 @@
   "pago": 357.67
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5E6F8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11616,6 +12144,7 @@
   "pago": 139.09
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D6AD5",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-02",
@@ -11638,6 +12167,7 @@
   "pago": 99.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#B2B40",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11660,6 +12190,7 @@
   "pago": 269.51
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#FCC7A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-02",
@@ -11682,6 +12213,7 @@
   "pago": 157.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A31FC",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11704,6 +12236,7 @@
   "pago": 266.7
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0D5F1",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11726,6 +12259,7 @@
   "pago": 236.08
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D1D8C",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-02",
@@ -11748,6 +12282,7 @@
   "pago": 64.98
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#5CEA0",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11770,6 +12305,7 @@
   "pago": 128.57
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D2439",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-02",
@@ -11792,6 +12328,7 @@
   "pago": 227.4
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#45EA8",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11814,6 +12351,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A6549",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11836,6 +12374,7 @@
   "pago": 81.41
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AA96D",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11858,6 +12397,7 @@
   "pago": 238.63
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1D8B7",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11880,6 +12420,7 @@
   "pago": 193.51
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#77A6B",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-02",
@@ -11902,6 +12443,7 @@
   "pago": 215.04
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#62B72",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11924,6 +12466,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#AA312",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11946,6 +12489,7 @@
   "pago": 106.79
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#C5DFC",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11968,6 +12512,7 @@
   "pago": 134.76
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#A15EA",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-02",
@@ -11990,6 +12535,7 @@
   "pago": 556.22
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#62FC6",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-02",
@@ -12012,6 +12558,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#4CB7F",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-01",
@@ -12034,6 +12581,7 @@
   "pago": 225.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#D2156",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12056,6 +12604,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#436A4",
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-10-01",
@@ -12078,6 +12627,7 @@
   "pago": 104.05
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#94DBD",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12100,6 +12650,7 @@
   "pago": 92.64
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#8A3F5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12122,6 +12673,7 @@
   "pago": 162.83
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#01190",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12144,6 +12696,7 @@
   "pago": 140.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#50146",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12166,6 +12719,7 @@
   "pago": 132.5
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BFD86",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12188,6 +12742,7 @@
   "pago": 159.81
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DCB8C",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-01",
@@ -12210,6 +12765,7 @@
   "pago": 484.55
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#0C534",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12232,6 +12788,7 @@
   "pago": 194.94
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#101C5",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12254,6 +12811,7 @@
   "pago": 123.31
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#BA857",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12276,6 +12834,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#DE805",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12298,6 +12857,7 @@
   "pago": 102.75
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#43398",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-01",
@@ -12320,6 +12880,7 @@
   "pago": 67.37
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#7FBCD",
   "tienda": "Baristi Pacífico",
   "fecha": "2026-10-01",
@@ -12342,6 +12903,7 @@
   "pago": 87.59
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#3776E",
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-10-01",
@@ -12364,6 +12926,7 @@
   "pago": 90.71
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#1159A",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-01",
@@ -12386,6 +12949,7 @@
   "pago": 65.13
  },
  {
+  "plataforma": "Uber Eats",
   "id": "#51644",
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-10-01",
