@@ -168,6 +168,23 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .cmp tr.total td{font-weight:700;border-bottom:none;border-top:2px solid var(--text)}
 .cmp td.na{color:var(--muted2);text-align:left}
 
+/* ── comparativo semana contra semana ── */
+.wow-head{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
+.wow-ctrls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.wow-vs{font-size:13px;color:var(--muted)}
+.wow-vs b{color:var(--text);font-weight:600}
+.wow-tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.wow-tbl th{text-align:right;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+.wow-tbl th:first-child,.wow-tbl td:first-child{text-align:left}
+.wow-tbl td{text-align:right;padding:9px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+.wow-tbl td.prev{color:var(--muted)}
+.delta{font-weight:600;font-size:12px}
+.delta.up{color:var(--green)}
+.delta.down{color:var(--red)}
+.delta.flat{color:var(--muted)}
+.legend{display:flex;gap:14px;font-size:11px;color:var(--muted);margin-bottom:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
 /* ── Uber: filtros y detalle ── */
 .filters{position:sticky;top:0;z-index:50;background:var(--bg);padding:12px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;border-bottom:1px solid var(--border);margin-bottom:16px}
 .f-field{display:flex;flex-direction:column;gap:3px;min-width:0}
@@ -277,6 +294,29 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <div class="kpi c kpi-sm"><div class="kpi-label">Venta (con IVA)</div><div class="kpi-value" id="u-venta">—</div><div class="kpi-foot" id="u-ticket">—</div></div>
       <div class="kpi a kpi-sm"><div class="kpi-label">Comisión de la plataforma (con IVA)</div><div class="kpi-value" id="u-comision">—</div><div class="kpi-foot" id="u-comision-pct">—</div></div>
       <div class="kpi b kpi-sm"><div class="kpi-label">Te deposita la plataforma</div><div class="kpi-value" id="u-pago">—</div><div class="kpi-foot" id="u-pago-pct">—</div></div>
+    </div>
+
+    <div class="card" id="wow-card" style="margin-top:16px">
+      <div class="wow-head">
+        <div>
+          <div class="card-title" style="margin-bottom:4px">Comparativo contra la semana pasada</div>
+          <div class="wow-vs" id="wow-vs"></div>
+        </div>
+        <div class="wow-ctrls">
+          <div class="f-field"><label for="wow-modo">Comparar</label>
+            <select id="wow-modo"><option value="1">Mismo día de la semana</option><option value="7">Últimos 7 días</option></select></div>
+          <div class="f-field"><label for="wow-fecha">Día</label><input type="date" id="wow-fecha"></div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div style="overflow-x:auto"><table class="wow-tbl" id="wow-tbl"></table></div>
+        <div>
+          <div class="legend"><span><i style="background:var(--copper)"></i><span id="wow-l1">Este día</span></span><span><i style="background:var(--muted2)"></i><span id="wow-l2">Semana pasada</span></span></div>
+          <div class="chart-wrap" id="wow-chart"></div>
+        </div>
+      </div>
+      <div style="overflow-x:auto;margin-top:16px"><table class="wow-tbl" id="wow-tiendas"></table></div>
+      <p class="card-note">Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta" porque aquí eliges el día. "Te deposita" no incluye publicidad (se cobra aparte por día).</p>
     </div>
 
     <div class="grid-2" style="margin-top:16px">
@@ -938,6 +978,7 @@ function renderUber(){
   $('u-flow').innerHTML=lines.map(([k,v])=>`<tr><td>${k}</td><td class="num ${v<0?'neg':''}">${v<0?'−':''}${money2(Math.abs(v))}</td><td class="pct">${share(Math.abs(v),venta)}</td></tr>`).join('')+
     `<tr class="total"><td>Te deposita${UF.plat==='Total'?'n las plataformas':' '+esc(UF.plat)}</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,venta)}</td></tr>`;
 
+  renderWoW();
   chartUberDias(P);
   chartUberHoras(P);
 
@@ -1013,6 +1054,76 @@ function chartUberHoras(P){
       tip.innerHTML=`<strong>${r.h}:00 – ${r.h+1}:00</strong><br>${r.n} pedidos<br>Venta ${money(r.venta)}`;})
     .on('mouseleave',()=>tip.style.display='none');
   rows.forEach(r=>svg.append('text').attr('x',x(r.h)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(r.h+'h'));
+}
+
+// ── comparativo semana contra semana ──
+const addDays=(iso,n)=>{const d=new Date(iso+'T12:00:00');d.setDate(d.getDate()+n);return d.toISOString().slice(0,10);};
+const dayLong=iso=>new Date(iso+'T12:00:00').toLocaleDateString('es-MX',{weekday:'long',day:'numeric',month:'short'});
+function filterNoDates(){
+  const f=uberFilters();
+  return (DATA.pedidos||[]).filter(p=>inPlat(p)&&
+    (!f.tienda||p.tienda===f.tienda)&&(!f.estado||p.estado===f.estado)&&(!f.modo||p.modo===f.modo)&&
+    (!f.canal||p.canal===f.canal)&&(!f.socio||(f.socio==='Con membresía')===!!p.uber_one));
+}
+function delta(cur,prev,goodUp=true){
+  if(!prev&&!cur) return '<span class="delta flat">—</span>';
+  if(!prev) return '<span class="delta up">nuevo</span>';
+  const ch=(cur-prev)/prev*100,cls=Math.abs(ch)<0.5?'flat':((ch>0)===goodUp?'up':'down');
+  return `<span class="delta ${cls}">${ch>0?'▲ +':ch<0?'▼ ':''}${ch.toFixed(1)}%</span>`;
+}
+let wowBound=false;
+function renderWoW(){
+  const base=filterNoDates();
+  const fechas=[...new Set(base.map(p=>p.fecha).filter(Boolean))].sort();
+  const el=$('wow-fecha');
+  if(!fechas.length){$('wow-card').style.display='none';return;}
+  $('wow-card').style.display='';
+  el.min=addDays(fechas[0],7);el.max=fechas[fechas.length-1];
+  if(!el.value||el.value>el.max||el.value<el.min) el.value=fechas[fechas.length-1];
+  if(!wowBound){wowBound=true;['wow-fecha','wow-modo'].forEach(id=>$(id).addEventListener('change',renderWoW));}
+  const n=+$('wow-modo').value,end=el.value,start=addDays(end,-(n-1));
+  const pEnd=addDays(end,-7),pStart=addDays(start,-7);
+  const cur=base.filter(p=>p.fecha>=start&&p.fecha<=end),prev=base.filter(p=>p.fecha>=pStart&&p.fecha<=pEnd);
+  const lbl=(a,b)=>a===b?dayLong(a):fmtDate(a)+' – '+fmtDate(b);
+  $('wow-vs').innerHTML=`<b>${lbl(start,end)}</b> vs <b>${lbl(pStart,pEnd)}</b>`;
+  $('wow-l1').textContent=n===1?dayLong(end):'Últimos 7 días';
+  $('wow-l2').textContent=n===1?dayLong(pEnd):'7 días anteriores';
+  const m=rows=>{const v=sum(rows,'venta'),k=rows.filter(p=>p.venta>0).length;
+    return {pedidos:rows.length,venta:v,ticket:k?v/k:0,promos:sum(rows,'promos'),comision:sum(rows,'comision'),pago:sum(rows,'pago'),
+      uber_one:rows.filter(p=>p.uber_one).length,min:(()=>{const t=rows.map(p=>p.minutos).filter(x=>x!=null).sort((a,b)=>a-b);return t.length?t[Math.floor(t.length/2)]:0;})()};};
+  const a=m(cur),b=m(prev);
+  const rows=[['Pedidos','pedidos',v=>v.toLocaleString('es-MX'),true],['Venta','venta',money,true],['Ticket promedio','ticket',money,true],
+    ['Promociones','promos',money,false],['Comisión','comision',money,false],['Te deposita','pago',money,true],
+    ['Clientes con membresía','uber_one',v=>v,true],['Mediana de entrega (min)','min',v=>v||'—',false]];
+  $('wow-tbl').innerHTML=`<thead><tr><th>Métrica</th><th>${n===1?'Este día':'7 días'}</th><th>Semana pasada</th><th>Cambio</th></tr></thead><tbody>`+
+    rows.map(([t,k,f,g])=>`<tr><td>${t}</td><td>${f(a[k])}</td><td class="prev">${f(b[k])}</td><td>${delta(a[k],b[k],g)}</td></tr>`).join('')+'</tbody>';
+  // por tienda
+  const tiendas=[...new Set([...cur,...prev].map(p=>p.tienda))].sort();
+  $('wow-tiendas').innerHTML='<thead><tr><th>Tienda</th><th>Pedidos</th><th>Antes</th><th>Cambio</th><th>Venta</th><th>Antes</th><th>Cambio</th></tr></thead><tbody>'+
+    (tiendas.length?tiendas.map(t=>{const c=cur.filter(p=>p.tienda===t),q=prev.filter(p=>p.tienda===t),vc=sum(c,'venta'),vq=sum(q,'venta');
+      return `<tr><td>${esc(t.replace('Baristi ',''))}</td><td>${c.length}</td><td class="prev">${q.length}</td><td>${delta(c.length,q.length)}</td><td>${money(vc)}</td><td class="prev">${money(vq)}</td><td>${delta(vc,vq)}</td></tr>`;}).join('')
+     :'<tr><td colspan="7" class="empty">Sin pedidos en estos días</td></tr>')+'</tbody>';
+  // gráfica por hora
+  const box=$('wow-chart');box.innerHTML='';
+  const byH=(rs)=>{const o={};rs.forEach(p=>{if(p.hora){const h=+p.hora.slice(0,2);o[h]=(o[h]||0)+1;}});return o;};
+  const hc=byH(cur),hp=byH(prev),hs=[...new Set([...Object.keys(hc),...Object.keys(hp)].map(Number))].sort((x,y)=>x-y);
+  if(!hs.length){box.innerHTML='<div class="empty">Sin pedidos en estos días</div>';return;}
+  const H0=hs[0],H1=hs[hs.length-1],data=d3.range(H0,H1+1).map(h=>({h,c:hc[h]||0,p:hp[h]||0}));
+  const W=520,H=200,mg={t:8,r:6,b:24,l:28};
+  const svg=d3.select(box).append('svg').attr('width','100%').attr('viewBox',`0 0 ${W} ${H}`).attr('height',H);
+  const x=d3.scaleBand(data.map(d=>d.h),[mg.l,W-mg.r]).padding(.2),x2=d3.scaleBand(['p','c'],[0,x.bandwidth()]).padding(.1);
+  const y=d3.scaleLinear([0,d3.max(data,d=>Math.max(d.c,d.p))||1],[H-mg.b,mg.t]).nice();
+  y.ticks(4).forEach(t=>{svg.append('line').attr('x1',mg.l).attr('x2',W-mg.r).attr('y1',y(t)).attr('y2',y(t)).attr('stroke','var(--border)').attr('stroke-dasharray','3,3');
+    svg.append('text').attr('x',mg.l-6).attr('y',y(t)+4).attr('text-anchor','end').attr('fill','var(--muted)').attr('font-size',10).text(t);});
+  const tip=$('tip');
+  const g=svg.selectAll('g.h').data(data).join('g').attr('class','h').attr('transform',d=>`translate(${x(d.h)},0)`)
+    .on('mousemove',(e,d)=>{tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-10)+'px';
+      tip.innerHTML=`<strong>${d.h}:00 – ${d.h+1}:00</strong><br>${$('wow-l1').textContent}: ${d.c}<br>${$('wow-l2').textContent}: ${d.p}`;})
+    .on('mouseleave',()=>tip.style.display='none');
+  g.append('rect').attr('x',x2('p')).attr('y',d=>y(d.p)).attr('width',x2.bandwidth()).attr('height',d=>y(0)-y(d.p)).attr('rx',2).attr('fill','var(--muted2)');
+  g.append('rect').attr('x',x2('c')).attr('y',d=>y(d.c)).attr('width',x2.bandwidth()).attr('height',d=>y(0)-y(d.c)).attr('rx',2).attr('fill','var(--copper)');
+  g.append('rect').attr('width',x.bandwidth()).attr('y',mg.t).attr('height',H-mg.b-mg.t).attr('fill','transparent');
+  data.forEach(d=>svg.append('text').attr('x',x(d.h)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(d.h+'h'));
 }
 
 const UCOLS_ALL=[
