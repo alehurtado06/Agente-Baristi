@@ -360,6 +360,39 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
     </div>
 
+    <!-- ── promociones (debajo del comparativo entre años) ── -->
+    <div class="card" id="promo-card" style="margin-top:16px">
+      <div class="card-title" style="margin-bottom:4px">Promociones del agente · ordenadas por margen</div>
+      <div class="wow-vs" style="margin-bottom:12px">Lo que el agente propone para subir ventas sin regalar margen. Filtra, ordena y quédate con las que convienen.</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+        <div class="card-title" style="margin:0" id="promo-title">Promos propuestas por el agente</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap" id="promo-filters">
+          <button class="chip active" data-filter="all">Todas</button>
+          <button class="chip" data-filter="ok">Aprobadas</button>
+          <button class="chip" data-filter="bad">Bloqueadas</button>
+        </div>
+      </div>
+      <div class="filters" id="promo-ctrls" style="position:static;padding-top:0">
+        <div class="f-field"><label for="p-orden">Ordenar por</label>
+          <select id="p-orden">
+            <option value="margen-desc">Mayor margen</option>
+            <option value="margen-asc">Menor margen</option>
+            <option value="reciente">Más recientes</option>
+            <option value="precio-desc">Mayor precio</option>
+            <option value="veces-desc">Más repetidas</option>
+          </select></div>
+        <div class="f-field"><label for="p-tienda">Tienda</label><select id="p-tienda"></select></div>
+        <div class="f-field"><label for="p-min">Margen mínimo</label>
+          <select id="p-min"><option value="">Cualquiera</option><option value="20">20% o más</option><option value="30">30% o más</option><option value="40">40% o más</option><option value="45">45% o más</option></select></div>
+        <div class="f-field"><label for="p-bloque">Bloque horario</label><select id="p-bloque"></select></div>
+        <div class="f-field"><label for="p-q">Buscar producto</label><input id="p-q" type="search" placeholder="latte, bagel, combo…"></div>
+        <label class="f-check" style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text);padding-bottom:6px"><input type="checkbox" id="p-agrupar" checked> Agrupar repetidas</label>
+        <button class="f-reset" id="p-reset" type="button">Limpiar</button>
+      </div>
+      <div class="grid-4" id="promo-stats" style="margin-bottom:14px"></div>
+      <div class="scroll-y promo-feed" id="promo-list"></div>
+    </div>
+
     <div class="card" id="med-card" style="margin-top:16px">
       <div class="card-title" style="margin-bottom:4px">Medición del sistema</div>
       <div class="wow-vs" id="med-vs" style="margin-bottom:6px"></div>
@@ -504,40 +537,6 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <div class="chart-wrap" id="chart-familias"></div>
         <p class="card-note">Largo = utilidad total. Oscuro = margen %. Prioriza las barras más largas y más oscuras.</p>
       </div>
-    </div>
-  </div>
-
-  <!-- ── promociones ── -->
-  <div class="section">
-    <div class="section-title">Historial de promociones</div>
-    <div class="card">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px">
-        <div class="card-title" style="margin:0" id="promo-title">Promos propuestas por el agente</div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap" id="promo-filters">
-          <button class="chip active" data-filter="all">Todas</button>
-          <button class="chip" data-filter="ok">Aprobadas</button>
-          <button class="chip" data-filter="bad">Bloqueadas</button>
-        </div>
-      </div>
-      <div class="filters" id="promo-ctrls" style="position:static;padding-top:0">
-        <div class="f-field"><label for="p-orden">Ordenar por</label>
-          <select id="p-orden">
-            <option value="margen-desc">Mayor margen</option>
-            <option value="margen-asc">Menor margen</option>
-            <option value="reciente">Más recientes</option>
-            <option value="precio-desc">Mayor precio</option>
-            <option value="veces-desc">Más repetidas</option>
-          </select></div>
-        <div class="f-field"><label for="p-tienda">Tienda</label><select id="p-tienda"></select></div>
-        <div class="f-field"><label for="p-min">Margen mínimo</label>
-          <select id="p-min"><option value="">Cualquiera</option><option value="20">20% o más</option><option value="30">30% o más</option><option value="40">40% o más</option><option value="45">45% o más</option></select></div>
-        <div class="f-field"><label for="p-bloque">Bloque horario</label><select id="p-bloque"></select></div>
-        <div class="f-field"><label for="p-q">Buscar producto</label><input id="p-q" type="search" placeholder="latte, bagel, combo…"></div>
-        <label class="f-check" style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text);padding-bottom:6px"><input type="checkbox" id="p-agrupar" checked> Agrupar repetidas</label>
-        <button class="f-reset" id="p-reset" type="button">Limpiar</button>
-      </div>
-      <div class="grid-4" id="promo-stats" style="margin-bottom:14px"></div>
-      <div class="scroll-y promo-feed" id="promo-list"></div>
     </div>
   </div>
 
