@@ -1,9 +1,51 @@
 [
  {
   "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-10",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-10",
+  "concepto": "Publicidad",
+  "monto": -36.55,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-10",
+  "concepto": "Publicidad",
+  "monto": -120.85,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-10",
+  "concepto": "Publicidad",
+  "monto": -85.71,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-10",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-09",
   "concepto": "Publicidad",
   "monto": -32.84,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-09",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
   "fecha_pago": null
  },
  {
@@ -11,6 +53,13 @@
   "fecha": "2026-11-09",
   "concepto": "Publicidad",
   "monto": -50.19,
+  "fecha_pago": "2026-11-09"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-09",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
   "fecha_pago": null
  },
  {
@@ -25,189 +74,182 @@
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -33.54,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -40.3,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -71.8,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Crédito de publicidad",
   "monto": 17.35,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -62.61,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -73.74,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -76.66,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -38.09,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-07",
   "concepto": "Publicidad",
   "monto": -91.05,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
   "concepto": "Publicidad",
   "monto": -92.65,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-06",
   "concepto": "Crédito de publicidad",
   "monto": 92.65,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-06",
   "concepto": "Publicidad",
   "monto": -8.98,
-  "fecha_pago": null
- },
- {
-  "tienda": "Baristi Macroplaza",
-  "fecha": "2026-11-05",
-  "concepto": "Publicidad",
-  "monto": -88.28,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-05",
   "concepto": "Crédito de publicidad",
   "monto": 88.28,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-05",
+  "concepto": "Publicidad",
+  "monto": -88.28,
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-04",
   "concepto": "Publicidad",
   "monto": -85.12,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-04",
   "concepto": "Crédito de publicidad",
   "monto": 85.12,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.01,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Etu (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Crédito de publicidad",
   "monto": 97.02,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Publicidad",
   "monto": -97.02,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.02,
-  "fecha_pago": null
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Pacífico",
   "fecha": "2026-11-03",
   "concepto": "Otra cuota",
   "monto": 0.0,
-  "fecha_pago": null
- },
- {
-  "tienda": "Baristi Macroplaza",
-  "fecha": "2026-11-01",
-  "concepto": "Crédito de publicidad",
-  "monto": 50.38,
-  "fecha_pago": "2026-11-02"
+  "fecha_pago": "2026-11-09"
  },
  {
   "tienda": "Baristi Macroplaza",
@@ -219,8 +261,8 @@
  {
   "tienda": "Baristi Macroplaza",
   "fecha": "2026-11-01",
-  "concepto": "Publicidad",
-  "monto": -71.91,
+  "concepto": "Crédito de publicidad",
+  "monto": 50.38,
   "fecha_pago": "2026-11-02"
  },
  {
@@ -228,6 +270,13 @@
   "fecha": "2026-11-01",
   "concepto": "Crédito de publicidad",
   "monto": 71.91,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-01",
+  "concepto": "Publicidad",
+  "monto": -71.91,
   "fecha_pago": "2026-11-02"
  },
  {

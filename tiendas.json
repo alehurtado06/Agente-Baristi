@@ -1,23 +1,23 @@
 [
  {
   "tienda": "Baristi Etu (Tijuana)",
-  "pedidos": 241,
-  "venta": 56801.0,
-  "comision_uber": 19646.33,
-  "publicidad": 8132.47,
+  "pedidos": 246,
+  "venta": 57584.0,
+  "comision_uber": 19914.89,
+  "publicidad": 8169.02,
   "costo_insumos": 0,
-  "utilidad": 23463.56,
-  "margen_pct": 41.3
+  "utilidad": 23834.35,
+  "margen_pct": 41.4
  },
  {
   "tienda": "Baristi Pacífico",
-  "pedidos": 127,
-  "venta": 29685.0,
-  "comision_uber": 10227.29,
-  "publicidad": 6128.58,
+  "pedidos": 132,
+  "venta": 31007.0,
+  "comision_uber": 10679.48,
+  "publicidad": 6214.29,
   "costo_insumos": 0,
-  "utilidad": 9824.16,
-  "margen_pct": 33.1
+  "utilidad": 10415.99,
+  "margen_pct": 33.6
  },
  {
   "tienda": "Baristi Macroplaza",
@@ -31,12 +31,12 @@
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
-  "pedidos": 62,
-  "venta": 18651.0,
-  "comision_uber": 6432.05,
-  "publicidad": 235.18,
+  "pedidos": 63,
+  "venta": 19275.0,
+  "comision_uber": 6645.27,
+  "publicidad": 356.03,
   "costo_insumos": 0,
-  "utilidad": 10030.44,
-  "margen_pct": 53.8
+  "utilidad": 10228.16,
+  "margen_pct": 53.1
  }
 ]
