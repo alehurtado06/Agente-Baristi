@@ -5094,5 +5094,61 @@
   "aprobadas": 2,
   "bloqueadas": 0,
   "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-10T12:38:17-08:00|Baristi Etu (Tijuana)",
+  "corrida_at": "2026-11-10T12:38:17-08:00",
+  "hora_negocio": "2026-11-10 12:37",
+  "simulada": false,
+  "tienda": "Baristi Etu (Tijuana)",
+  "bloque": "Valle Mañana (Hora Muerta)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-10T12:38:48-08:00|Baristi Macroplaza",
+  "corrida_at": "2026-11-10T12:38:48-08:00",
+  "hora_negocio": "2026-11-10 12:37",
+  "simulada": false,
+  "tienda": "Baristi Macroplaza",
+  "bloque": "Valle Mañana (Hora Muerta)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-10T12:39:27-08:00|Baristi Pacífico",
+  "corrida_at": "2026-11-10T12:39:27-08:00",
+  "hora_negocio": "2026-11-10 12:37",
+  "simulada": false,
+  "tienda": "Baristi Pacífico",
+  "bloque": "Valle Mañana (Hora Muerta)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-10T12:40:04-08:00|Baristi Rosarito (Tijuana)",
+  "corrida_at": "2026-11-10T12:40:04-08:00",
+  "hora_negocio": "2026-11-10 12:37",
+  "simulada": false,
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "bloque": "Valle Mañana (Hora Muerta)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 1,
+  "aprobadas": 1,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
  }
 ]
