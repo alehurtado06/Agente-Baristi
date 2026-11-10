@@ -1,0 +1,933 @@
+[
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-09",
+  "concepto": "Publicidad",
+  "monto": -32.84,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-09",
+  "concepto": "Publicidad",
+  "monto": -50.19,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-09",
+  "concepto": "Publicidad",
+  "monto": -88.38,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -33.54,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -40.3,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -71.8,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-07",
+  "concepto": "Crédito de publicidad",
+  "monto": 17.35,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -62.61,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -73.74,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -76.66,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -38.09,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-07",
+  "concepto": "Publicidad",
+  "monto": -91.05,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-06",
+  "concepto": "Publicidad",
+  "monto": -92.65,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-06",
+  "concepto": "Crédito de publicidad",
+  "monto": 92.65,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-06",
+  "concepto": "Publicidad",
+  "monto": -8.98,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-05",
+  "concepto": "Publicidad",
+  "monto": -88.28,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-05",
+  "concepto": "Crédito de publicidad",
+  "monto": 88.28,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-04",
+  "concepto": "Publicidad",
+  "monto": -85.12,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-04",
+  "concepto": "Crédito de publicidad",
+  "monto": 85.12,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.01,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-03",
+  "concepto": "Crédito de publicidad",
+  "monto": 97.02,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-03",
+  "concepto": "Publicidad",
+  "monto": -97.02,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.02,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-11-03",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": null
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-01",
+  "concepto": "Crédito de publicidad",
+  "monto": 50.38,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-01",
+  "concepto": "Publicidad",
+  "monto": -50.38,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-01",
+  "concepto": "Publicidad",
+  "monto": -71.91,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-11-01",
+  "concepto": "Crédito de publicidad",
+  "monto": 71.91,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-31",
+  "concepto": "Publicidad",
+  "monto": -1.16,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-31",
+  "concepto": "Crédito de publicidad",
+  "monto": 1.16,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -21.96,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -257.69,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-30",
+  "concepto": "Crédito de publicidad",
+  "monto": 18.08,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -18.08,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -20.17,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -323.18,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-30",
+  "concepto": "Publicidad",
+  "monto": -12.33,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-29",
+  "concepto": "Publicidad",
+  "monto": -77.05,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-29",
+  "concepto": "Publicidad",
+  "monto": -162.13,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-28",
+  "concepto": "Publicidad",
+  "monto": -32.62,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-28",
+  "concepto": "Publicidad",
+  "monto": -89.9,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-27",
+  "concepto": "Publicidad",
+  "monto": -255.77,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-27",
+  "concepto": "Publicidad",
+  "monto": -270.6,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.02,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-27",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-26",
+  "concepto": "Publicidad",
+  "monto": -319.05,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-26",
+  "concepto": "Publicidad",
+  "monto": -243.28,
+  "fecha_pago": "2026-11-02"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-25",
+  "concepto": "Publicidad",
+  "monto": -324.72,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-25",
+  "concepto": "Publicidad",
+  "monto": -427.49,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-24",
+  "concepto": "Publicidad",
+  "monto": -465.52,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-24",
+  "concepto": "Publicidad",
+  "monto": -226.69,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-23",
+  "concepto": "Publicidad",
+  "monto": -486.46,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-23",
+  "concepto": "Publicidad",
+  "monto": -380.82,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-22",
+  "concepto": "Publicidad",
+  "monto": -123.37,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-22",
+  "concepto": "Publicidad",
+  "monto": -128.46,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-21",
+  "concepto": "Publicidad",
+  "monto": -93.33,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-21",
+  "concepto": "Publicidad",
+  "monto": -62.72,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-20",
+  "concepto": "Publicidad",
+  "monto": -76.04,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-20",
+  "concepto": "Publicidad",
+  "monto": -175.03,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-20",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-19",
+  "concepto": "Publicidad",
+  "monto": -143.2,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-19",
+  "concepto": "Publicidad",
+  "monto": -87.61,
+  "fecha_pago": "2026-10-26"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-18",
+  "concepto": "Publicidad",
+  "monto": -264.96,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-18",
+  "concepto": "Publicidad",
+  "monto": -150.93,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-17",
+  "concepto": "Publicidad",
+  "monto": -461.8,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-17",
+  "concepto": "Publicidad",
+  "monto": -184.23,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-16",
+  "concepto": "Publicidad",
+  "monto": -548.94,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-16",
+  "concepto": "Publicidad",
+  "monto": -245.42,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-15",
+  "concepto": "Publicidad",
+  "monto": -94.56,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-15",
+  "concepto": "Publicidad",
+  "monto": -133.43,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-14",
+  "concepto": "Publicidad",
+  "monto": -87.3,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-14",
+  "concepto": "Publicidad",
+  "monto": -116.31,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-13",
+  "concepto": "Publicidad",
+  "monto": -366.28,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-13",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-13",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-13",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-13",
+  "concepto": "Publicidad",
+  "monto": -343.16,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-13",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-13",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-12",
+  "concepto": "Publicidad",
+  "monto": -371.7,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-12",
+  "concepto": "Publicidad",
+  "monto": -210.04,
+  "fecha_pago": "2026-10-19"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-11",
+  "concepto": "Publicidad",
+  "monto": -247.06,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-11",
+  "concepto": "Publicidad",
+  "monto": -141.3,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-10",
+  "concepto": "Publicidad",
+  "monto": -346.81,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-10",
+  "concepto": "Publicidad",
+  "monto": -297.06,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Crédito de publicidad",
+  "monto": 464.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Publicidad",
+  "monto": -569.65,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": 4.23,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": -41.6,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": 6.23,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": -14.75,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": 3.6,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": -9.04,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-09",
+  "concepto": "Publicidad",
+  "monto": -97.79,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": 7.46,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-09",
+  "concepto": "Otra cuota",
+  "monto": -5.93,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-08",
+  "concepto": "Publicidad",
+  "monto": -152.9,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-08",
+  "concepto": "Publicidad",
+  "monto": -145.37,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-07",
+  "concepto": "Publicidad",
+  "monto": -83.72,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-07",
+  "concepto": "Publicidad",
+  "monto": -122.39,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-06",
+  "concepto": "Publicidad",
+  "monto": -235.06,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-06",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-06",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Macroplaza",
+  "fecha": "2026-10-06",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-06",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "fecha": "2026-10-06",
+  "concepto": "Otra cuota",
+  "monto": 0.0,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-06",
+  "concepto": "Publicidad",
+  "monto": -228.5,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-05",
+  "concepto": "Publicidad",
+  "monto": -480.54,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-05",
+  "concepto": "Publicidad",
+  "monto": -158.51,
+  "fecha_pago": "2026-10-12"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-04",
+  "concepto": "Publicidad",
+  "monto": -310.98,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-04",
+  "concepto": "Publicidad",
+  "monto": -188.96,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-03",
+  "concepto": "Publicidad",
+  "monto": -569.56,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-03",
+  "concepto": "Publicidad",
+  "monto": -341.26,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-02",
+  "concepto": "Publicidad",
+  "monto": -510.76,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-02",
+  "concepto": "Publicidad",
+  "monto": -157.69,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Etu (Tijuana)",
+  "fecha": "2026-10-01",
+  "concepto": "Publicidad",
+  "monto": -73.07,
+  "fecha_pago": "2026-10-05"
+ },
+ {
+  "tienda": "Baristi Pacífico",
+  "fecha": "2026-10-01",
+  "concepto": "Publicidad",
+  "monto": -60.04,
+  "fecha_pago": "2026-10-05"
+ }
+]
