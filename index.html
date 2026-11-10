@@ -450,13 +450,31 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="section-title">Historial de promociones</div>
     <div class="card">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px">
-        <div class="card-title" style="margin:0">Últimas 200 promos propuestas</div>
+        <div class="card-title" style="margin:0" id="promo-title">Promos propuestas por el agente</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap" id="promo-filters">
           <button class="chip active" data-filter="all">Todas</button>
           <button class="chip" data-filter="ok">Aprobadas</button>
           <button class="chip" data-filter="bad">Bloqueadas</button>
         </div>
       </div>
+      <div class="filters" id="promo-ctrls" style="position:static;padding-top:0">
+        <div class="f-field"><label for="p-orden">Ordenar por</label>
+          <select id="p-orden">
+            <option value="margen-desc">Mayor margen</option>
+            <option value="margen-asc">Menor margen</option>
+            <option value="reciente">Más recientes</option>
+            <option value="precio-desc">Mayor precio</option>
+            <option value="veces-desc">Más repetidas</option>
+          </select></div>
+        <div class="f-field"><label for="p-tienda">Tienda</label><select id="p-tienda"></select></div>
+        <div class="f-field"><label for="p-min">Margen mínimo</label>
+          <select id="p-min"><option value="">Cualquiera</option><option value="20">20% o más</option><option value="30">30% o más</option><option value="40">40% o más</option><option value="45">45% o más</option></select></div>
+        <div class="f-field"><label for="p-bloque">Bloque horario</label><select id="p-bloque"></select></div>
+        <div class="f-field"><label for="p-q">Buscar producto</label><input id="p-q" type="search" placeholder="latte, bagel, combo…"></div>
+        <label class="f-check" style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text);padding-bottom:6px"><input type="checkbox" id="p-agrupar" checked> Agrupar repetidas</label>
+        <button class="f-reset" id="p-reset" type="button">Limpiar</button>
+      </div>
+      <div class="grid-4" id="promo-stats" style="margin-bottom:14px"></div>
       <div class="scroll-y promo-feed" id="promo-list"></div>
     </div>
   </div>
@@ -541,7 +559,7 @@ function render(){
   renderWaterfall();
   renderHoras();
   renderFamilias();
-  renderPromos('all');
+  renderPromos(promoFilter);
   renderCompetencia();
 }
 
@@ -761,22 +779,68 @@ function toggleAnalysis(id,btn){
 
 // ── promos ──
 let promoFilter='all';
+const isOk=r=>r.aprobada===true||r.aprobada==='true';
+const promoBlock=r=>getBlock(new Date(r.corrida_at).toLocaleString('en-US',{timeZone:TZ,hour:'numeric',hourCycle:'h23'})|0);
+let promoCtrlsReady=false;
+function setupPromoCtrls(all){
+  const keep=(id,opts,label)=>{const el=$(id),cur=el.value;
+    el.innerHTML=`<option value="">${label}</option>`+opts.map(o=>`<option value="${esc(o)}">${esc(o)}</option>`).join('');
+    if(opts.includes(cur)) el.value=cur;};
+  keep('p-tienda',[...new Set(all.map(r=>r.tienda).filter(Boolean))].sort(),'Todas');
+  keep('p-bloque',BLOCKS.map(b=>b.name),'Todos');
+  if(promoCtrlsReady) return; promoCtrlsReady=true;
+  ['p-orden','p-tienda','p-min','p-bloque','p-agrupar'].forEach(id=>$(id).addEventListener('change',()=>renderPromos(promoFilter)));
+  $('p-q').addEventListener('input',()=>renderPromos(promoFilter));
+  $('p-reset').addEventListener('click',()=>{['p-tienda','p-min','p-bloque','p-q'].forEach(id=>$(id).value='');$('p-orden').value='margen-desc';$('p-agrupar').checked=true;renderPromos('all');});
+}
 function renderPromos(f){
   promoFilter=f;
   document.querySelectorAll('#promo-filters .chip').forEach(c=>{c.classList.toggle('active',c.dataset.filter===f);});
-  const rows=(DATA.promociones||[]).slice().sort((a,b)=>b.corrida_at.localeCompare(a.corrida_at))
-    .filter(r=>f==='all'||( f==='ok'&&(r.aprobada===true||r.aprobada==='true'))||(f==='bad'&&r.aprobada!==true&&r.aprobada!=='true'));
+  const all=DATA.promociones||[];
+  setupPromoCtrls(all);
+  const tienda=$('p-tienda').value,min=$('p-min').value,bloque=$('p-bloque').value,
+        q=$('p-q').value.trim().toLowerCase(),orden=$('p-orden').value,agrupar=$('p-agrupar').checked;
+  let rows=all.filter(r=>(f==='all'||(f==='ok'&&isOk(r))||(f==='bad'&&!isOk(r)))&&
+    (!tienda||r.tienda===tienda)&&(!min||(r.margen_pct!=null&&r.margen_pct>=+min))&&
+    (!bloque||(promoBlock(r)||{}).name===bloque)&&
+    (!q||(r.mecanica||'').toLowerCase().includes(q)||(r.producto_id||'').replace(/_/g,' ').includes(q)));
+  rows=rows.map(r=>({...r,veces:1,primera:r.corrida_at}));
+  if(agrupar){
+    const m=new Map();
+    rows.forEach(r=>{const k=[r.tienda,r.producto_id,r.precio,isOk(r)].join('|'),g=m.get(k);
+      if(!g) m.set(k,r); else {g.veces++; if(r.corrida_at>g.corrida_at){Object.assign(g,{...r,veces:g.veces,primera:g.primera});} if(r.corrida_at<g.primera) g.primera=r.corrida_at;}});
+    rows=[...m.values()];
+  }
+  const by={
+    'margen-desc':(a,b)=>(b.margen_pct??-1e9)-(a.margen_pct??-1e9),
+    'margen-asc':(a,b)=>(a.margen_pct??1e9)-(b.margen_pct??1e9),
+    'reciente':(a,b)=>b.corrida_at.localeCompare(a.corrida_at),
+    'precio-desc':(a,b)=>(b.precio??0)-(a.precio??0),
+    'veces-desc':(a,b)=>b.veces-a.veces,
+  }[orden];
+  rows.sort((a,b)=>by(a,b)||b.corrida_at.localeCompare(a.corrida_at));
+  // resumen
+  const ms=rows.map(r=>r.margen_pct).filter(v=>v!=null),avg=ms.length?ms.reduce((s,v)=>s+v,0)/ms.length:null;
+  const best=rows.slice().sort((a,b)=>(b.margen_pct??-1e9)-(a.margen_pct??-1e9))[0];
+  const fechas=all.map(r=>r.corrida_at).sort();
+  $('promo-title').textContent=`Promos propuestas por el agente · ${all.length} desde ${fechas.length?when(fechas[0]):'—'}`;
+  $('promo-stats').innerHTML=[
+    ['c',agrupar?'Promos distintas':'Promos',rows.length.toLocaleString('es-MX'),agrupar?rows.reduce((s,r)=>s+r.veces,0)+' propuestas en total':'con estos filtros'],
+    ['g','Margen promedio',avg!=null?pct(avg):'—',ms.length?'de '+pct(Math.min(...ms))+' a '+pct(Math.max(...ms)):''],
+    ['b','Mejor margen',best&&best.margen_pct!=null?pct(best.margen_pct):'—',best?esc((best.tienda||'').replace('Baristi ',''))+(best.precio!=null?' · '+money(best.precio):''):''],
+    ['a','Aprobadas',rows.filter(isOk).length+' de '+rows.length,rows.length?pct(rows.filter(isOk).length/rows.length*100):''],
+  ].map(([c,l,v,ft])=>`<div class="kpi ${c} kpi-sm"><div class="kpi-label">${l}</div><div class="kpi-value">${v}</div><div class="kpi-foot">${ft}</div></div>`).join('');
   const list=$('promo-list');
-  if(!rows.length){list.innerHTML='<div class="empty">Sin promociones.</div>';return;}
+  if(!rows.length){list.innerHTML='<div class="empty">Sin promociones con estos filtros.</div>';return;}
   list.innerHTML=rows.map(r=>{
-    const ok=r.aprobada===true||r.aprobada==='true';
-    const b=getBlock(new Date(r.corrida_at).toLocaleString('en-US',{timeZone:TZ,hour:'numeric',hourCycle:'h23'})|0);
+    const ok=isOk(r);
+    const b=promoBlock(r);
     return `<div class="promo-item">
       <div class="promo-badge ${ok?'ok':'bad'}">${ok?'✓':'✗'}</div>
       <div>
         <div class="promo-text">${r.mecanica||'—'}</div>
         <div class="promo-meta">
-          <span>${when(r.corrida_at)}</span>
+          <span>${r.veces>1?'×'+r.veces+' · '+when(r.primera)+' → '+when(r.corrida_at):when(r.corrida_at)}</span>
           <span style="color:var(--copper)">${(r.tienda||'').replace('Baristi ','')}</span>
           ${r.motivo?`<span style="color:var(--red)">${r.motivo}</span>`:''}
         </div>
