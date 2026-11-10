@@ -9997,5 +9997,93 @@
   "margen_pct": 35.5,
   "aprobada": false,
   "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-10T13:31:05-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-10T13:31:05-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Snack de la tarde: americano + bagel + galleta $159",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:05-08:00|Baristi Etu (Tijuana)|1",
+  "corrida_at": "2026-11-10T13:31:05-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "4 frappés para la oficina $419",
+  "producto_id": "combo_amigos_4_frappes_16_oz",
+  "precio": 419.0,
+  "margen_pct": 48.5,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:05-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-10T13:31:05-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "2 lattes + postre para compartir $219",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 219.0,
+  "margen_pct": 45.6,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:05-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-10T13:31:05-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Comida rápida: americano + bagel + galleta $169",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 169.0,
+  "margen_pct": 37.2,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:06-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-10T13:31:06-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "2 lattes + postre $209",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 209.0,
+  "margen_pct": 45.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:06-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-10T13:31:06-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Bagel + americano + galleta $159",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:07-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-10T13:31:07-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Café para dos con postre $219",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 219.0,
+  "margen_pct": 45.6,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T13:31:07-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-10T13:31:07-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Café americano + bagel $155",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 155.0,
+  "margen_pct": 35.5,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
  }
 ]
