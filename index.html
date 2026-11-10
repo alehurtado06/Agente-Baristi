@@ -360,6 +360,27 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
     </div>
 
+    <div class="card" id="med-card" style="margin-top:16px">
+      <div class="card-title" style="margin-bottom:4px">Medición del sistema</div>
+      <div class="wow-vs" id="med-vs" style="margin-bottom:6px"></div>
+
+      <div class="yoy-sub">1 · Éxito de las promociones</div>
+      <div class="grid-4" id="med-promo-kpis"></div>
+      <div style="overflow-x:auto;margin-top:12px"><table class="wow-tbl" id="med-promo-mes"></table></div>
+      <p class="card-note" id="med-promo-note"></p>
+
+      <div class="yoy-sub">2 · Rentabilidad por tienda</div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="med-rent"></table></div>
+      <p class="card-note">Cada columna es % de la venta. "Te deposita" = lo que llega a tu cuenta después de comisión, promos, retenciones y publicidad (antes del costo de insumos).</p>
+
+      <div class="yoy-sub">3 · Retroalimentación de los clientes</div>
+      <div class="grid-4" id="med-cli-kpis"></div>
+      <div class="card plat-empty" style="margin-top:12px;padding:20px;box-shadow:none;background:var(--card2)">
+        <h3 style="font-size:14px">Calificaciones y reseñas: aún no hay datos</h3>
+        <p>El reporte de pagos no trae estrellas ni comentarios. Descarga en Uber Eats Manager el reporte de calificaciones / reseñas de clientes y mándamelo para medir satisfacción por tienda, producto y promoción.</p>
+      </div>
+    </div>
+
     <div class="grid-2" style="margin-top:16px">
       <div class="card">
         <div class="card-title" id="u-dias-title">Venta por día</div>
@@ -1087,6 +1108,7 @@ function renderUber(){
 
   renderWoW();
   renderYoY();
+  renderMedicion(P,O);
   chartUberDias(P);
   chartUberHoras(P);
 
@@ -1171,6 +1193,57 @@ function chartUberHoras(P){
       tip.innerHTML=`<strong>${r.h}:00 – ${r.h+1}:00</strong><br>${r.n} pedidos<br>Venta ${money(r.venta)}`;})
     .on('mouseleave',()=>tip.style.display='none');
   rows.forEach(r=>svg.append('text').attr('x',x(r.h)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(r.h+'h'));
+}
+
+// ── medición: promociones, rentabilidad, clientes ──
+function renderMedicion(P,O){
+  const fs=P.map(p=>p.fecha).filter(Boolean).sort();
+  $('med-vs').textContent=P.length?`${P.length.toLocaleString('es-MX')} pedidos · ${fmtDate(fs[0])} – ${fmtDate(fs[fs.length-1])} · usa las pestañas y filtros de arriba`:'Sin pedidos con estos filtros';
+  const kpi=(c,l,v,f)=>`<div class="kpi ${c} kpi-sm"><div class="kpi-label">${l}</div><div class="kpi-value">${v}</div><div class="kpi-foot">${f}</div></div>`;
+  const ok=P.filter(p=>p.venta>0&&p.estado==='Completado');
+  const conP=ok.filter(p=>p.promos>0),sinP=ok.filter(p=>!(p.promos>0));
+  const tk=rs=>rs.length?sum(rs,'venta')/rs.length:0;
+  const tC=tk(conP),tS=tk(sinP);
+  const costo=sum(conP,'promos')+sum(conP,'cuota_promo')-sum(conP,'ajuste_mkt');
+  const extra=(tC-tS)*conP.length;
+  const depC=conP.length?sum(conP,'pago')/conP.length:0,depS=sinP.length?sum(sinP,'pago')/sinP.length:0;
+  $('med-promo-kpis').innerHTML=[
+    kpi('c','Pedidos con promoción',conP.length.toLocaleString('es-MX'),share(conP.length,ok.length)+' de los pedidos'),
+    kpi('g','Ticket con promo',conP.length?money(tC):'—',conP.length?`vs ${money(tS)} sin promo · ${delta(tC,tS)}`:'sin pedidos con promo'),
+    kpi('a','Costo de las promos',money(costo),conP.length?'descuentos + cuota de Uber − cofinanciado':'—'),
+    kpi('b','Te deposita por pedido',conP.length?money(depC):'—',conP.length?`vs ${money(depS)} sin promo · ${delta(depC,depS)}`:'—'),
+  ].join('');
+  $('med-promo-note').textContent=conP.length
+    ?`Venta extra estimada: ${money(extra)} (${conP.length} pedidos × ${money(tC-tS)} más de ticket que uno sin promo)${costo>0?`, o sea $${(extra/costo).toFixed(1)} de venta extra por cada $1 de descuento`:''}. Mide las promos que activaste en Uber; las del agente cuentan solo cuando las activas (el agente está en modo "proponer").`
+    :'No hay pedidos con promoción en este periodo. El agente está en modo "proponer": sus promos se miden aquí cuando las activas en Uber.';
+  const byM=groupBy(ok,p=>p.fecha.slice(0,7));
+  const meses=[...byM.keys()].sort().filter(k=>byM.get(k).some(p=>p.promos>0)).slice(-12).reverse();
+  const mLab=k=>new Date(k+'-15T12:00:00').toLocaleDateString('es-MX',{month:'short',year:'numeric'});
+  $('med-promo-mes').innerHTML=meses.length?`<thead><tr><th>Mes</th><th>Pedidos con promo</th><th>% de pedidos</th><th>Ticket con promo</th><th>Ticket sin promo</th><th>Diferencia</th><th>Descuento dado</th></tr></thead><tbody>`+
+    meses.map(k=>{const rs=byM.get(k),c=rs.filter(p=>p.promos>0),n=rs.filter(p=>!(p.promos>0)),a=tk(c),b=tk(n);
+      return `<tr><td>${mLab(k)}</td><td>${c.length}</td><td class="prev">${share(c.length,rs.length)}</td><td>${money(a)}</td><td class="prev">${money(b)}</td><td>${delta(a,b)}</td><td>${money(sum(c,'promos'))}</td></tr>`;}).join('')+'</tbody>':'';
+
+  // rentabilidad por tienda
+  const tiendas=[...new Set(P.map(p=>p.tienda))].sort();
+  const rr=tiendas.map(t=>{const rs=P.filter(p=>p.tienda===t),os=O.filter(o=>o.tienda===t),v=sum(rs,'venta');
+    const pub=-sum(os.filter(o=>o.concepto==='Publicidad'||o.concepto==='Crédito de publicidad'),'monto');
+    const dep=sum(rs,'pago')+sum(os,'monto');
+    return {t,n:rs.length,v,com:sum(rs,'comision'),promo:sum(rs,'promos')+sum(rs,'cuota_promo'),ret:sum(rs,'ret_iva')+sum(rs,'ret_isr'),pub,dep};}).sort((a,b)=>b.dep/b.v-a.dep/a.v);
+  const pc=(x,v)=>v?pct(x/v*100):'—';
+  $('med-rent').innerHTML=rr.length?`<thead><tr><th>Tienda</th><th>Pedidos</th><th>Venta</th><th>Comisión</th><th>Promos</th><th>Retenciones</th><th>Publicidad</th><th>Te deposita</th><th>Por pedido</th></tr></thead><tbody>`+
+    rr.map((r,i)=>`<tr><td>${i===0?'🏆 ':''}${esc(r.t.replace('Baristi ',''))}</td><td>${r.n.toLocaleString('es-MX')}</td><td>${money(r.v)}</td><td class="prev">${pc(r.com,r.v)}</td><td class="prev">${pc(r.promo,r.v)}</td><td class="prev">${pc(r.ret,r.v)}</td><td style="${r.pub/r.v>.1?'color:var(--red);font-weight:600':''}">${pc(r.pub,r.v)}</td><td><b>${pc(r.dep,r.v)}</b></td><td>${r.n?money(r.dep/r.n):'—'}</td></tr>`).join('')+'</tbody>'
+    :'<tr><td class="empty">Sin datos</td></tr>';
+
+  // clientes
+  const fallidos=P.filter(p=>p.estado!=='Completado'),reemb=P.filter(p=>p.contracargo>0);
+  const conT=P.filter(p=>p.minutos!=null),lentos=conT.filter(p=>p.minutos>45);
+  const memb=P.filter(p=>p.uber_one);
+  $('med-cli-kpis').innerHTML=[
+    kpi('r','Cancelados / no completados',fallidos.length.toLocaleString('es-MX'),share(fallidos.length,P.length)+' de los pedidos'),
+    kpi('a','Reembolsos por queja',reemb.length.toLocaleString('es-MX'),reemb.length?money(sum(reemb,'contracargo'))+' devueltos · '+share(reemb.length,P.length):'sin quejas con reembolso'),
+    kpi('b','Entregas de más de 45 min',share(lentos.length,conT.length),lentos.length.toLocaleString('es-MX')+' pedidos tardados'),
+    kpi('g','Clientes con membresía',share(memb.length,P.length),'de los pedidos (Uber One / Prime)'),
+  ].join('');
 }
 
 // ── comparativo entre años ──
