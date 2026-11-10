@@ -9326,5 +9326,126 @@
   "margen_pct": 38.3,
   "aprobada": true,
   "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Descuento directo de 8% en bagel salado durante el bloque de desayuno (5-11 h) o hasta agotar las 10 piezas. En la ficha, sugerir agregar Café americano sabor o Aztec mocha a precio completo.",
+  "producto_id": "bagel_salado",
+  "precio": 78.0,
+  "margen_pct": 15.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Etu (Tijuana)|1",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Descuento directo de 10% en galleta de zanahoria (5-11 h) o hasta agotar las 15 piezas, presentada como 'agrega tu galleta' en bebidas calientes.",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Combo desayuno a $171 (antes $189, -9.5%); el descuento se imputa al bagel y la galleta, no al café. Activo de 6:00 a 11:00 o hasta agotar la vitrina.",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 171.0,
+  "margen_pct": 37.4,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Combo americano + bagel a $179 (antes $189, -5.3%, equivalente a cerca de 12% de descuento solo sobre el bagel de $85). Es la opción de ticket alto para quien no quiere galleta.",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Macroplaza|2",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Galleta de zanahoria a $45 (antes $50, -10%) como add-on sugerido en el checkout de cualquier bebida caliente.",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "10% de descuento en Bagel salado de 05:30 a 11:00 o hasta agotar los 10 de vitrina. Sugerir en el carrito como acompañante de cualquier bebida caliente.",
+  "producto_id": "bagel_salado",
+  "precio": 76.5,
+  "margen_pct": 14.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "10% de descuento en Galleta de zanahoria hasta las 11:00 o hasta agotar las 15 unidades. Mostrar como add-on de $45 junto a lattes y mokas.",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Pacífico|2",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Combo Desayuno a $179 (antes $189): el descuento de $10 se atribuye solo al pan (bagel y galleta); el americano va a precio completo. Vigente de 05:30 a 11:00.",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "10% de descuento en Bagel salado al agregarlo a cualquier bebida caliente (descuento solo en el pan; la bebida va a precio de lista). Activo de 6:00 a 11:00 o hasta agotar las 10 piezas.",
+  "producto_id": "bagel_salado",
+  "precio": 76.5,
+  "margen_pct": 14.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "10% de descuento en Galleta de zanahoria como complemento ('agrégala a tu café'), sugerida en el carrito de bebidas calientes y frías. Válido hasta las 11:00 o hasta agotar las 15 piezas.",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-10T06:20:24-08:00|Baristi Rosarito (Tijuana)|2",
+  "corrida_at": "2026-11-10T06:20:24-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "5% de descuento en el Combo americano 16 oz + bagel + galleta, armado con Bagel salado y Galleta de zanahoria de la vitrina. Se comunica como 'Desayuno completo $179'. No se combina con los descuentos individuales de bagel y galleta.",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 179.55,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
  }
 ]
