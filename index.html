@@ -168,6 +168,15 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .cmp tr.total td{font-weight:700;border-bottom:none;border-top:2px solid var(--text)}
 .cmp td.na{color:var(--muted2);text-align:left}
 
+/* ── comparativo entre años ── */
+:root{--y2024:#8c9aad;--y2025:#2f72c9;--y2026:#b5602f;--y2023:#7aa874}
+.ychips{display:flex;gap:6px;flex-wrap:wrap}
+.ychip{font:inherit;font-size:12px;font-weight:600;border:1px solid var(--border);border-radius:999px;padding:5px 12px;background:var(--card);color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:6px}
+.ychip i{width:9px;height:9px;border-radius:50%;display:inline-block;opacity:.35}
+.ychip.on{color:var(--text);border-color:var(--text)}
+.ychip.on i{opacity:1}
+.yoy-sub{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:20px 0 10px}
+
 /* ── comparativo semana contra semana ── */
 .wow-head{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
 .wow-ctrls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
@@ -319,11 +328,43 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta" porque aquí eliges el día. "Te deposita" no incluye publicidad (se cobra aparte por día).</p>
     </div>
 
+    <div class="card" id="yoy-card" style="margin-top:16px">
+      <div class="wow-head">
+        <div>
+          <div class="card-title" style="margin-bottom:4px">Comparativo entre años</div>
+          <div class="wow-vs" id="yoy-vs"></div>
+        </div>
+        <div class="wow-ctrls">
+          <div class="f-field"><label for="yoy-metric">Métrica</label>
+            <select id="yoy-metric"><option value="pedidos">Pedidos</option><option value="venta">Venta</option><option value="ticket">Ticket promedio</option><option value="pago">Te deposita</option></select></div>
+          <div class="f-field"><label for="yoy-por">Ver por</label>
+            <select id="yoy-por"><option value="semana">Semana del año</option><option value="mes">Mes</option><option value="dow">Día de la semana (promedio diario)</option></select></div>
+          <div class="f-field"><label>Años</label><div class="ychips" id="yoy-years"></div></div>
+        </div>
+      </div>
+      <div class="chart-wrap" id="yoy-chart"></div>
+      <p class="card-note" id="yoy-note"></p>
+
+      <div class="yoy-sub">Acumulado del año al mismo día</div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="yoy-ytd"></table></div>
+
+      <div class="wow-head" style="margin-top:20px;margin-bottom:10px">
+        <div class="yoy-sub" style="margin:0">Un día o una semana contra años anteriores</div>
+        <div class="wow-ctrls">
+          <div class="f-field"><label for="yoy-modo">Comparar</label>
+            <select id="yoy-modo"><option value="dia">El mismo día de la semana</option><option value="semana">La semana completa (lun–dom)</option></select></div>
+          <div class="f-field"><label for="yoy-fecha">Fecha</label><input type="date" id="yoy-fecha"></div>
+        </div>
+      </div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="yoy-dia"></table></div>
+      <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
+    </div>
+
     <div class="grid-2" style="margin-top:16px">
       <div class="card">
-        <div class="card-title">Venta por día</div>
+        <div class="card-title" id="u-dias-title">Venta por día</div>
         <div class="chart-wrap" id="u-chart-dias"></div>
-        <p class="card-note">Barra = venta del día. Pasa el cursor para ver pedidos y pago neto.</p>
+        <p class="card-note" id="u-dias-note">Barra = venta del día. Pasa el cursor para ver pedidos y pago neto.</p>
       </div>
       <div class="card">
         <div class="card-title">De la venta al depósito</div>
@@ -543,7 +584,8 @@ async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
       const r=await fetch(id+'.json?'+Date.now());
-      DATA[id]=r.ok? await r.json():[];
+      const j=r.ok? await r.json():[];
+      DATA[id]=j&&j.cols&&j.rows? j.rows.map(row=>{const o={};j.cols.forEach((c,i)=>o[c]=row[i]);return o;}) : j;
     }catch{DATA[id]=[];}
   }));
   render();
@@ -906,7 +948,8 @@ const PLAT_HELP={
   'DiDi Food':'Descarga en el portal de DiDi Food para restaurantes el reporte de pedidos o el estado de cuenta (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
 };
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fmtDate=iso=>iso?new Date(iso+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'short'}):'—';
+const THIS_YEAR=String(new Date().getFullYear());
+const fmtDate=iso=>iso?new Date(iso+'T12:00:00').toLocaleDateString('es-MX',iso.slice(0,4)===THIS_YEAR?{day:'numeric',month:'short'}:{day:'numeric',month:'short',year:'2-digit'}):'—';
 const money2=n=>'$'+Number(n).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
 const share=(a,b)=>b?pct(a/b*100):'—';
 
@@ -1043,6 +1086,7 @@ function renderUber(){
     `<tr class="total"><td>Te deposita${UF.plat==='Total'?'n las plataformas':' '+esc(UF.plat)}</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,venta)}</td></tr>`;
 
   renderWoW();
+  renderYoY();
   chartUberDias(P);
   chartUberHoras(P);
 
@@ -1070,14 +1114,23 @@ function renderUber(){
   const byPay=groupBy([...P.map(p=>({f:p.fecha_pago,m:p.pago})),...O.map(o=>({f:o.fecha_pago,m:o.monto}))],r=>r.f||'Pendiente');
   const dep=[...byPay].map(([k,rows])=>({k:k==='Pendiente'?'Pendiente de pago':fmtDate(k),raw:k,v:Math.max(0,sum(rows,'m'))}))
     .sort((a,b)=>a.raw==='Pendiente'?1:b.raw==='Pendiente'?-1:a.raw<b.raw?-1:1);
-  bars('u-depositos',dep,{fmt:money});
+  const pend=dep.filter(d=>d.raw==='Pendiente'),paid=dep.filter(d=>d.raw!=='Pendiente');
+  bars('u-depositos',[...paid.slice(-12),...pend],{fmt:money});
+  if(paid.length>12) $('u-depositos').insertAdjacentHTML('beforeend',`<p class="card-note">Últimos 12 depósitos de ${paid.length}. Usa "Desde/Hasta" para ver otros.</p>`);
 
   renderUberTable();
 }
 
 function chartUberDias(P){
   const el=$('u-chart-dias');el.innerHTML='';
-  const g=[...groupBy(P.filter(p=>p.fecha),p=>p.fecha)].map(([k,rows])=>({k,venta:sum(rows,'venta'),pedidos:rows.length,pago:sum(rows,'pago')})).sort((a,b)=>a.k<b.k?-1:1);
+  const fs=P.map(p=>p.fecha).filter(Boolean).sort();
+  const span=fs.length?(new Date(fs[fs.length-1])-new Date(fs[0]))/864e5:0;
+  const unit=span>730?'mes':span>120?'semana':'día';
+  const keyOf=f=>unit==='mes'?f.slice(0,7)+'-01':unit==='semana'?weekStart(f):f;
+  $('u-dias-title').textContent='Venta por '+unit;
+  $('u-dias-note').textContent='Barra = venta '+(unit==='día'?'del día':unit==='semana'?'de la semana (lunes a domingo)':'del mes')+'. Pasa el cursor para ver pedidos y pago neto.';
+  const lab=k=>unit==='mes'?new Date(k+'T12:00:00').toLocaleDateString('es-MX',{month:'short',year:'2-digit'}):unit==='semana'?'Semana del '+fmtDate(k):fmtDate(k);
+  const g=[...groupBy(P.filter(p=>p.fecha),p=>keyOf(p.fecha))].map(([k,rows])=>({k,venta:sum(rows,'venta'),pedidos:rows.length,pago:sum(rows,'pago')})).sort((a,b)=>a.k<b.k?-1:1);
   if(!g.length){el.innerHTML='<div class="empty">Sin datos con estos filtros</div>';return;}
   const W=560,H=220,m={t:10,r:8,b:26,l:46};
   const svg=d3.select(el).append('svg').attr('width','100%').attr('viewBox',`0 0 ${W} ${H}`).attr('height',H);
@@ -1092,10 +1145,10 @@ function chartUberDias(P){
     .attr('x',d=>x(d.k)).attr('y',d=>y(d.venta)).attr('width',x.bandwidth()).attr('height',d=>y(0)-y(d.venta))
     .attr('rx',Math.min(3,x.bandwidth()/3)).attr('fill','var(--copper)')
     .on('mousemove',(e,d)=>{tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-10)+'px';
-      tip.innerHTML=`<strong>${fmtDate(d.k)}</strong><br>${d.pedidos} pedidos<br>Venta ${money(d.venta)}<br>Pago neto ${money(d.pago)}`;})
+      tip.innerHTML=`<strong>${lab(d.k)}</strong><br>${d.pedidos} pedidos<br>Venta ${money(d.venta)}<br>Pago neto ${money(d.pago)}`;})
     .on('mouseleave',()=>tip.style.display='none');
   const step=Math.ceil(g.length/8);
-  g.forEach((d,i)=>{if(i%step===0) svg.append('text').attr('x',x(d.k)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(fmtDate(d.k));});
+  g.forEach((d,i)=>{if(i%step===0) svg.append('text').attr('x',x(d.k)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(unit==='semana'?fmtDate(d.k):unit==='mes'?lab(d.k):fmtDate(d.k));});
 }
 
 function chartUberHoras(P){
@@ -1118,6 +1171,117 @@ function chartUberHoras(P){
       tip.innerHTML=`<strong>${r.h}:00 – ${r.h+1}:00</strong><br>${r.n} pedidos<br>Venta ${money(r.venta)}`;})
     .on('mouseleave',()=>tip.style.display='none');
   rows.forEach(r=>svg.append('text').attr('x',x(r.h)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',10).text(r.h+'h'));
+}
+
+// ── comparativo entre años ──
+const weekStart=iso=>{const d=new Date(iso+'T12:00:00');d.setDate(d.getDate()-((d.getDay()+6)%7));return d.toISOString().slice(0,10);};
+const isoWeek=iso=>{const d=new Date(iso+'T12:00:00');d.setDate(d.getDate()+3-((d.getDay()+6)%7));const y=new Date(d.getFullYear(),0,4,12);
+  return 1+Math.round(((d-y)/864e5-3+((y.getDay()+6)%7))/7);};
+const isoYear=iso=>{const d=new Date(iso+'T12:00:00');d.setDate(d.getDate()+3-((d.getDay()+6)%7));return d.getFullYear();};
+const yColor=y=>`var(--y${y},var(--muted))`;
+const MESES=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+const DOWS=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+const metr=(rows,k)=>{if(k==='pedidos')return rows.length;if(k==='ticket'){const n=rows.filter(p=>p.venta>0).length;return n?sum(rows,'venta')/n:0;}return sum(rows,k);};
+const fmtM=(k,v)=>k==='pedidos'?Math.round(v).toLocaleString('es-MX'):money(v);
+const YOY={years:null,bound:false};
+function renderYoY(){
+  const base=filterNoDates().filter(p=>p.fecha);
+  if(!base.length){$('yoy-card').style.display='none';return;}
+  const allYears=[...new Set(base.map(p=>p.fecha.slice(0,4)))].sort();
+  if(allYears.length<2){$('yoy-card').style.display='none';return;}
+  $('yoy-card').style.display='';
+  if(!YOY.years) YOY.years=new Set(allYears);
+  $('yoy-years').innerHTML=allYears.map(y=>`<button type="button" class="ychip ${YOY.years.has(y)?'on':''}" data-y="${y}"><i style="background:${yColor(y)}"></i>${y}</button>`).join('');
+  $('yoy-years').querySelectorAll('.ychip').forEach(b=>b.onclick=()=>{const y=b.dataset.y;
+    if(YOY.years.has(y)){if(YOY.years.size>1)YOY.years.delete(y);}else YOY.years.add(y);renderYoY();});
+  if(!YOY.bound){YOY.bound=true;['yoy-metric','yoy-por','yoy-modo','yoy-fecha'].forEach(id=>$(id).addEventListener('change',renderYoY));}
+  const metric=$('yoy-metric').value,por=$('yoy-por').value,years=allYears.filter(y=>YOY.years.has(y));
+  const last=base.reduce((m,p)=>p.fecha>m?p.fecha:m,'');
+  $('yoy-vs').innerHTML=`Datos del <b>${fmtDate(base.reduce((m,p)=>p.fecha<m?p.fecha:m,'9999'))}</b> al <b>${fmtDate(last)}</b>`;
+
+  // ── gráfica ──
+  const byY=groupBy(base,p=>p.fecha.slice(0,4));
+  let xs,series,note='';
+  if(por==='semana'){
+    xs=d3.range(1,54);
+    const lastWeekDone=new Date(last+'T12:00:00').getDay()===0; // domingo = semana completa
+    series=years.map(y=>{const g=groupBy(base.filter(p=>isoYear(p.fecha)==y),p=>isoWeek(p.fecha));
+      let pts=xs.map(w=>({x:w,v:g.has(w)?metr(g.get(w),metric):null}));
+      if(String(isoYear(last))===y&&!lastWeekDone) pts=pts.map(p=>p.x===isoWeek(last)?{...p,v:null}:p);
+      return {y,pts};});
+    note='Semanas de lunes a domingo (numeración ISO). La semana en curso no se grafica hasta que termine.';
+  }else if(por==='mes'){
+    xs=d3.range(0,12);
+    const lastMonthDone=addDays(last,1).slice(5,7)!==last.slice(5,7);
+    series=years.map(y=>{const g=groupBy(byY.get(y)||[],p=>+p.fecha.slice(5,7)-1);
+      let pts=xs.map(m=>({x:m,v:g.has(m)?metr(g.get(m),metric):null}));
+      if(last.slice(0,4)===y&&!lastMonthDone) pts=pts.map(p=>p.x===+last.slice(5,7)-1?{...p,v:null}:p);
+      return {y,pts};});
+    note='El mes en curso no se grafica hasta que termine; compáralo con la tabla de abajo.';
+  }else{
+    xs=d3.range(0,7);
+    series=years.map(y=>{const rows=byY.get(y)||[];const g=groupBy(rows,p=>(new Date(p.fecha+'T12:00:00').getDay()+6)%7);
+      const fs=rows.map(p=>p.fecha).sort();
+      return {y,pts:xs.map(d=>{const rs=g.get(d)||[];if(!rs.length)return {x:d,v:null};
+        if(metric==='ticket') return {x:d,v:metr(rs,'ticket')};
+        let n=0;for(let t=fs[0];t<=fs[fs.length-1];t=addDays(t,1)) if((new Date(t+'T12:00:00').getDay()+6)%7===d) n++;
+        return {x:d,v:metr(rs,metric)/Math.max(1,n)};})};});
+    note='Promedio por día: total de ese día de la semana entre el número de esos días en el año (2026 cuenta hasta hoy).';
+  }
+  $('yoy-note').textContent=note;
+  const box=$('yoy-chart');box.innerHTML='';
+  const W=900,H=260,mg={t:12,r:10,b:26,l:56};
+  const svg=d3.select(box).append('svg').attr('width','100%').attr('viewBox',`0 0 ${W} ${H}`).attr('height',H);
+  const vals=series.flatMap(s=>s.pts.map(p=>p.v)).filter(v=>v!=null);
+  const y=d3.scaleLinear([0,d3.max(vals)||1],[H-mg.b,mg.t]).nice();
+  const tickF=v=>metric==='pedidos'?v:(v>=1000?'$'+(v/1000)+'k':'$'+v);
+  y.ticks(5).forEach(t=>{svg.append('line').attr('x1',mg.l).attr('x2',W-mg.r).attr('y1',y(t)).attr('y2',y(t)).attr('stroke','var(--border)').attr('stroke-dasharray','3,3');
+    svg.append('text').attr('x',mg.l-8).attr('y',y(t)+4).attr('text-anchor','end').attr('fill','var(--muted)').attr('font-size',11).text(tickF(t));});
+  const xLab=v=>por==='semana'?'S'+v:por==='mes'?MESES[v]:DOWS[v];
+  const tip=$('tip');
+  const showTip=(e,xv)=>{tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-10)+'px';
+    tip.innerHTML=`<strong>${por==='semana'?'Semana '+xv:por==='mes'?MESES[xv]:DOWS[xv]}</strong><br>`+series.map(s=>{const p=s.pts.find(q=>q.x===xv);return `<span style="color:${yColor(s.y)}">●</span> ${s.y}: ${p&&p.v!=null?fmtM(metric,p.v):'—'}`;}).join('<br>');};
+  if(por==='dow'){
+    const x=d3.scaleBand(xs,[mg.l,W-mg.r]).padding(.25),x2=d3.scaleBand(years,[0,x.bandwidth()]).padding(.08);
+    series.forEach(s=>s.pts.forEach(p=>{if(p.v==null)return;
+      svg.append('rect').attr('x',x(p.x)+x2(s.y)).attr('y',y(p.v)).attr('width',x2.bandwidth()).attr('height',y(0)-y(p.v)).attr('rx',2).attr('fill',yColor(s.y));}));
+    xs.forEach(v=>{svg.append('text').attr('x',x(v)+x.bandwidth()/2).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',11).text(xLab(v));
+      svg.append('rect').attr('x',x(v)).attr('y',mg.t).attr('width',x.bandwidth()).attr('height',H-mg.b-mg.t).attr('fill','transparent').on('mousemove',e=>showTip(e,v)).on('mouseleave',()=>tip.style.display='none');});
+  }else{
+    const x=d3.scalePoint(xs,[mg.l+6,W-mg.r-6]);
+    const line=d3.line().defined(p=>p.v!=null).x(p=>x(p.x)).y(p=>y(p.v)).curve(d3.curveMonotoneX);
+    series.forEach(s=>{svg.append('path').datum(s.pts).attr('d',line).attr('fill','none').attr('stroke',yColor(s.y)).attr('stroke-width',s.y===years[years.length-1]?2.5:1.8);
+      const lastP=[...s.pts].reverse().find(p=>p.v!=null);
+      if(lastP) svg.append('circle').attr('cx',x(lastP.x)).attr('cy',y(lastP.v)).attr('r',3.5).attr('fill',yColor(s.y));});
+    const every=por==='semana'?4:1;
+    xs.forEach((v,i)=>{if(i%every===0||por!=='semana') svg.append('text').attr('x',x(v)).attr('y',H-8).attr('text-anchor','middle').attr('fill','var(--muted)').attr('font-size',11).text(xLab(v));});
+    const step=x.step();
+    xs.forEach(v=>svg.append('rect').attr('x',x(v)-step/2).attr('y',mg.t).attr('width',step).attr('height',H-mg.b-mg.t).attr('fill','transparent').on('mousemove',e=>showTip(e,v)).on('mouseleave',()=>tip.style.display='none'));
+  }
+
+  // ── acumulado al mismo día ──
+  const md=last.slice(5);
+  const ytd=allYears.map(y=>{const rows=(byY.get(y)||[]).filter(p=>p.fecha.slice(5)<=md);
+    return {y,pedidos:rows.length,venta:sum(rows,'venta'),ticket:metr(rows,'ticket'),pago:sum(rows,'pago')};});
+  $('yoy-ytd').innerHTML=`<thead><tr><th>Año</th><th>Periodo</th><th>Pedidos</th><th>vs año ant.</th><th>Venta</th><th>vs año ant.</th><th>Ticket</th><th>vs año ant.</th><th>Te deposita</th><th>vs año ant.</th></tr></thead><tbody>`+
+    ytd.map((r,i)=>{const pr=ytd[i-1];const dl=(k,g=true)=>pr?delta(r[k],pr[k],g):'<span class="delta flat">—</span>';
+      return `<tr><td><span style="color:${yColor(r.y)}">●</span> <b>${r.y}</b></td><td class="prev">1 ene – ${fmtDate(r.y+'-'+md).replace(/ \d+$/,'')}</td><td>${r.pedidos.toLocaleString('es-MX')}</td><td>${dl('pedidos')}</td><td>${money(r.venta)}</td><td>${dl('venta')}</td><td>${money(r.ticket)}</td><td>${dl('ticket')}</td><td>${money(r.pago)}</td><td>${dl('pago')}</td></tr>`;}).join('')+'</tbody>';
+
+  // ── un día o una semana ──
+  const fe=$('yoy-fecha'),fechas=[...new Set(base.map(p=>p.fecha))].sort();
+  fe.min=fechas[0];fe.max=last;
+  if(!fe.value||fe.value>last||fe.value<fechas[0]) fe.value=last;
+  const modo=$('yoy-modo').value,sel=fe.value;
+  const periods=[0,1,2,3].map(k=>{
+    const d=addDays(sel,-364*k);
+    const a=modo==='semana'?weekStart(d):d,b=modo==='semana'?addDays(a,6):d;
+    return {k,a,b,rows:base.filter(p=>p.fecha>=a&&p.fecha<=b)};
+  }).filter(p=>p.b>=fechas[0]);
+  const lbl=p=>p.a===p.b?new Date(p.a+'T12:00:00').toLocaleDateString('es-MX',{weekday:'short',day:'numeric',month:'short',year:'numeric'}):fmtDate(p.a)+' – '+fmtDate(p.b);
+  const ms=periods.map(p=>({...p,pedidos:p.rows.length,venta:sum(p.rows,'venta'),ticket:metr(p.rows,'ticket'),pago:sum(p.rows,'pago')}));
+  $('yoy-dia').innerHTML=`<thead><tr><th>${modo==='semana'?'Semana':'Día'}</th><th>Pedidos</th><th>vs año ant.</th><th>Venta</th><th>vs año ant.</th><th>Ticket</th><th>Te deposita</th><th>vs año ant.</th></tr></thead><tbody>`+
+    ms.map((r,i)=>{const pr=ms[i+1];const dl=k=>pr?delta(r[k],pr[k]):'<span class="delta flat">—</span>';const yy=r.a.slice(0,4);
+      return `<tr><td><span style="color:${yColor(yy)}">●</span> ${lbl(r)}</td><td>${r.pedidos}</td><td>${dl('pedidos')}</td><td>${money(r.venta)}</td><td>${dl('venta')}</td><td>${r.pedidos?money(r.ticket):'—'}</td><td>${money(r.pago)}</td><td>${dl('pago')}</td></tr>`;}).join('')+'</tbody>';
 }
 
 // ── comparativo semana contra semana ──
