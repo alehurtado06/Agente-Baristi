@@ -964,7 +964,7 @@ const UF={ids:['f-tienda','f-desde','f-hasta','f-estado','f-modo','f-canal','f-s
 const platOf=r=>r.plataforma||'Uber Eats';
 const inPlat=r=>UF.plat==='Total'||platOf(r)===UF.plat;
 const PLAT_HELP={
-  'Rappi':'Descarga en el portal de Rappi Aliados el reporte de pedidos o de pagos (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
+  'Rappi':'Rappi opera solo en Macroplaza y Etu (Tijuana), desde hace un año (aprox. noviembre 2025). Descarga en el portal de Rappi Aliados el reporte de pedidos o de pagos de esas dos sucursales, del día que abrieron a hoy (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto), y mándamelo. El último archivo llegó vacío: solo traía encabezados.',
   'DiDi Food':'Descarga en el portal de DiDi Food para restaurantes el reporte de pedidos o el estado de cuenta (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
 };
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1282,6 +1282,8 @@ function renderYoY(){
       if(String(isoYear(last))===y&&!lastWeekDone) pts=pts.map(p=>p.x===isoWeek(last)?{...p,v:null}:p);
       return {y,pts};});
     note='Semanas de lunes a domingo (numeración ISO). La semana en curso no se grafica hasta que termine.';
+    if(UF.plat==='Rappi') note+=' Rappi abrió hace un año (Macroplaza y Etu): no hay datos de 2024 ni de la primera mitad de 2025.';
+    if(UF.plat==='Total'&&(DATA.pedidos||[]).some(p=>platOf(p)==='Rappi')) note+=' Ojo: Rappi se suma desde fines de 2025, así que parte del crecimiento en Total es su arranque, no más ventas en Uber.';
   }else if(por==='mes'){
     xs=d3.range(0,12);
     const lastMonthDone=addDays(last,1).slice(5,7)!==last.slice(5,7);
