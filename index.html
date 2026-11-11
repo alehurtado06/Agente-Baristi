@@ -284,7 +284,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="card" id="plat-cmp-card" style="display:none;margin-top:16px">
       <div class="card-title">Comparativo por plataforma</div>
       <div style="overflow-x:auto"><table class="cmp" id="plat-cmp"></table></div>
-      <p class="card-note">Respeta los filtros de tienda y fechas. "Te deposita" ya descuenta publicidad y cuotas.</p>
+      <p class="card-note">Respeta los filtros de tienda y fechas. "Te deposita" ya descuenta publicidad y cuotas. * Solo plataformas con reporte de pagos.</p>
     </div>
     <div class="filters" id="filters">
       <div class="f-field"><label for="f-tienda">Tienda</label><select id="f-tienda"></select></div>
@@ -574,7 +574,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 <script>
 const TZ = 'America/Tijuana';
 const $ = id => document.getElementById(id);
-const money = n => '$' + Number(n).toLocaleString('es-MX', {minimumFractionDigits:0,maximumFractionDigits:0});
+const money = n => n==null||Number.isNaN(n) ? '—' : '$' + Number(n).toLocaleString('es-MX', {minimumFractionDigits:0,maximumFractionDigits:0});
 const pct = n => Number(n).toFixed(1) + '%';
 const when = iso => new Date(iso).toLocaleString('es-MX',{timeZone:TZ,day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
 const ago = iso => {
@@ -964,13 +964,14 @@ const UF={ids:['f-tienda','f-desde','f-hasta','f-estado','f-modo','f-canal','f-s
 const platOf=r=>r.plataforma||'Uber Eats';
 const inPlat=r=>UF.plat==='Total'||platOf(r)===UF.plat;
 const PLAT_HELP={
-  'Rappi':'Rappi opera solo en Macroplaza y Etu (Tijuana), desde hace un año (aprox. noviembre 2025). Descarga en el portal de Rappi Aliados el reporte de pedidos o de pagos de esas dos sucursales, del día que abrieron a hoy (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto), y mándamelo. El último archivo llegó vacío: solo traía encabezados.',
+  'Rappi':'Descarga en el portal de Rappi Aliados el reporte de pedidos (Historial de pedidos) de todas las sucursales y, si puedes, el de pagos o conciliación (con comisión y pago neto), y mándamelos.',
   'DiDi Food':'Descarga en el portal de DiDi Food para restaurantes el reporte de pedidos o el estado de cuenta (un renglón por pedido, con fecha, tienda, venta, descuentos, comisión y pago neto) y mándamelo. En cuanto lo cargue, esta pestaña se llena sola.',
 };
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const THIS_YEAR=String(new Date().getFullYear());
 const fmtDate=iso=>iso?new Date(iso+'T12:00:00').toLocaleDateString('es-MX',iso.slice(0,4)===THIS_YEAR?{day:'numeric',month:'short'}:{day:'numeric',month:'short',year:'2-digit'}):'—';
-const money2=n=>'$'+Number(n).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
+const money2=n=>n==null||Number.isNaN(n)?'—':'$'+Number(n).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
+const hasPay=p=>p.pago!=null;  // Rappi (reporte de pedidos) no trae comisión ni pago neto
 const share=(a,b)=>b?pct(a/b*100):'—';
 
 function fillSelect(id,label,values){
@@ -1046,8 +1047,10 @@ function renderPlatCmp(){
   const P=(DATA.pedidos||[]).filter(inF),O=(DATA.otros_pagos||[]).filter(inF);
   const row=(name,ps,os)=>{
     if(!ps.length&&!os.length) return `<tr><td>${name}</td><td class="na" colspan="6">Sin datos todavía</td></tr>`;
-    const v=sum(ps,'venta'),c=sum(ps,'comision'),d=sum(ps,'pago')+sum(os,'monto'),n=ps.length;
-    return `<tr><td>${name}</td><td>${n.toLocaleString('es-MX')}</td><td>${money(v)}</td><td>${n?money(v/n):'—'}</td><td>${money(c)} · ${share(c,v)}</td><td>${money(d)}</td><td>${share(d,v)}</td></tr>`;
+    const v=sum(ps,'venta'),n=ps.length,pp=ps.filter(hasPay),vp=sum(pp,'venta');
+    if(!pp.length) return `<tr><td>${name}</td><td>${n.toLocaleString('es-MX')}</td><td>${money(v)}</td><td>${n?money(v/n):'—'}</td><td class="na" colspan="3">Sin dato de comisión ni pago (falta su reporte de pagos)</td></tr>`;
+    const c=sum(pp,'comision'),d=sum(pp,'pago')+sum(os,'monto'),part=pp.length<n;
+    return `<tr><td>${name}</td><td>${n.toLocaleString('es-MX')}</td><td>${money(v)}</td><td>${n?money(v/n):'—'}</td><td>${money(c)} · ${share(c,vp)}</td><td>${money(d)}${part?'*':''}</td><td>${share(d,vp)}${part?'*':''}</td></tr>`;
   };
   $('plat-cmp').innerHTML='<thead><tr><th>Plataforma</th><th>Pedidos</th><th>Venta</th><th>Ticket</th><th>Comisión</th><th>Te deposita</th><th>% de la venta</th></tr></thead><tbody>'+
     PLATS.map(pl=>row(pl,P.filter(p=>platOf(p)===pl),O.filter(o=>platOf(o)===pl))).join('')+
@@ -1081,10 +1084,17 @@ function renderUber(){
   $('u-pedidos-foot').textContent=compl+' completados'+(P.length-compl?' · '+(P.length-compl)+' otros':'');
   $('u-venta').textContent=money(venta);
   $('u-ticket').textContent='ticket promedio '+(compl?money(venta/Math.max(1,P.filter(p=>p.venta>0).length)):'—');
-  $('u-comision').textContent=money(com);
-  $('u-comision-pct').textContent=share(com,venta)+' de la venta';
-  $('u-pago').textContent=money(deposito);
-  $('u-pago-pct').textContent=share(deposito,venta)+' de la venta · tras publicidad';
+  const PP=P.filter(hasPay),ventaPay=sum(PP,'venta'),mixed=PP.length&&PP.length<P.length;
+  const sinPagoTxt=[...new Set(P.filter(p=>!hasPay(p)).map(platOf))].join(' y ');
+  if(!PP.length){
+    $('u-comision').textContent='Sin dato';$('u-comision-pct').textContent='el reporte de '+sinPagoTxt+' no trae comisión';
+    $('u-pago').textContent='Sin dato';$('u-pago-pct').textContent='falta el reporte de pagos de '+sinPagoTxt;
+  }else{
+    $('u-comision').textContent=money(com);
+    $('u-comision-pct').textContent=share(com,ventaPay)+' de la venta'+(mixed?' · solo '+[...new Set(PP.map(platOf))].join(', '):'');
+    $('u-pago').textContent=money(deposito);
+    $('u-pago-pct').textContent=share(deposito,ventaPay)+' de la venta · tras publicidad'+(mixed?' · sin '+sinPagoTxt:'');
+  }
   const pName=UF.plat==='Total'?'las plataformas':UF.plat;
 
   // cascada venta → depósito
@@ -1102,8 +1112,12 @@ function renderUber(){
     ['Crédito de publicidad',sum(O.filter(o=>o.concepto==='Crédito de publicidad'),'monto')],
     ['Otras cuotas',sum(O.filter(o=>o.concepto!=='Publicidad'&&o.concepto!=='Crédito de publicidad'),'monto')],
   ].filter((l,i)=>i===0||Math.abs(l[1])>=0.5);
-  $('u-flow').innerHTML=lines.map(([k,v])=>`<tr><td>${k}</td><td class="num ${v<0?'neg':''}">${v<0?'−':''}${money2(Math.abs(v))}</td><td class="pct">${share(Math.abs(v),venta)}</td></tr>`).join('')+
-    `<tr class="total"><td>Te deposita${UF.plat==='Total'?'n las plataformas':' '+esc(UF.plat)}</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,venta)}</td></tr>`;
+  if(mixed) lines[0]=['Venta (con IVA) · solo pedidos con reporte de pagos',ventaPay];
+  $('u-flow').innerHTML=!PP.length
+    ?`<tr><td class="empty">El reporte de pedidos de ${esc(sinPagoTxt)} solo trae el total del pedido (${money(venta)}). Para ver comisión, retenciones y depósito, descarga su reporte de pagos o conciliación.</td></tr>`
+    :lines.map(([k,v])=>`<tr><td>${k}</td><td class="num ${v<0?'neg':''}">${v<0?'−':''}${money2(Math.abs(v))}</td><td class="pct">${share(Math.abs(v),ventaPay)}</td></tr>`).join('')+
+    `<tr class="total"><td>Te deposita${UF.plat==='Total'?'n las plataformas':' '+esc(UF.plat)}</td><td class="num">${money2(deposito)}</td><td class="pct">${share(deposito,ventaPay)}</td></tr>`+
+    (mixed?`<tr><td colspan="3" class="prev" style="font-size:11px">No incluye ${esc(sinPagoTxt)}: su reporte no trae comisión ni pago.</td></tr>`:'');
 
   renderWoW();
   renderYoY();
@@ -1123,7 +1137,10 @@ function renderUber(){
   };
   grp('u-tiendas',p=>(p.tienda||'').replace('Baristi ',''));
   grp('u-canal',p=>p.canal+(p.modo==='Recoger'?' · recoger':''));
-  grp('u-socio',p=>p.uber_one?(UF.plat==='Total'?'Con membresía':platOf(p)==='Uber Eats'?'Uber One':'Con membresía'):'Sin membresía');
+  grp('u-socio',p=>p.uber_one==null?'Sin dato ('+platOf(p)+')':p.uber_one?(UF.plat==='Total'?'Con membresía':platOf(p)==='Uber Eats'?'Uber One':'Con membresía'):'Sin membresía');
+  const canalLbl=UF.plat==='Rappi'?'Método de pago':UF.plat==='Total'?'Dispositivo (Uber) / método de pago (Rappi)':'Dispositivo del cliente';
+  $('u-canal').previousElementSibling.textContent=canalLbl;
+  document.querySelector('label[for="f-canal"]').textContent=UF.plat==='Rappi'?'Método de pago':UF.plat==='Total'?'Dispositivo / pago':'Dispositivo';
   grp('u-estado',p=>p.estado+(p.contracargo>0?' con reembolso':''));
   const T=[['< 15 min',0,15],['15–30 min',15,30],['30–45 min',30,45],['45–60 min',45,60],['> 60 min',60,1e9]];
   const conT=P.filter(p=>p.minutos!=null);
@@ -1132,7 +1149,7 @@ function renderUber(){
   const med=conT.map(p=>p.minutos).sort((a,b)=>a-b)[Math.floor(conT.length/2)];
   if(conT.length) $('u-tiempo').insertAdjacentHTML('beforeend',`<p class="card-note">Mediana: ${med} min.</p>`);
 
-  const byPay=groupBy([...P.map(p=>({f:p.fecha_pago,m:p.pago})),...O.map(o=>({f:o.fecha_pago,m:o.monto}))],r=>r.f||'Pendiente');
+  const byPay=groupBy([...P.filter(hasPay).map(p=>({f:p.fecha_pago,m:p.pago})),...O.map(o=>({f:o.fecha_pago,m:o.monto}))],r=>r.f||'Pendiente');
   const dep=[...byPay].map(([k,rows])=>({k:k==='Pendiente'?'Pendiente de pago':fmtDate(k),raw:k,v:Math.max(0,sum(rows,'m'))}))
     .sort((a,b)=>a.raw==='Pendiente'?1:b.raw==='Pendiente'?-1:a.raw<b.raw?-1:1);
   const pend=dep.filter(d=>d.raw==='Pendiente'),paid=dep.filter(d=>d.raw!=='Pendiente');
@@ -1199,7 +1216,7 @@ function renderMedicion(P,O){
   const fs=P.map(p=>p.fecha).filter(Boolean).sort();
   $('med-vs').textContent=P.length?`${P.length.toLocaleString('es-MX')} pedidos · ${fmtDate(fs[0])} – ${fmtDate(fs[fs.length-1])} · usa las pestañas y filtros de arriba`:'Sin pedidos con estos filtros';
   const kpi=(c,l,v,f)=>`<div class="kpi ${c} kpi-sm"><div class="kpi-label">${l}</div><div class="kpi-value">${v}</div><div class="kpi-foot">${f}</div></div>`;
-  const ok=P.filter(p=>p.venta>0&&p.estado==='Completado');
+  const ok=P.filter(p=>p.venta>0&&p.estado==='Completado'&&hasPay(p));  // promos/costos solo vienen en reportes de pagos
   const conP=ok.filter(p=>p.promos>0),sinP=ok.filter(p=>!(p.promos>0));
   const tk=rs=>rs.length?sum(rs,'venta')/rs.length:0;
   const tC=tk(conP),tS=tk(sinP);
@@ -1223,25 +1240,26 @@ function renderMedicion(P,O){
       return `<tr><td>${mLab(k)}</td><td>${c.length}</td><td class="prev">${share(c.length,rs.length)}</td><td>${money(a)}</td><td class="prev">${money(b)}</td><td>${delta(a,b)}</td><td>${money(sum(c,'promos'))}</td></tr>`;}).join('')+'</tbody>':'';
 
   // rentabilidad por tienda
-  const tiendas=[...new Set(P.map(p=>p.tienda))].sort();
-  const rr=tiendas.map(t=>{const rs=P.filter(p=>p.tienda===t),os=O.filter(o=>o.tienda===t),v=sum(rs,'venta');
+  const PPm=P.filter(hasPay);
+  const tiendas=[...new Set(PPm.map(p=>p.tienda))].sort();
+  const rr=tiendas.map(t=>{const rs=PPm.filter(p=>p.tienda===t),os=O.filter(o=>o.tienda===t),v=sum(rs,'venta');
     const pub=-sum(os.filter(o=>o.concepto==='Publicidad'||o.concepto==='Crédito de publicidad'),'monto');
     const dep=sum(rs,'pago')+sum(os,'monto');
     return {t,n:rs.length,v,com:sum(rs,'comision'),promo:sum(rs,'promos')+sum(rs,'cuota_promo'),ret:sum(rs,'ret_iva')+sum(rs,'ret_isr'),pub,dep};}).sort((a,b)=>b.dep/b.v-a.dep/a.v);
   const pc=(x,v)=>v?pct(x/v*100):'—';
   $('med-rent').innerHTML=rr.length?`<thead><tr><th>Tienda</th><th>Pedidos</th><th>Venta</th><th>Comisión</th><th>Promos</th><th>Retenciones</th><th>Publicidad</th><th>Te deposita</th><th>Por pedido</th></tr></thead><tbody>`+
     rr.map((r,i)=>`<tr><td>${i===0?'🏆 ':''}${esc(r.t.replace('Baristi ',''))}</td><td>${r.n.toLocaleString('es-MX')}</td><td>${money(r.v)}</td><td class="prev">${pc(r.com,r.v)}</td><td class="prev">${pc(r.promo,r.v)}</td><td class="prev">${pc(r.ret,r.v)}</td><td style="${r.pub/r.v>.1?'color:var(--red);font-weight:600':''}">${pc(r.pub,r.v)}</td><td><b>${pc(r.dep,r.v)}</b></td><td>${r.n?money(r.dep/r.n):'—'}</td></tr>`).join('')+'</tbody>'
-    :'<tr><td class="empty">Sin datos</td></tr>';
+    :'<tr><td class="empty">Sin reporte de pagos para esta plataforma: falta comisión y pago neto para calcular rentabilidad.</td></tr>';
 
   // clientes
   const fallidos=P.filter(p=>p.estado!=='Completado'),reemb=P.filter(p=>p.contracargo>0);
   const conT=P.filter(p=>p.minutos!=null),lentos=conT.filter(p=>p.minutos>45);
-  const memb=P.filter(p=>p.uber_one);
+  const conM=P.filter(p=>p.uber_one!=null),memb=conM.filter(p=>p.uber_one);
   $('med-cli-kpis').innerHTML=[
     kpi('r','Cancelados / no completados',fallidos.length.toLocaleString('es-MX'),share(fallidos.length,P.length)+' de los pedidos'),
     kpi('a','Reembolsos por queja',reemb.length.toLocaleString('es-MX'),reemb.length?money(sum(reemb,'contracargo'))+' devueltos · '+share(reemb.length,P.length):'sin quejas con reembolso'),
     kpi('b','Entregas de más de 45 min',share(lentos.length,conT.length),lentos.length.toLocaleString('es-MX')+' pedidos tardados'),
-    kpi('g','Clientes con membresía',share(memb.length,P.length),'de los pedidos (Uber One / Prime)'),
+    kpi('g','Clientes con membresía',conM.length?share(memb.length,conM.length):'Sin dato','de los pedidos (Uber One / Prime)'),
   ].join('');
 }
 
@@ -1253,8 +1271,9 @@ const isoYear=iso=>{const d=new Date(iso+'T12:00:00');d.setDate(d.getDate()+3-((
 const yColor=y=>`var(--y${y},var(--muted))`;
 const MESES=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
 const DOWS=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
-const metr=(rows,k)=>{if(k==='pedidos')return rows.length;if(k==='ticket'){const n=rows.filter(p=>p.venta>0).length;return n?sum(rows,'venta')/n:0;}return sum(rows,k);};
-const fmtM=(k,v)=>k==='pedidos'?Math.round(v).toLocaleString('es-MX'):money(v);
+const metr=(rows,k)=>{if(k==='pedidos')return rows.length;if(k==='ticket'){const n=rows.filter(p=>p.venta>0).length;return n?sum(rows,'venta')/n:0;}
+  if(k==='pago'||k==='comision'){const pr=rows.filter(hasPay);return rows.length&&!pr.length?null:sum(pr,k);}return sum(rows,k);};
+const fmtM=(k,v)=>v==null?'—':k==='pedidos'?Math.round(v).toLocaleString('es-MX'):money(v);
 const YOY={years:null,bound:false};
 function renderYoY(){
   const base=filterNoDates().filter(p=>p.fecha);
@@ -1282,8 +1301,9 @@ function renderYoY(){
       if(String(isoYear(last))===y&&!lastWeekDone) pts=pts.map(p=>p.x===isoWeek(last)?{...p,v:null}:p);
       return {y,pts};});
     note='Semanas de lunes a domingo (numeración ISO). La semana en curso no se grafica hasta que termine.';
-    if(UF.plat==='Rappi') note+=' Rappi abrió hace un año (Macroplaza y Etu): no hay datos de 2024 ni de la primera mitad de 2025.';
-    if(UF.plat==='Total'&&(DATA.pedidos||[]).some(p=>platOf(p)==='Rappi')) note+=' Ojo: Rappi se suma desde fines de 2025, así que parte del crecimiento en Total es su arranque, no más ventas en Uber.';
+    const rf=(DATA.pedidos||[]).filter(p=>platOf(p)==='Rappi').map(p=>p.fecha).filter(Boolean).sort()[0];
+    if(UF.plat==='Rappi'&&rf) note+=` El reporte de Rappi empieza el ${fmtDate(rf)}: no hay datos antes de esa fecha.`;
+    if(UF.plat==='Total'&&rf) note+=` Ojo: Rappi solo tiene datos desde el ${fmtDate(rf)}, así que parte del crecimiento en Total es que Rappi entra al reporte, no más ventas.`;
   }else if(por==='mes'){
     xs=d3.range(0,12);
     const lastMonthDone=addDays(last,1).slice(5,7)!==last.slice(5,7);
@@ -1335,8 +1355,8 @@ function renderYoY(){
 
   // ── acumulado al mismo día ──
   const md=last.slice(5);
-  const ytd=allYears.map(y=>{const rows=(byY.get(y)||[]).filter(p=>p.fecha.slice(5)<=md);
-    return {y,pedidos:rows.length,venta:sum(rows,'venta'),ticket:metr(rows,'ticket'),pago:sum(rows,'pago')};});
+  const ytd=allYears.filter(y=>(byY.get(y)||[]).some(p=>p.fecha.slice(5)<=md)).map(y=>{const rows=(byY.get(y)||[]).filter(p=>p.fecha.slice(5)<=md);
+    return {y,pedidos:rows.length,venta:sum(rows,'venta'),ticket:metr(rows,'ticket'),pago:metr(rows,'pago')};});
   $('yoy-ytd').innerHTML=`<thead><tr><th>Año</th><th>Periodo</th><th>Pedidos</th><th>vs año ant.</th><th>Venta</th><th>vs año ant.</th><th>Ticket</th><th>vs año ant.</th><th>Te deposita</th><th>vs año ant.</th></tr></thead><tbody>`+
     ytd.map((r,i)=>{const pr=ytd[i-1];const dl=(k,g=true)=>pr?delta(r[k],pr[k],g):'<span class="delta flat">—</span>';
       return `<tr><td><span style="color:${yColor(r.y)}">●</span> <b>${r.y}</b></td><td class="prev">1 ene – ${fmtDate(r.y+'-'+md).replace(/ \d+$/,'')}</td><td>${r.pedidos.toLocaleString('es-MX')}</td><td>${dl('pedidos')}</td><td>${money(r.venta)}</td><td>${dl('venta')}</td><td>${money(r.ticket)}</td><td>${dl('ticket')}</td><td>${money(r.pago)}</td><td>${dl('pago')}</td></tr>`;}).join('')+'</tbody>';
@@ -1352,7 +1372,7 @@ function renderYoY(){
     return {k,a,b,rows:base.filter(p=>p.fecha>=a&&p.fecha<=b)};
   }).filter(p=>p.b>=fechas[0]);
   const lbl=p=>p.a===p.b?new Date(p.a+'T12:00:00').toLocaleDateString('es-MX',{weekday:'short',day:'numeric',month:'short',year:'numeric'}):fmtDate(p.a)+' – '+fmtDate(p.b);
-  const ms=periods.map(p=>({...p,pedidos:p.rows.length,venta:sum(p.rows,'venta'),ticket:metr(p.rows,'ticket'),pago:sum(p.rows,'pago')}));
+  const ms=periods.map(p=>({...p,pedidos:p.rows.length,venta:sum(p.rows,'venta'),ticket:metr(p.rows,'ticket'),pago:metr(p.rows,'pago')}));
   $('yoy-dia').innerHTML=`<thead><tr><th>${modo==='semana'?'Semana':'Día'}</th><th>Pedidos</th><th>vs año ant.</th><th>Venta</th><th>vs año ant.</th><th>Ticket</th><th>Te deposita</th><th>vs año ant.</th></tr></thead><tbody>`+
     ms.map((r,i)=>{const pr=ms[i+1];const dl=k=>pr?delta(r[k],pr[k]):'<span class="delta flat">—</span>';const yy=r.a.slice(0,4);
       return `<tr><td><span style="color:${yColor(yy)}">●</span> ${lbl(r)}</td><td>${r.pedidos}</td><td>${dl('pedidos')}</td><td>${money(r.venta)}</td><td>${dl('venta')}</td><td>${r.pedidos?money(r.ticket):'—'}</td><td>${money(r.pago)}</td><td>${dl('pago')}</td></tr>`;}).join('')+'</tbody>';
@@ -1368,7 +1388,7 @@ function filterNoDates(){
     (!f.canal||p.canal===f.canal)&&(!f.socio||(f.socio==='Con membresía')===!!p.uber_one));
 }
 function delta(cur,prev,goodUp=true){
-  if(!prev&&!cur) return '<span class="delta flat">—</span>';
+  if(cur==null||prev==null||(!prev&&!cur)) return '<span class="delta flat">—</span>';
   if(!prev) return '<span class="delta up">nuevo</span>';
   const ch=(cur-prev)/prev*100,cls=Math.abs(ch)<0.5?'flat':((ch>0)===goodUp?'up':'down');
   return `<span class="delta ${cls}">${ch>0?'▲ +':ch<0?'▼ ':''}${ch.toFixed(1)}%</span>`;
@@ -1391,12 +1411,13 @@ function renderWoW(){
   $('wow-l1').textContent=n===1?dayLong(end):'Últimos 7 días';
   $('wow-l2').textContent=n===1?dayLong(pEnd):'7 días anteriores';
   const m=rows=>{const v=sum(rows,'venta'),k=rows.filter(p=>p.venta>0).length;
-    return {pedidos:rows.length,venta:v,ticket:k?v/k:0,promos:sum(rows,'promos'),comision:sum(rows,'comision'),pago:sum(rows,'pago'),
-      uber_one:rows.filter(p=>p.uber_one).length,min:(()=>{const t=rows.map(p=>p.minutos).filter(x=>x!=null).sort((a,b)=>a-b);return t.length?t[Math.floor(t.length/2)]:0;})()};};
+    const pr=rows.filter(hasPay),np=!pr.length&&rows.length;
+    return {pedidos:rows.length,venta:v,ticket:k?v/k:0,promos:sum(rows,'promos'),comision:np?null:sum(pr,'comision'),pago:np?null:sum(pr,'pago'),
+      uber_one:rows.length&&rows.every(p=>p.uber_one==null)?null:rows.filter(p=>p.uber_one).length,min:(()=>{const t=rows.map(p=>p.minutos).filter(x=>x!=null).sort((a,b)=>a-b);return t.length?t[Math.floor(t.length/2)]:0;})()};};
   const a=m(cur),b=m(prev);
   const rows=[['Pedidos','pedidos',v=>v.toLocaleString('es-MX'),true],['Venta','venta',money,true],['Ticket promedio','ticket',money,true],
     ['Promociones','promos',money,false],['Comisión','comision',money,false],['Te deposita','pago',money,true],
-    ['Clientes con membresía','uber_one',v=>v,true],['Mediana de entrega (min)','min',v=>v||'—',false]];
+    ['Clientes con membresía','uber_one',v=>v==null?'—':v,true],['Mediana de entrega (min)','min',v=>v||'—',false]];
   $('wow-tbl').innerHTML=`<thead><tr><th>Métrica</th><th>${n===1?'Este día':'7 días'}</th><th>Semana pasada</th><th>Cambio</th></tr></thead><tbody>`+
     rows.map(([t,k,f,g])=>`<tr><td>${t}</td><td>${f(a[k])}</td><td class="prev">${f(b[k])}</td><td>${delta(a[k],b[k],g)}</td></tr>`).join('')+'</tbody>';
   // por tienda
@@ -1436,14 +1457,14 @@ const UCOLS_ALL=[
   {k:'id',t:'Pedido'},
   {k:'estado',t:'Estado',f:p=>`<span class="tag ${p.estado==='Completado'&&!p.contracargo?'ok':p.estado==='Completado'?'':'bad'}">${esc(p.estado)}${p.contracargo?' · reemb.':''}</span>`},
   {k:'canal',t:'Dispositivo'},
-  {k:'uber_one',t:'Membresía',f:p=>p.uber_one?'Sí':'No'},
+  {k:'uber_one',t:'Membresía',f:p=>p.uber_one==null?'—':p.uber_one?'Sí':'No'},
   {k:'minutos',t:'Min',num:1,f:p=>p.minutos??'—'},
   {k:'venta',t:'Venta',num:1,f:p=>money2(p.venta)},
-  {k:'promos',t:'Promos',num:1,f:p=>p.promos?money2(p.promos):'—'},
+  {k:'promos',t:'Promos',num:1,f:p=>p.promos&&hasPay(p)?money2(p.promos):'—'},
   {k:'comision',t:'Comisión',num:1,f:p=>money2(p.comision)},
-  {k:'ret',t:'Retenciones',num:1,v:p=>p.ret_iva+p.ret_isr,f:p=>money2(p.ret_iva+p.ret_isr)},
+  {k:'ret',t:'Retenciones',num:1,v:p=>p.ret_iva==null?null:p.ret_iva+p.ret_isr,f:p=>p.ret_iva==null?'—':money2(p.ret_iva+p.ret_isr)},
   {k:'pago',t:'Pago neto',num:1,f:p=>money2(p.pago)},
-  {k:'fecha_pago',t:'Pagado',f:p=>p.fecha_pago?fmtDate(p.fecha_pago):'<span class="tag">pendiente</span>'},
+  {k:'fecha_pago',t:'Pagado',f:p=>!hasPay(p)?'—':p.fecha_pago?fmtDate(p.fecha_pago):'<span class="tag">pendiente</span>'},
 ];
 let UCOLS=UCOLS_ALL;
 function sortedPedidos(){
