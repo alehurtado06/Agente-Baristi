@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): Ahorra $40 gastando más de $299 (ya no se ve el 2x1); Pacífico: Ahorra $40 gastando más de $299",
+  "promo": "Rosarito (Tijuana): Ahorra $40 gastando más de $299 (visto en la categoría; la página de la tienda no muestra artículos con descuento); Pacífico: Ahorra $40 gastando más de $299 (tienda \"No disponible de momento\" al revisar)",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en artículos seleccionados (frappés Rockaccino, brownie); 25% en bebidas de temporada Pan de Muerto (sin cambios: tienda cerrada al revisar; Elías Calles y Vía Poniente muestran \"30% en artículos seleccionados\" en la categoría)",
+  "promo": "30% en artículos seleccionados (frappés Rockaccino, brownie); 25% en bebidas de temporada Pan de Muerto (sin cambios: tienda cerrada al revisar; Bellas Artes, Elías Calles, Vía Poniente y Benítez López muestran \"30% en artículos seleccionados\" en la categoría)",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte, capuccino, Rockaccino, Lateada)",
+  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte caliente y frío, capuccino, Rockaccino, Lateada)",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Caramel y Chip Frappuccino, Avellana Shaken Espresso, Mango Dragonfruit Refresher y combos (Working Lunch, Latte Lunch, Pastel con Latte); 25% en Chocolate Caliente; 20% en Toffee Nut Latte",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Caramel Brulée Latte (caliente, helado y Frappuccino), Toffee Nut Latte Helado y Toffee Nut Frappuccino, Caramel y Caramel Cream Frappuccino, Avellana Shaken Espresso y combos (Working Lunch, Latte Lunch, Pastel con Latte); 25% en Chocolate Caliente. Flat White, Chip Frappuccino y Mango Dragonfruit Refresher ya no tienen descuento; Toffee Nut Latte caliente a precio completo",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en artículos seleccionados (Caramel Macchiato, Flat White, Caramel y Chip Frappuccino, Mango Dragonfruit Refresher, combos Working Lunch y Latte Lunch); 25% en Chocolate Caliente; 20% en Toffee Nut Latte",
+  "promo": "30% en artículos seleccionados (Caramel Macchiato, Caramel Brulée Latte y Frappuccino, Toffee Nut Latte Helado y Frappuccino, Caramel y Caramel Cream Frappuccino, Avellana Shaken Espresso, combos Working Lunch y Latte Lunch); 25% en Chocolate Caliente",
   "latte": 94,
   "frappe": 119
  },
@@ -43,15 +43,15 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "15% a 25% solo en comida (chilaquiles, ensaladas, combos con limonada); bebidas a precio completo (sin cambios: tienda cerrada al revisar)",
-  "latte": null,
+  "promo": "15% a 25% solo en comida (enchiladas, sopa de tortilla, combos chilaquiles o sopa + limonada); bebidas a precio completo",
+  "latte": 105,
   "frappe": 145
  },
  {
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "$64 de descuento en artículos seleccionados (sin cambios: tienda cerrada al revisar)",
+  "promo": "15% en latte helado (16oz), latte grande (20oz), sándwiches y limonada cold brew; 25% en Combo Eats bagel o pollo + americano (20oz); 24% en Combo Miércoles (la categoría lo resume como \"$64 en artículos seleccionados\")",
   "latte": 101,
   "frappe": 120
  },
@@ -59,8 +59,16 @@
   "competidor": "Nómada Coffee Crew",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en lattes fríos y chai (sin cambios: tienda cerrada al revisar)",
+  "promo": "25% en lattes (natural caliente y frío, vainilla caliente, butterscotch frío) y chai de plátano",
   "latte": 80,
   "frappe": 140
+ },
+ {
+  "competidor": "Carlota's Cafe & Deli (Rosarito, Calle Ensenada)",
+  "zona": "Rosarito (Tijuana), Pacífico",
+  "posicion": "independiente",
+  "promo": "30% en artículos seleccionados (latte, waffles, crepas, chilaquiles, omelette, torta, hamburguesa)",
+  "latte": 87.2,
+  "frappe": 98.1
  }
 ]
