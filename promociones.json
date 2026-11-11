@@ -1,16 +1,5 @@
 [
  {
-  "promo": "2026-11-03T11:31:29-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-03T11:31:29-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo condicionado de 11:00 a 13:00: Bagel salado a 74.80 (12 % de descuento) al comprarlo con cualquier latte grande o bebida caliente de alto margen a precio de lista (Café latte sabor, Aztec mocha, Capuccino sabor). Limitado al stock de vitrina (10 unidades).",
-  "producto_id": "bagel_salado",
-  "precio": 74.8,
-  "margen_pct": 22.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-03T11:31:29-08:00|Baristi Etu (Tijuana)|1",
   "corrida_at": "2026-11-03T11:31:29-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -10947,6 +10936,102 @@
   "producto_id": "bagel_salado",
   "precio": 69.0,
   "margen_pct": 9.8,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:30:33-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-11T15:30:33-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Smoothie + bagel salado $179",
+  "segmento": "todos",
+  "producto_id": "smoothie_strawberry_banana",
+  "precio": 179.0,
+  "margen_pct": 36.6,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:30:33-08:00|Baristi Etu (Tijuana)|1",
+  "corrida_at": "2026-11-11T15:30:33-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "2 lattes + postre $219",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 219.0,
+  "margen_pct": 45.6,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-11T15:30:34-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-11T15:30:34-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Smoothie fresa-plátano + galleta de zanahoria $149",
+  "segmento": "todos",
+  "producto_id": "smoothie_strawberry_banana",
+  "precio": 149.0,
+  "margen_pct": 32.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:30:34-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-11T15:30:34-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Americano frío + bagel salado $149",
+  "segmento": "inactivos",
+  "producto_id": "bagel_salado",
+  "precio": 149.0,
+  "margen_pct": 34.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:31:33-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-11T15:31:33-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Americano + bagel + galleta $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-11T15:31:33-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-11T15:31:33-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Smoothie + galleta de zanahoria $159",
+  "segmento": "recurrentes",
+  "producto_id": "smoothie_fresas_con_crema",
+  "precio": 159.0,
+  "margen_pct": 34.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:32:39-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-11T15:32:39-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Tu smoothie + galleta de zanahoria por solo $40 más",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 40.0,
+  "margen_pct": 11.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T15:32:39-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-11T15:32:39-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Bagel salado $75",
+  "segmento": "todos",
+  "producto_id": "bagel_salado",
+  "precio": 75.0,
+  "margen_pct": 13.5,
   "aprobada": true,
   "motivo": ""
  }
