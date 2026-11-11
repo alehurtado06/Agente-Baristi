@@ -894,6 +894,7 @@ function renderPromos(f){
   ].map(([c,l,v,ft])=>`<div class="kpi ${c} kpi-sm"><div class="kpi-label">${l}</div><div class="kpi-value">${v}</div><div class="kpi-foot">${ft}</div></div>`).join('');
   const list=$('promo-list');
   if(!rows.length){list.innerHTML='<div class="empty">Sin promociones con estos filtros.</div>';return;}
+  const SEGMENTOS={todos:'todos',nuevos:'clientes nuevos',recurrentes:'recurrentes',inactivos:'inactivos (+45 días)',uber_one:'Uber One'};
   list.innerHTML=rows.map(r=>{
     const ok=isOk(r);
     const b=promoBlock(r);
@@ -904,6 +905,7 @@ function renderPromos(f){
         <div class="promo-meta">
           <span>${r.veces>1?'×'+r.veces+' · '+when(r.primera)+' → '+when(r.corrida_at):when(r.corrida_at)}</span>
           <span style="color:var(--copper)">${(r.tienda||'').replace('Baristi ','')}</span>
+          ${r.segmento?`<span class="tag" title="Público de la oferta en Uber Eats">Público: ${SEGMENTOS[r.segmento]||r.segmento}</span>`:''}
           ${r.motivo?`<span style="color:var(--red)">${r.motivo}</span>`:''}
         </div>
       </div>
