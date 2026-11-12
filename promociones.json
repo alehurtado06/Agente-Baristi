@@ -1,82 +1,5 @@
 [
  {
-  "promo": "2026-11-04T09:35:51-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-04T09:35:51-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo desayuno: 10% de descuento solo en el Bagel salado ($85 → $76.50) al pedirlo con cualquier bebida caliente o fría a precio de lista (sugerido: Café latte sabor o Aztec mocha). Válido hasta las 11:00 o hasta agotar las 10 piezas de vitrina.",
-  "producto_id": "bagel_salado",
-  "precio": 76.5,
-  "margen_pct": 23.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:35:51-08:00|Baristi Macroplaza|1",
-  "corrida_at": "2026-11-04T09:35:51-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Agrega tu Galleta de zanahoria a $45 (10% off sobre $50) con cualquier bebida. Add-on de upselling en el checkout, hasta las 11:00 o hasta agotar las 15 piezas.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 45.0,
-  "margen_pct": 25.2,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:36:19-08:00|Baristi Pacífico|0",
-  "corrida_at": "2026-11-04T09:36:19-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo desayuno: cualquier bebida a precio completo (destacando Aztec mocha o latte sabor) + bagel salado con 10% de descuento solo en el bagel. Vigente hasta las 11:00 o hasta agotar las 10 piezas en vitrina.",
-  "producto_id": "bagel_salado",
-  "precio": 76.5,
-  "margen_pct": 23.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:36:19-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-04T09:36:19-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Agrega una galleta de zanahoria por $45 (10% de descuento) a cualquier bebida caliente o fría a precio completo. Es un add-on en el checkout y no aplica sola.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 45.0,
-  "margen_pct": 25.2,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:36:47-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-04T09:36:47-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Combo Desayuno: bagel salado a $77 (−9.4%) al agregarlo con cualquier bebida caliente a precio completo (sugerido Café latte sabor o Aztec mocha). Válido hasta las 11:00 o hasta agotar las 10 piezas de vitrina.",
-  "producto_id": "bagel_salado",
-  "precio": 77.0,
-  "margen_pct": 23.6,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:36:47-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-04T09:36:47-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Agrega una galleta de zanahoria a $45 (−10%) con cualquier café o latte a precio de lista. Se ofrece como add-on en el checkout de bebidas.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 45.0,
-  "margen_pct": 25.2,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-04T09:47:19-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-04T09:47:19-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo Desayuno: 10% de descuento solo en el Bagel salado al agregarlo con cualquier bebida de café a precio completo (sugerir Aztec mocha o Café latte sabor). Vigente hasta las 11:00 o hasta agotar las 10 piezas de vitrina.",
-  "producto_id": "bagel_salado",
-  "precio": 76.5,
-  "margen_pct": 23.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-04T09:47:19-08:00|Baristi Etu (Tijuana)|1",
   "corrida_at": "2026-11-04T09:47:19-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -11179,5 +11102,89 @@
   "margen_pct": 16.1,
   "aprobada": true,
   "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:01:24-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-12T08:01:24-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Desayuno completo: americano + bagel + galleta $179",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:02:22-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-12T08:02:22-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Desayuno completo $179: americano grande, bagel y galleta",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:02:22-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-12T08:02:22-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Galleta de zanahoria $45",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:03:08-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-12T08:03:08-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Desayuno completo: americano 16 oz + bagel + galleta $175",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 175.0,
+  "margen_pct": 37.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:03:08-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-12T08:03:08-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Galleta de zanahoria $45",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:03:47-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-12T08:03:47-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Desayuno completo: americano + bagel + galleta $175",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 175.0,
+  "margen_pct": 37.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T08:03:47-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-12T08:03:47-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Café para dos con postre $229",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 229.0,
+  "margen_pct": 46.1,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
  }
 ]
