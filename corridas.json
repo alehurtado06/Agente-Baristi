@@ -7614,5 +7614,61 @@
   "aprobadas": 0,
   "bloqueadas": 2,
   "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T14:01:32-08:00|Baristi Etu (Tijuana)",
+  "corrida_at": "2026-11-12T14:01:32-08:00",
+  "hora_negocio": "2026-11-12 14:00",
+  "simulada": false,
+  "tienda": "Baristi Etu (Tijuana)",
+  "bloque": "Post-Comida (Postres)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 3,
+  "aprobadas": 1,
+  "bloqueadas": 2,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T14:02:35-08:00|Baristi Macroplaza",
+  "corrida_at": "2026-11-12T14:02:35-08:00",
+  "hora_negocio": "2026-11-12 14:00",
+  "simulada": false,
+  "tienda": "Baristi Macroplaza",
+  "bloque": "Post-Comida (Postres)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 3,
+  "aprobadas": 2,
+  "bloqueadas": 1,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T14:03:26-08:00|Baristi Pacífico",
+  "corrida_at": "2026-11-12T14:03:26-08:00",
+  "hora_negocio": "2026-11-12 14:00",
+  "simulada": false,
+  "tienda": "Baristi Pacífico",
+  "bloque": "Post-Comida (Postres)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 1,
+  "bloqueadas": 1,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T14:04:17-08:00|Baristi Rosarito (Tijuana)",
+  "corrida_at": "2026-11-12T14:04:17-08:00",
+  "hora_negocio": "2026-11-12 14:00",
+  "simulada": false,
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "bloque": "Post-Comida (Postres)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 0,
+  "bloqueadas": 2,
+  "whatsapp_enviado": false
  }
 ]
