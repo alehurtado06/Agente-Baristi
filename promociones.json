@@ -1,93 +1,5 @@
 [
  {
-  "promo": "2026-11-05T09:17:21-08:00|Baristi Macroplaza|2",
-  "corrida_at": "2026-11-05T09:17:21-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Americano + Croissant a $81 (antes $85, ~4.7% menos). Se destaca como 'Desayuno completo'.",
-  "producto_id": "combo_desayuno",
-  "precio": 81.0,
-  "margen_pct": 40.5,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-05T09:17:52-08:00|Baristi Pacífico|0",
-  "corrida_at": "2026-11-05T09:17:52-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo Americano + Croissant a $81 (antes $85, -4.7%) hasta las 11:00. Se exhibe como 'Desayuno rápido' en la parte alta del menú, con opción de upgrade a latte grande pagando la diferencia.",
-  "producto_id": "combo_desayuno",
-  "precio": 81.0,
-  "margen_pct": 40.5,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-05T09:17:52-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-05T09:17:52-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Croissant de Mantequilla a $43 (-10%) solo al agregarlo con un Latte Grande o un Capuccino Regular, que van a precio completo. Es un bundle café + pan con descuento solo en el pan, hasta las 11:00.",
-  "producto_id": "croissant_mantequilla",
-  "precio": 43.0,
-  "margen_pct": 44.3,
-  "aprobada": false,
-  "motivo": "Descuento 10% supera el máximo permitido 10%"
- },
- {
-  "promo": "2026-11-05T09:17:52-08:00|Baristi Pacífico|2",
-  "corrida_at": "2026-11-05T09:17:52-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Muffin de Chocolate a $47 (-10%) al pedirlo junto con un Frappé Moka o un Latte Grande a precio completo. Se sugiere como 'agrega tu muffin' en el checkout, hasta las 11:00.",
-  "producto_id": "muffin_chocolate",
-  "precio": 47.0,
-  "margen_pct": 41.8,
-  "aprobada": false,
-  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
- },
- {
-  "promo": "2026-11-05T09:17:52-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-05T09:17:52-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Combo Desayuno: Bagel salado con 10% de descuento ($85 → $76.5) al agregar cualquier bebida caliente o fría a precio completo; se sugiere Café latte sabor o Aztec mocha. El descuento aplica solo al bagel. Vigente hasta las 11:00 o hasta agotar las 10 piezas.",
-  "producto_id": "bagel_salado",
-  "precio": 76.5,
-  "margen_pct": 0,
-  "aprobada": false,
-  "motivo": "Producto no existe en matriz"
- },
- {
-  "promo": "2026-11-05T09:17:52-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-05T09:17:52-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Agrega una Galleta de zanahoria por $45 (10% off) en la compra de cualquier bebida a precio completo. Descuento solo en la galleta, como upsell en el checkout. Hasta agotar las 15 piezas o hasta las 11:00.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 45.0,
-  "margen_pct": 0,
-  "aprobada": false,
-  "motivo": "Producto no existe en matriz"
- },
- {
-  "promo": "2026-11-05T11:03:24-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-05T11:03:24-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Croissant de Mantequilla a $44 (≈8% menos) al agregarlo a cualquier café a precio completo. Vigente hasta las 11:00.",
-  "producto_id": "croissant_mantequilla",
-  "precio": 44.0,
-  "margen_pct": 44.7,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-05T11:03:24-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-05T11:03:24-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Muffin de Chocolate a $47 (≈9.6% menos) en pareja con Latte Grande o Capuccino. Vigente hasta las 11:00.",
-  "producto_id": "muffin_chocolate",
-  "precio": 47.0,
-  "margen_pct": 41.8,
-  "aprobada": false,
-  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
- },
- {
   "promo": "2026-11-05T11:03:24-08:00|Baristi Etu (Tijuana)|2",
   "corrida_at": "2026-11-05T11:03:24-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -11293,5 +11205,101 @@
   "margen_pct": 24.3,
   "aprobada": false,
   "motivo": "Descuento 24% supera el máximo permitido 20%"
+ },
+ {
+  "promo": "2026-11-12T14:31:19-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-12T14:31:19-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Merienda completa: americano + bagel + galleta $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-12T14:31:19-08:00|Baristi Etu (Tijuana)|1",
+  "corrida_at": "2026-11-12T14:31:19-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "2 smoothies Fresas con crema $239",
+  "segmento": "recurrentes",
+  "producto_id": "smoothie_fresas_con_crema",
+  "precio": 239.0,
+  "margen_pct": 41.5,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-12T14:32:13-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-12T14:32:13-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Café, bagel y galleta para la tarde $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-12T14:32:13-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-12T14:32:13-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "2 smoothies $220",
+  "segmento": "recurrentes",
+  "producto_id": "smoothie_fresa",
+  "precio": 110.0,
+  "margen_pct": 24.3,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-12T14:32:57-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-12T14:32:57-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Merienda completa: americano + bagel + galleta $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-12T14:32:57-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-12T14:32:57-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "2 smoothies $220",
+  "segmento": "recurrentes",
+  "producto_id": "smoothie_fresas_con_crema",
+  "precio": 110.0,
+  "margen_pct": 24.3,
+  "aprobada": false,
+  "motivo": "Descuento 24% supera el máximo permitido 20%"
+ },
+ {
+  "promo": "2026-11-12T14:34:01-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-12T14:34:01-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Café + bagel + galleta $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
+ },
+ {
+  "promo": "2026-11-12T14:34:01-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-12T14:34:01-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "2 smoothies $230",
+  "segmento": "recurrentes",
+  "producto_id": "smoothie_fresa",
+  "precio": 115.0,
+  "margen_pct": 25.7,
+  "aprobada": false,
+  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
  }
 ]
