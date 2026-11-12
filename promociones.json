@@ -1,82 +1,5 @@
 [
  {
-  "promo": "2026-11-03T11:31:29-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-03T11:31:29-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Add-on de 11:00 a 13:00: Galleta de zanahoria a 42.50 (15 % de descuento) al agregarla a un pedido con cualquier bebida de lista, con prioridad para el Café latte sabor y el Café americano. Válido hasta agotar 15 unidades.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 42.5,
-  "margen_pct": 22.8,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:31:53-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-03T11:31:53-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Valle 11-13h: Bagel salado a $73 (−14.1% vs $85) al comprar cualquier Latte Grande o bebida premium (Café latte sabor, Aztec mocha, Mocha oscuro, Cafruccinos). Limitado al stock de vitrina (≈10 piezas).",
-  "producto_id": "bagel_salado",
-  "precio": 73.0,
-  "margen_pct": 21.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:31:53-08:00|Baristi Macroplaza|1",
-  "corrida_at": "2026-11-03T11:31:53-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Agrega Galleta de zanahoria por $43 (−14% vs $50) con la compra de cualquier bebida de $115 o más, de 11:00 a 13:00. Máximo 2 galletas por pedido, hasta agotar las ≈15 piezas en vitrina.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 43.0,
-  "margen_pct": 23.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:32:21-08:00|Baristi Pacífico|0",
-  "corrida_at": "2026-11-03T11:32:21-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo Valle: bagel salado a 75 MXN (-11.8%) al agregar cualquier latte, capuccino sabor o Aztec mocha, válido de 11:00 a 13:00 o hasta agotar las 10 piezas de vitrina.",
-  "producto_id": "bagel_salado",
-  "precio": 75.0,
-  "margen_pct": 22.5,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:32:21-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-03T11:32:21-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Galleta de zanahoria a 43 MXN (-14%) como complemento en compra de cualquier bebida de la línea latte, mocha o capuccino sabor, de 11:00 a 13:00 o hasta agotar las 15 piezas.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 43.0,
-  "margen_pct": 23.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:32:42-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-03T11:32:42-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "10% de descuento en Bagel salado al agregarlo a un pedido con Café latte sabor, Aztec mocha o Mocha oscuro (combo desayuno tardío). Válido de 11:00 a 13:00 o hasta agotar las 10 piezas.",
-  "producto_id": "bagel_salado",
-  "precio": 76.5,
-  "margen_pct": 23.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-03T11:32:42-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-03T11:32:42-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "12% de descuento en Galleta de zanahoria al comprarla con cualquier latte (Café latte sabor, Latte sabor frío o Café latte). Válido de 11:00 a 13:00 o hasta agotar las 15 piezas.",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 44.0,
-  "margen_pct": 24.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-03T11:41:20-08:00|Baristi Etu (Tijuana)|0",
   "corrida_at": "2026-11-03T11:41:20-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -11032,6 +10955,90 @@
   "producto_id": "bagel_salado",
   "precio": 75.0,
   "margen_pct": 13.5,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:01:16-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-11T16:01:16-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Smoothie + bagel salado $199",
+  "segmento": "todos",
+  "producto_id": "bagel_salado",
+  "precio": 69.0,
+  "margen_pct": 9.8,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:02:00-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-11T16:02:00-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Merienda completa: americano + bagel + galleta $149",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 149.0,
+  "margen_pct": 34.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:02:00-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-11T16:02:00-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Galleta de zanahoria $35",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 35.0,
+  "margen_pct": 4.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:02:45-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-11T16:02:45-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Bagel salado recién hecho $60",
+  "segmento": "todos",
+  "producto_id": "bagel_salado",
+  "precio": 60.0,
+  "margen_pct": 2.8,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:02:45-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-11T16:02:45-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Galleta de zanahoria $39",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 39.0,
+  "margen_pct": 10.0,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:03:40-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-11T16:03:40-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Merienda completa: americano + bagel + galleta $159",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 159.0,
+  "margen_pct": 36.0,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-11T16:03:40-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-11T16:03:40-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Galleta de zanahoria $35",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 35.0,
+  "margen_pct": 4.7,
   "aprobada": true,
   "motivo": ""
  }
