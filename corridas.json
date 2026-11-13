@@ -8006,5 +8006,61 @@
   "aprobadas": 2,
   "bloqueadas": 0,
   "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T17:31:13-08:00|Baristi Etu (Tijuana)",
+  "corrida_at": "2026-11-12T17:31:13-08:00",
+  "hora_negocio": "2026-11-12 17:30",
+  "simulada": false,
+  "tienda": "Baristi Etu (Tijuana)",
+  "bloque": "Tarde / Antojo (Liquidación de Merma)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T17:31:23-08:00|Baristi Macroplaza",
+  "corrida_at": "2026-11-12T17:31:23-08:00",
+  "hora_negocio": "2026-11-12 17:30",
+  "simulada": false,
+  "tienda": "Baristi Macroplaza",
+  "bloque": "Tarde / Antojo (Liquidación de Merma)",
+  "motor": "claude, sin cambios",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T17:32:12-08:00|Baristi Pacífico",
+  "corrida_at": "2026-11-12T17:32:12-08:00",
+  "hora_negocio": "2026-11-12 17:30",
+  "simulada": false,
+  "tienda": "Baristi Pacífico",
+  "bloque": "Tarde / Antojo (Liquidación de Merma)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-12T17:32:22-08:00|Baristi Rosarito (Tijuana)",
+  "corrida_at": "2026-11-12T17:32:22-08:00",
+  "hora_negocio": "2026-11-12 17:30",
+  "simulada": false,
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "bloque": "Tarde / Antojo (Liquidación de Merma)",
+  "motor": "claude, sin cambios",
+  "modo": "propose",
+  "propuestas": 2,
+  "aprobadas": 2,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
  }
 ]
