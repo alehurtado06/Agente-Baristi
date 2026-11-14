@@ -1,25 +1,25 @@
 [
  {
   "tienda": "Baristi Etu (Tijuana)",
-  "corrida_at": "2026-11-13T17:31:33-08:00",
-  "resumen": "Viernes 17:30 en Baristi Etu, bloque Tarde/Antojo. Solo se puede descontar repostería (máximo 30%); las bebidas van a precio de lista. La merma está alta: 10 bagels salados y 15 galletas de zanahoria. La prioridad es sacar esa vitrina sin regalar margen y que el café del combo suba el ticket. Propongo solo 2 promos claras. (1) Merienda completa a $149, que mueve bagel y galleta juntos. (2) Bagel salado suelto a $70, el piso que pasa el margen mínimo de 10%; a $59 (30%) quedaría casi en cero después del ~44% que se lleva Uber. Promo activa del equipo: la galleta de zanahoria a $40 sigue y no la dupliqué. No pierde dinero, pero es delgada: deja ~$4 de utilidad contra ~$10 a precio de lista. Conviene apagarla en cuanto baje el stock. Sin promo de smoothie: el bloque no permite descontar bebidas y el clima no está disponible (noviembre en la tarde suele ser fresco en Tijuana). Si alguien pide un smoothie, el de Fresas con crema es el de mejor margen. Hay datos que revisar en la matriz. Toffe joe, Cajeta caliente y Pay de limón tienen costo $0, y el Pay de limón está como 'bebida'. Los combos de $189 muestran un costo de $32, aunque incluyen americano (+$12) y galleta (+$18). Con el costo real, la Merienda a $149 deja aún ~$21 de utilidad (≈14%). No hay eventos próximos. DiDi Food no está activa, así que no se propone nada para ella; estas promos son solo para Uber Eats.",
-  "respuesta_competencia": "No igualo los descuentos en bebidas: el bloque no lo permite y no deja utilidad. Esos descuentos son latte a $60 en Nómada, a $63 en D'volada y a $65.80 (helado) en Starbucks, frappé a $53 y brownie a $38.50 en CAFFENIO, y 30% en galletas en Náufrago. Por ejemplo, un latte de $94 a $63 dejaría ~$12 después de comisión. Contra Starbucks respondo con valor percibido: la Merienda completa a $149 trae americano, bagel y galleta, contra su Latte Lunch de $153 con solo latte y bagel o sándwich. Contra D'volada y Náufrago respondo en repostería: bagel salado a $70 y galleta de zanahoria a $40, ya activa. Para el viernes en la noche destaco a precio completo lo que ellos no tienen: Combo Amigos (4 frappés), Combo Pareja y los Cafruccinos premium (Vainilla caramel latte, Coffee Toffee), que son nuestro mayor margen."
+  "corrida_at": "2026-11-13T18:00:40-08:00",
+  "resumen": "Estrategia por reglas (Tarde / Antojo (Liquidación de Merma))",
+  "respuesta_competencia": "Sin análisis IA (modo reglas)"
  },
  {
   "tienda": "Baristi Macroplaza",
-  "corrida_at": "2026-11-13T17:32:15-08:00",
-  "resumen": "Viernes 17:30 en Macroplaza, bloque Tarde/Antojo de liquidación de merma. Solo se permite descontar repostería, con un máximo de 30%; las bebidas van a precio estándar. Hay merma alta en vitrina: 10 bagels salados y 15 galletas de zanahoria. Propongo solo 2 promos simples para vaciar vitrina antes del cierre sin perder dinero: Galleta de zanahoria $35 (-30%; queda ~$4.75 de utilidad por pieza, 13.6% después del 35% de Uber) y Bagel salado $60 (-29%; ~$7 por pieza, 11.7%). No lanzo promo de smoothie porque el bloque no permite descontar bebidas y no hay dato de clima (falló la API); en noviembre de noche no hay señal de calor. El margen se empuja destacando los combos de grupo (Combo Amigos, Combo Pareja) y los cafruccinos premium a precio de lista. Promo propia activa, 15% en cafruccinos para todos: no pierde dinero (un cafruccino de $135 queda en ~$42.6 de utilidad, 37%), pero contradice la regla de este bloque. Sugiero limitarla a la mañana/mediodía o moverla al segmento inactivos en vez de todos. No la dupliqué. Alertas de datos: Toffe joe, Cajeta y Pay de limón tienen costo $0. Pay de limón está como 'bebida' cuando es repostería. Los combos de $189 marcan costo $32, menos que la suma de sus partes (bagel $32 + café $12). Corregir antes de usarlos en promos.",
-  "respuesta_competencia": "No igualamos descuentos en bebidas. CAFFENIO tiene frappé a $53, D'volada latte a $63 y frappé Oreo a $70, Nómada latte a $60, y Starbucks Latte Helado a $65.80 más un 2x1. Con el 35% de Uber, igualarlos nos deja casi sin margen y además lo prohíbe la regla del bloque. Respondemos donde ganamos. Contra Starbucks (Pastel con Latte $125 y 2x1): Combo Pareja $249 con 2 lattes y postre para el plan de viernes en pareja, sin descuento extra. Contra CAFFENIO y D'volada en frappés: Combo Amigos (4 frappes por $499, ~$125 c/u) para grupos de viernes, más cafruccinos únicos que ellos no tienen (Vainilla caramel latte, Coffe Toffe). Ya tenemos 15% activo en cafruccinos, así que no hace falta bajar más. Contra Náufrago y el brownie de CAFFENIO ($38.50) en repostería: galleta de zanahoria a $35 y bagel salado a $60, solo mientras haya merma."
+  "corrida_at": "2026-11-13T18:00:41-08:00",
+  "resumen": "Estrategia por reglas (Tarde / Antojo (Liquidación de Merma))",
+  "respuesta_competencia": "Sin análisis IA (modo reglas)"
  },
  {
   "tienda": "Baristi Pacífico",
-  "corrida_at": "2026-11-13T17:32:45-08:00",
+  "corrida_at": "2026-11-13T18:00:41-08:00",
   "resumen": "Estrategia por reglas (Tarde / Antojo (Liquidación de Merma))",
   "respuesta_competencia": "Sin análisis IA (modo reglas)"
  },
  {
   "tienda": "Baristi Rosarito (Tijuana)",
-  "corrida_at": "2026-11-13T17:32:55-08:00",
+  "corrida_at": "2026-11-13T18:00:41-08:00",
   "resumen": "Estrategia por reglas (Tarde / Antojo (Liquidación de Merma))",
   "respuesta_competencia": "Sin análisis IA (modo reglas)"
  }
