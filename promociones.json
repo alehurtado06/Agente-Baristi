@@ -1,16 +1,5 @@
 [
  {
-  "promo": "2026-11-08T11:50:48-08:00|Baristi Pacífico|2",
-  "corrida_at": "2026-11-08T11:50:48-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo americano 16 oz + bagel + galleta a $161 (-14.8%) solo de 11:00 a 13:00, con opción de cambiar el americano por americano frío.",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": false,
-  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
- },
- {
   "promo": "2026-11-08T11:50:48-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-08T11:50:48-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
@@ -11528,10 +11517,10 @@
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T16:59:01-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-13T16:59:01-08:00",
+  "promo": "2026-11-13T17:02:09-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-13T17:02:09-08:00",
   "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Café, bagel y galleta para la tarde $149",
+  "mecanica": "Café + bagel + galleta $149",
   "segmento": "todos",
   "producto_id": "combo_americano_16_oz_bagel_galleta",
   "precio": 149.0,
@@ -11540,20 +11529,32 @@
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T16:59:01-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-13T16:59:01-08:00",
+  "promo": "2026-11-13T17:02:09-08:00|Baristi Etu (Tijuana)|1",
+  "corrida_at": "2026-11-13T17:02:09-08:00",
   "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Bagel salado $60",
+  "mecanica": "Bagel salado $65",
   "segmento": "todos",
   "producto_id": "bagel_salado",
-  "precio": 60.0,
-  "margen_pct": 2.8,
+  "precio": 65.0,
+  "margen_pct": 6.9,
   "aprobada": true,
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T16:59:43-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-13T16:59:43-08:00",
+  "promo": "2026-11-13T17:03:03-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-13T17:03:03-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Merienda completa: americano, bagel y galleta $149",
+  "segmento": "recurrentes",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 149.0,
+  "margen_pct": 34.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-13T17:03:03-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-13T17:03:03-08:00",
   "tienda": "Baristi Macroplaza",
   "mecanica": "Bagel salado $60",
   "segmento": "todos",
@@ -11564,33 +11565,9 @@
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T16:59:43-08:00|Baristi Macroplaza|1",
-  "corrida_at": "2026-11-13T16:59:43-08:00",
+  "promo": "2026-11-13T17:03:03-08:00|Baristi Macroplaza|2",
+  "corrida_at": "2026-11-13T17:03:03-08:00",
   "tienda": "Baristi Macroplaza",
-  "mecanica": "Galleta de zanahoria $36",
-  "segmento": "todos",
-  "producto_id": "galleta_de_zanahoria",
-  "precio": 36.0,
-  "margen_pct": 6.1,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-13T17:00:30-08:00|Baristi Pacífico|0",
-  "corrida_at": "2026-11-13T17:00:30-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Americano + bagel + galleta de zanahoria $149",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 149.0,
-  "margen_pct": 34.7,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-13T17:00:30-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-13T17:00:30-08:00",
-  "tienda": "Baristi Pacífico",
   "mecanica": "Galleta de zanahoria $39",
   "segmento": "todos",
   "producto_id": "galleta_de_zanahoria",
@@ -11600,9 +11577,21 @@
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T17:01:09-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-13T17:01:09-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
+  "promo": "2026-11-13T17:03:48-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-13T17:03:48-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Merienda completa: americano + bagel + galleta $149",
+  "segmento": "todos",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 149.0,
+  "margen_pct": 34.7,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-13T17:03:48-08:00|Baristi Pacífico|1",
+  "corrida_at": "2026-11-13T17:03:48-08:00",
+  "tienda": "Baristi Pacífico",
   "mecanica": "Galleta de zanahoria $35",
   "segmento": "todos",
   "producto_id": "galleta_de_zanahoria",
@@ -11612,14 +11601,26 @@
   "motivo": ""
  },
  {
-  "promo": "2026-11-13T17:01:09-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-13T17:01:09-08:00",
+  "promo": "2026-11-13T17:04:27-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-13T17:04:27-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
   "mecanica": "Bagel salado $60",
   "segmento": "todos",
   "producto_id": "bagel_salado",
   "precio": 60.0,
   "margen_pct": 2.8,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-13T17:04:27-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-13T17:04:27-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Galleta de zanahoria $35",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 35.0,
+  "margen_pct": 4.7,
   "aprobada": true,
   "motivo": ""
  }
