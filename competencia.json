@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): 30% en artículos seleccionados (Cafruccino Mexican Oreo $165→$115.50, Cafruccino Chai Frappé $140→$98, smoothies Fresas con Crema y Lavanda Moras) y 20% en el resto de smoothies (Mango, Fresa, Piña Colada, Tropicales, etc.); la categoría la muestra como \"30% en artículos seleccionados\". Ya no aparece \"Ahorra $40 gastando más de $299\"; Pacífico: Ahorra $40 gastando más de $299 (sin cambios: no apareció en la categoría al revisar)",
+  "promo": "Rosarito (Tijuana): 30% en artículos seleccionados (Cafruccino Mexican Oreo $165→$115.50, Cafruccino Chai Frappé $140→$98, smoothies Fresas con Crema y Lavanda Moras) y 20% en el resto de smoothies (Mango, Fresa, Piña Colada, Tropicales, etc.); la categoría la muestra como \"30% en artículos seleccionados\". Ya no aparece \"Ahorra $40 gastando más de $299\" (sin cambios: no apareció en la categoría al revisar); Pacífico: 2x1 en Americano Frío ($98.80) y Americano sabor Frío ($114.40) (\"Compra 1, obtén 1 sin costo\"); Ahorra 10% en pedidos de $199 o más (la categoría lo muestra como \"10% de ahorro cuando gastes más de $199\"). Ya no aparece \"Ahorra $40 gastando más de $299\"",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en artículos seleccionados (frappés Rockaccino, Kfreeze, brownie); 25% en bebidas de temporada Pan de Muerto (sin cambios: tienda cerrada al revisar; Bellas Artes, Elías Calles, Vía Poniente, Benítez López y Alba Roja muestran \"30% en artículos seleccionados\" en la categoría)",
+  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte caliente y frío, capuccino, Rockaccino, Lateada); Bellas Artes, Elías Calles, Vía Poniente y Benítez López muestran \"30% en artículos seleccionados\" en la categoría",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80, nuevo), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" (artículos no identificados en la página). Terminaron: 30% en Caramel Brulée (latte y Frappuccino, ahora $119/$124), Toffee Nut helado y Frappuccino ($124), Caramel Cream Frappuccino y Avellana Shaken Espresso, y 25% en Chocolate Caliente ($94)",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en Camino Real, Terán, Vía Rápida, Macroplaza y Paseo de los Héroes (artículos no identificados en la página)",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80, nuevo), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); Vía Rápida no aparece con 2x1 (\"30% en artículos seleccionados\"), pero Plaza Pacífico y Rosarito sí muestran \"Promoción de 2x1\" (artículos no identificados en la página). Terminaron: 30% en Caramel Brulée (latte y Frappuccino, ahora $119/$124), Toffee Nut helado y Frappuccino ($124), Caramel Cream Frappuccino y Avellana Shaken Espresso, y 25% en Chocolate Caliente ($94)",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en Vía Rápida, Plaza Pacífico y Rosarito (artículos no identificados en la página); Las Alondras solo \"30% en artículos seleccionados\"",
   "latte": 94,
   "frappe": 109
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "15% a 25% solo en comida (enchiladas, sopa de tortilla, combos chilaquiles o sopa + limonada); bebidas a precio completo (sin cambios: tienda cerrada al revisar)",
+  "promo": "25% en Combo Sopa de Tortilla + Limonada ($245→$184) y 19% en Combo Chilaquiles + Limonada ($245→$199); la categoría lo resume como \"$46 en artículos seleccionados\". Bebidas a precio completo. Terminaron los descuentos en enchiladas y sopa sola",
   "latte": 105,
   "frappe": 145
  },
