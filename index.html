@@ -360,6 +360,14 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
     </div>
 
+    <!-- ── pendientes de la junta ── -->
+    <div class="card" id="pend-card" style="margin-top:16px">
+      <div class="card-title" style="margin-bottom:4px">Pendientes de la junta</div>
+      <div class="wow-vs" style="margin-bottom:12px" id="pend-fuente"></div>
+      <div id="pend-list"></div>
+      <p class="card-note">Lo que el equipo quedó de revisar. El agente ya usa lo que le toca: ticket promedio, bebidas favoritas, artículos agotados y el perfil de cada tienda.</p>
+    </div>
+
     <!-- ── promociones (debajo del comparativo entre años) ── -->
     <div class="card" id="promo-card" style="margin-top:16px">
       <div class="card-title" style="margin-bottom:4px">Promociones del agente · ordenadas por margen</div>
@@ -599,7 +607,7 @@ function getBlock(h){return BLOCKS.find(b=>h>=b.start&&h<b.end)||null;}
 
 // ── data loading ──
 let DATA={};
-const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos'];
+const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','pendientes'];
 async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
@@ -611,7 +619,20 @@ async function loadAll(){
   render();
 }
 
+function renderPendientes(){
+  const rows=Array.isArray(DATA.pendientes)?DATA.pendientes:[];
+  const card=document.getElementById('pend-card');
+  if(!rows.length){card.style.display='none';return;}
+  card.style.display='';
+  document.getElementById('pend-fuente').textContent=rows[0].fuente||'';
+  const temas=[...new Set(rows.map(r=>r.tema))];
+  document.getElementById('pend-list').innerHTML=temas.map(t=>`<div style="margin:8px 0 4px;font-weight:600;font-size:12px">${esc(t)}</div>`+
+    rows.filter(r=>r.tema===t).map(r=>`<div style="display:flex;gap:8px;align-items:baseline;font-size:12px;line-height:1.5;padding:2px 0">
+      <span style="color:var(--muted)">☐</span><span style="flex:1">${esc(r.pendiente)}</span><span class="tag">${esc(r.tiendas)}</span></div>`).join('')).join('');
+}
+
 function render(){
+  renderPendientes();
   renderUber();
   renderStatus();
   renderKPIs();
