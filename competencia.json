@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): 30% en artículos seleccionados (Cafruccino Mexican Oreo $165→$115.50, Cafruccino Chai Frappé $140→$98, smoothies Fresas con Crema y Lavanda Moras) y 20% en el resto de smoothies (Mango, Fresa, Piña Colada, Tropicales, etc.); la categoría la muestra como \"30% en artículos seleccionados\". Ya no aparece \"Ahorra $40 gastando más de $299\" (sin cambios: no apareció en la categoría al revisar); Pacífico: 2x1 en Americano Frío ($98.80) y Americano sabor Frío ($114.40) (\"Compra 1, obtén 1 sin costo\"); Ahorra 10% en pedidos de $199 o más (la categoría lo muestra como \"10% de ahorro cuando gastes más de $199\"). Ya no aparece \"Ahorra $40 gastando más de $299\"",
+  "promo": "Rosarito (Tijuana): 30% en artículos seleccionados (Cafruccino Mexican Oreo $165→$115.50, Cafruccino Chai Frappé $140→$98, smoothies Fresas con Crema y Lavanda Moras) y 20% en el resto de smoothies (Mango, Fresa, Piña Colada, Tropicales, etc.); la categoría la muestra como \"30% en artículos seleccionados\". Ya no aparece \"Ahorra $40 gastando más de $299\" (sin cambios: no apareció en la categoría al revisar) (sin cambios: la categoría muestra la tienda como \"No disponible de momento\" al revisar); Pacífico: La categoría de Rosarito hoy lista Baristi Pacífico sin etiqueta de promo visible (no se abrió su página; las promos anteriores — 2x1 en Americano Frío y 10% en pedidos de $199+ — no se pudieron confirmar) (sin cambios: no confirmado)",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte caliente y frío, capuccino, Rockaccino, Lateada); Bellas Artes, Elías Calles, Vía Poniente y Benítez López muestran \"30% en artículos seleccionados\" en la categoría",
+  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína, sabor Pan de Muerto), Kfreeze y brownie; terminó el 25% en lattes/capuccino Pan de Muerto",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Proteína), Kfreeze y brownie; 25% en bebidas Pan de Muerto (latte caliente y frío, capuccino, Rockaccino, Lateada)",
+  "promo": "30% en frappés Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína, sabor Pan de Muerto), Kfreeze y brownie; terminó el 25% en lattes/capuccino Pan de Muerto",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en Camino Real, Terán, Vía Rápida, Macroplaza y Paseo de los Héroes (artículos no identificados en la página)",
+  "promo": "2x1 (\"Compra 1, obtén 1 sin costo\") en bebidas de temporada: Caramel Brulée Latte/Frappuccino ($119/$124), Toffee Nut Latte/Frappuccino, Merry Latte/Frappuccino ($114/$124); 30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en las sucursales",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en Vía Rápida, Plaza Pacífico y Rosarito (artículos no identificados en la página); Las Alondras solo \"30% en artículos seleccionados\"",
+  "promo": "2x1 (\"Compra 1, obtén 1 sin costo\") en bebidas de temporada: Caramel Brulée Latte/Frappuccino ($119/$124), Toffee Nut Latte/Frappuccino, Merry Latte/Frappuccino ($114/$124); 30% en Caramel Macchiato (caliente y helado), Latte Helado ($94→$65.80), Caramel Frappuccino y combos (Working Lunch, Latte Lunch, Pastel con Latte); la categoría muestra \"Promoción de 2x1\" en las sucursales",
   "latte": 94,
   "frappe": 109
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "25% en Combo Sopa de Tortilla + Limonada ($245→$184) y 19% en Combo Chilaquiles + Limonada ($245→$199); la categoría lo resume como \"$46 en artículos seleccionados\". Bebidas a precio completo. Terminaron los descuentos en enchiladas y sopa sola",
+  "promo": "25% en Combo Sopa de Tortilla + Limonada ($245→$184) y Sopa de Tortilla ($150→$112.50); 19% en Combo Chilaquiles + Limonada ($245→$199); 15% en Enchiladas de Pollo ($230→$195.50); la categoría lo resume como \"15% en artículos seleccionados\". Bebidas a precio completo",
   "latte": 105,
   "frappe": 145
  },
@@ -51,7 +51,7 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "15% en latte helado (16oz), latte grande (20oz), sándwiches y limonada cold brew; 25% en Combo Eats bagel o pollo + americano (20oz); 24% en Combo Miércoles (la categoría lo resume como \"$64 en artículos seleccionados\") (sin cambios: tienda cerrada al revisar)",
+  "promo": "15% en latte helado (16oz), latte grande (20oz), sándwiches y limonada cold brew; 25% en Combo Eats bagel o pollo + americano (20oz); 24% en Combo Lunes ($314→$238); la categoría de Rosarito muestra \"$90 en artículos seleccionados\" para Barcelona",
   "latte": 101,
   "frappe": 120
  },
@@ -59,7 +59,7 @@
   "competidor": "Nómada Coffee Crew",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en lattes (natural caliente y frío, vainilla caliente, butterscotch frío) y chai de plátano (sin cambios: tienda cerrada al revisar)",
+  "promo": "25% en lattes (natural caliente y frío, vainilla caliente, butterscotch frío)",
   "latte": 80,
   "frappe": 140
  },
@@ -67,7 +67,7 @@
   "competidor": "Carlota's Cafe & Deli (Rosarito, Calle Ensenada)",
   "zona": "Rosarito (Tijuana), Pacífico",
   "posicion": "independiente",
-  "promo": "30% en artículos seleccionados (latte, waffles, crepas, chilaquiles, omelette, torta, hamburguesa) (sin cambios: tienda cerrada al revisar)",
+  "promo": "30% en artículos seleccionados (latte, waffles, crepas, hamburguesa sencilla)",
   "latte": 87.2,
   "frappe": 98.1
  },
@@ -75,7 +75,7 @@
   "competidor": "D'volada Café (Díaz Ordaz)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en artículos seleccionados: café latte, latte helado, frappé Oreo, bagel d'Pollo y bagel D'sayuno",
+  "promo": "30% en artículos seleccionados: Frappé Oreo ($100→$70) y bagel d'Pollo ($108→$75.60); lattes a precio completo",
   "latte": 90,
   "frappe": 90
  },
@@ -83,7 +83,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "independiente",
-  "promo": "25% en latte natural, latte de vainilla y espresso americano; 30% en Pumpkin Spice Latte y repostería (galletas, panqué de naranja)",
+  "promo": "25% en latte natural, latte de vainilla y espresso americano; 30% en Pumpkin Spice Latte y repostería (galletas, panqué de naranja) (sin cambios: la página no cargó al revisar)",
   "latte": 95,
   "frappe": null
  },
@@ -91,7 +91,7 @@
   "competidor": "D'volada Café (Díaz Ordaz, La Joya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en Café Latte, Latte Helado, Frappé Oreo y bagels (d'Pollo, D'sayuno)",
+  "promo": "30% en artículos seleccionados: Frappé Oreo ($100→$70) y bagel d'Pollo ($108→$75.60); lattes a precio completo",
   "latte": 90,
   "frappe": 90
  },
@@ -99,7 +99,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en Latte Natural, Latte de Vainilla y Espresso Americano; 30% en Pumpkin Spice Latte y galletas/panqué",
+  "promo": "25% en Latte Natural, Latte de Vainilla y Espresso Americano; 30% en Pumpkin Spice Latte y galletas/panqué (sin cambios: la página no cargó al revisar)",
   "latte": 95,
   "frappe": null
  }
