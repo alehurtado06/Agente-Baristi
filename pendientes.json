@@ -3,60 +3,102 @@
   "tema": "Menú",
   "pendiente": "Evaluar la viabilidad de incorporar ensaladas en Plaza ETU",
   "tiendas": "Etu",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Menú",
   "pendiente": "Investigar opciones de mezclas para ensaladas en Costco",
   "tiendas": "Etu",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Menú",
   "pendiente": "Desarrollar las ofertas de bagels de proteína",
   "tiendas": "Etu, Pacífico",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Menú",
   "pendiente": "Evaluar el regreso de muffins y galletas al catálogo de aplicaciones",
   "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Menú",
   "pendiente": "Explorar la oferta de galletas de proteína",
   "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Promoción",
   "pendiente": "Cotizar y desarrollar volantes 'Ahora pídenos por Uber Eats' para zonas de oficinas",
   "tiendas": "Etu",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Fotos",
   "pendiente": "Completar el catálogo fotográfico de Uber Eats con apoyo de las sucursales",
   "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Fotos",
   "pendiente": "Corregir imágenes que no representan bien el producto (Frappé de Oreo, Bagel de jamón de pavo, fondos blancos)",
   "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
- },
- {
-  "tema": "Lealtad",
-  "pendiente": "Investigar la integración del programa de lealtad con Korona (registrar compras de apps; ya hay clientes pidiéndolo en las notas del pedido)",
-  "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  },
  {
   "tema": "Disponibilidad",
   "pendiente": "Reactivar en Uber los artículos agotados (galletas, keto, Fit & Fun, Durazno, Mumbai, crema batida)",
   "tiendas": "Todas",
-  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico"
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "Lealtad",
+  "pendiente": "Alternativa A (al pedir): activar instrucciones del pedido en Uber Eats Manager, texto en descripción de los más vendidos ('¿Cliente frecuente Baristi? Escribe tu celular en las instrucciones') y modificador sin costo 'Soy cliente frecuente (anoté mi celular)'. Cajero teclea el celular y usa Set Loyalty Card antes de cerrar el ticket en KORONA.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "Lealtad",
+  "pendiente": "Alternativa B (después del pedido): confirmar con soporte de KORONA si permite asignar cliente/puntos a un ticket ya cerrado o impreso (hoy no confirmado); si no, definir registro manual por el cajero o por el agente.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "Lealtad",
+  "pendiente": "Regla en caja: pedido de Uber con celular en la nota no se cierra sin Set Loyalty Card. Sticker en la bolsa explicando el beneficio.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "Lealtad",
+  "pendiente": "Revisar contrato de Uber Eats México: confirmar que no hay restricción para pedir datos de contacto dentro de la app.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "KORONA",
+  "pendiente": "Conectar KORONA al agente (APIv3): confirmar que el plan incluye API (Retail o superior), crear credenciales en Settings > Data Exchange con permisos solo de leer/escribir clientes, leer tickets y cajas. Credenciales las guarda el dueño en claves.env (KORONA_ACCOUNT_ID, KORONA_ENDPOINT, KORONA_LOGIN, KORONA_PASSWORD), nunca por chat.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "KORONA",
+  "pendiente": "Tabla de equivalencias tienda Uber ↔ caja KORONA (Rosarito, Macroplaza, Pacífico, ETU) con GET pointsOfSale.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "KORONA",
+  "pendiente": "Auditoría diaria: comparar pedidos de Uber con celular en notas vs tickets KORONA con lealtad y reportar omitidos.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
+ },
+ {
+  "tema": "KORONA",
+  "pendiente": "Nota: el POS propio (hecho con Claude Code) reemplazará a KORONA en enero–febrero 2027; la conexión a KORONA es puente. Diseñar el agente para que la fuente de ventas sea intercambiable.",
+  "tiendas": "Todas",
+  "fuente": "Minuta de la junta del 15 nov 2026 · Plaza ETU y Pacífico + chat WhatsApp 16 nov 2026"
  }
 ]
