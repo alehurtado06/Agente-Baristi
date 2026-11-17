@@ -360,18 +360,6 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
     </div>
 
-    <!-- ── lealtad: pedidos de apps sin cliente en KORONA ── -->
-    <div class="card" id="leal-card" style="margin-top:16px">
-      <div class="card-title" style="margin-bottom:4px">Lealtad · pedidos de apps sin cliente en KORONA</div>
-      <div class="wow-vs" style="margin-bottom:12px" id="leal-sub"></div>
-      <div class="filters" style="position:static;padding-top:0">
-        <div class="f-field"><label for="leal-dias">Periodo</label>
-          <select id="leal-dias"><option value="7">Últimos 7 días</option><option value="14">Últimos 14 días</option><option value="30">Últimos 30 días</option></select></div>
-      </div>
-      <div style="overflow-x:auto"><table class="wow-tbl" id="leal-tbl"></table></div>
-      <p class="card-note">Cuenta los tickets que KORONA marca con grupo de cliente Uber o Rappi y cuántos tienen un cliente frecuente asignado. Se actualiza al correr el exportador en la Mac (la nube no tiene acceso a KORONA).</p>
-    </div>
-
     <!-- ── pendientes de la junta ── -->
     <div class="card" id="pend-card" style="margin-top:16px">
       <div class="card-title" style="margin-bottom:4px">Pendientes de la junta</div>
@@ -619,7 +607,7 @@ function getBlock(h){return BLOCKS.find(b=>h>=b.start&&h<b.end)||null;}
 
 // ── data loading ──
 let DATA={};
-const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','pendientes','lealtad'];
+const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','pendientes'];
 async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
@@ -643,32 +631,8 @@ function renderPendientes(){
       <span style="color:var(--muted)">☐</span><span style="flex:1">${esc(r.pendiente)}</span><span class="tag">${esc(r.tiendas)}</span></div>`).join('')).join('');
 }
 
-function renderLealtad(){
-  const rows=Array.isArray(DATA.lealtad)?DATA.lealtad:[];
-  const card=document.getElementById('leal-card');
-  if(!rows.length){card.style.display='none';return;}
-  card.style.display='';
-  const dias=+document.getElementById('leal-dias').value;
-  const last=rows.map(r=>r.fecha).sort().pop();
-  const d0=new Date(last+'T12:00:00');d0.setDate(d0.getDate()-dias+1);
-  const desde=d0.toISOString().slice(0,10);
-  const sel=rows.filter(r=>r.fecha>=desde);
-  const g={};
-  sel.forEach(r=>{const k=r.tienda+'|'+r.plataforma;const a=g[k]=g[k]||{t:r.tienda,p:r.plataforma,n:0,c:0,v:0};a.n+=r.pedidos;a.c+=r.con_cliente;a.v+=r.venta;});
-  const list=Object.values(g).sort((a,b)=>a.t.localeCompare(b.t)||a.p.localeCompare(b.p));
-  const tot=list.reduce((s,a)=>({n:s.n+a.n,c:s.c+a.c,v:s.v+a.v}),{n:0,c:0,v:0});
-  const pct=(c,n)=>n?(100*c/n).toFixed(0)+'%':'–';
-  const money=v=>'$'+Math.round(v).toLocaleString('es-MX');
-  document.getElementById('leal-sub').textContent=`Del ${desde} al ${last}: ${tot.n} pedidos de apps, ${tot.n-tot.c} sin cliente asignado (${pct(tot.n-tot.c,tot.n)}).`;
-  document.getElementById('leal-tbl').innerHTML='<tr><th>Tienda</th><th>App</th><th>Pedidos</th><th>Con cliente</th><th>Sin cliente</th><th>% sin cliente</th><th>Venta</th></tr>'+
-    list.map(a=>`<tr><td>${esc(a.t)}</td><td>${esc(a.p==='uber'?'Uber':'Rappi')}</td><td>${a.n}</td><td>${a.c}</td><td>${a.n-a.c}</td><td>${pct(a.n-a.c,a.n)}</td><td>${money(a.v)}</td></tr>`).join('')+
-    `<tr style="font-weight:600"><td>Total</td><td></td><td>${tot.n}</td><td>${tot.c}</td><td>${tot.n-tot.c}</td><td>${pct(tot.n-tot.c,tot.n)}</td><td>${money(tot.v)}</td></tr>`;
-}
-document.addEventListener('change',e=>{if(e.target&&e.target.id==='leal-dias')renderLealtad();});
-
 function render(){
   renderPendientes();
-  renderLealtad();
   renderUber();
   renderStatus();
   renderKPIs();
