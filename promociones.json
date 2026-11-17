@@ -1,65 +1,5 @@
 [
  {
-  "promo": "2026-11-13T12:00:52-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-13T12:00:52-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Americano grande + bagel + galleta de zanahoria $165",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 165.0,
-  "margen_pct": 36.7,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-13T12:00:52-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-13T12:00:52-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Lunch Baristi $169",
-  "segmento": "inactivos",
-  "producto_id": "lunch_baristi",
-  "precio": 169.0,
-  "margen_pct": 37.2,
-  "aprobada": false,
-  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
- },
- {
-  "promo": "2026-11-13T12:22:19-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-13T12:22:19-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Desayuno tardío completo: americano + bagel + galleta $169",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 169.0,
-  "margen_pct": 37.2,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-13T12:22:19-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-13T12:22:19-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Lunch Baristi $169",
-  "segmento": "recurrentes",
-  "producto_id": "lunch_baristi",
-  "precio": 169.0,
-  "margen_pct": 37.2,
-  "aprobada": false,
-  "motivo": "No alcanza margen mínimo o el aumento de ventas esperado no compensa"
- },
- {
-  "promo": "2026-11-13T12:23:05-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-13T12:23:05-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo americano grande + bagel + galleta $165",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 165.0,
-  "margen_pct": 36.7,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-13T12:23:05-08:00|Baristi Macroplaza|1",
   "corrida_at": "2026-11-13T12:23:05-08:00",
   "tienda": "Baristi Macroplaza",
@@ -11996,6 +11936,66 @@
   "producto_id": "bagel_salado",
   "precio": 65.0,
   "margen_pct": 6.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-17T05:00:57-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-17T05:00:57-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Desayuno para llevar: americano + bagel $175",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 175.0,
+  "margen_pct": 37.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-17T05:01:25-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-17T05:01:25-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Desayuno bagel + café americano $175",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 175.0,
+  "margen_pct": 37.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-17T05:01:25-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-17T05:01:25-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Agrega un bagel salado $77",
+  "segmento": "todos",
+  "producto_id": "bagel_salado",
+  "precio": 77.0,
+  "margen_pct": 14.6,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-17T05:01:34-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-17T05:01:34-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Desayuno con bagel y café americano $179",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-17T05:01:54-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-17T05:01:54-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Desayuno completo $179",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 179.0,
+  "margen_pct": 38.3,
   "aprobada": true,
   "motivo": ""
  }
