@@ -1,77 +1,5 @@
 [
  {
-  "promo": "2026-11-14T12:00:35-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-14T12:00:35-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -15%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-14T12:00:35-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-14T12:00:35-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Bagel (café americano + bagel) -15%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-14T12:00:35-08:00|Baristi Macroplaza|1",
-  "corrida_at": "2026-11-14T12:00:35-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -15%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-14T12:00:36-08:00|Baristi Pacífico|0",
-  "corrida_at": "2026-11-14T12:00:36-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo Bagel (café americano + bagel) -15%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-14T12:00:36-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-14T12:00:36-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -15%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-14T12:00:36-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-14T12:00:36-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Combo Bagel (café americano + bagel) -15%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 161.0,
-  "margen_pct": 36.3,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-14T12:00:36-08:00|Baristi Rosarito (Tijuana)|1",
   "corrida_at": "2026-11-14T12:00:36-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
@@ -11998,5 +11926,77 @@
   "margen_pct": 46.1,
   "aprobada": false,
   "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-18T06:30:49-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-18T06:30:49-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Desayuno completo para llevar $170",
+  "segmento": "recurrentes",
+  "producto_id": "combo_americano_16_oz_bagel_galleta",
+  "precio": 170.0,
+  "margen_pct": 37.3,
+  "aprobada": false,
+  "motivo": "Descuento 10% supera el máximo permitido 10%"
+ },
+ {
+  "promo": "2026-11-18T06:30:59-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-18T06:30:59-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Desayuno bagel + americano $175",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 175.0,
+  "margen_pct": 37.9,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-18T06:30:59-08:00|Baristi Macroplaza|1",
+  "corrida_at": "2026-11-18T06:30:59-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Bagel salado $79",
+  "segmento": "todos",
+  "producto_id": "bagel_salado",
+  "precio": 79.0,
+  "margen_pct": 15.6,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-18T06:31:11-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-18T06:31:11-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Desayuno con bagel y americano $169",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 169.0,
+  "margen_pct": 37.2,
+  "aprobada": false,
+  "motivo": "Descuento 11% supera el máximo permitido 10%"
+ },
+ {
+  "promo": "2026-11-18T06:31:29-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-18T06:31:29-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Desayuno completo para llevar: café americano + bagel $179",
+  "segmento": "recurrentes",
+  "producto_id": "combo_bagel_cafe_americano_bagel",
+  "precio": 179.0,
+  "margen_pct": 38.3,
+  "aprobada": true,
+  "motivo": ""
+ },
+ {
+  "promo": "2026-11-18T06:31:29-08:00|Baristi Rosarito (Tijuana)|1",
+  "corrida_at": "2026-11-18T06:31:29-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Agrega una galleta de zanahoria a tu café $45",
+  "segmento": "todos",
+  "producto_id": "galleta_de_zanahoria",
+  "precio": 45.0,
+  "margen_pct": 16.1,
+  "aprobada": true,
+  "motivo": ""
  }
 ]
