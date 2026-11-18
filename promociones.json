@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-14T15:00:37-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-14T15:00:37-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -20%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 152.0,
-  "margen_pct": 35.1,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-14T15:00:37-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-14T15:00:37-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
@@ -11990,6 +11978,18 @@
  {
   "promo": "2026-11-18T12:00:44-08:00|Baristi Macroplaza|0",
   "corrida_at": "2026-11-18T12:00:44-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Café para dos con postre $225",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 225.0,
+  "margen_pct": 30.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Valle Mañana (Hora Muerta)"
+ },
+ {
+  "promo": "2026-11-18T12:30:38-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-18T12:30:38-08:00",
   "tienda": "Baristi Macroplaza",
   "mecanica": "Café para dos con postre $225",
   "segmento": "recurrentes",
