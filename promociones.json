@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-14T15:00:37-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-14T15:00:37-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Bagel (café americano + bagel) -20%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 152.0,
-  "margen_pct": 35.1,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-14T15:00:37-08:00|Baristi Macroplaza|1",
   "corrida_at": "2026-11-14T15:00:37-08:00",
   "tienda": "Baristi Macroplaza",
@@ -11998,5 +11986,17 @@
   "margen_pct": 15.0,
   "aprobada": false,
   "motivo": "Costo 72.7% del ingreso real (55% del precio), máximo 48%"
+ },
+ {
+  "promo": "2026-11-18T11:01:15-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-18T11:01:15-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Café para dos con postre $225",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 225.0,
+  "margen_pct": 30.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Valle Mañana (Hora Muerta)"
  }
 ]
