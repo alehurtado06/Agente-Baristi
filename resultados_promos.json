@@ -7,22 +7,22 @@
   "hasta": "",
   "origen": "equipo",
   "estado": "activa",
-  "dias": 5,
+  "dias": 8,
   "antes": {
-   "dias": 5,
-   "pedidos_dia": 5.2,
-   "venta_dia": 1374.8,
-   "ticket": 264.38
+   "dias": 8,
+   "pedidos_dia": 4.88,
+   "venta_dia": 1243.25,
+   "ticket": 255.03
   },
   "durante": {
-   "dias": 5,
-   "pedidos_dia": 5.4,
-   "venta_dia": 1562.44,
-   "ticket": 289.34
+   "dias": 8,
+   "pedidos_dia": 4.38,
+   "venta_dia": 1256.58,
+   "ticket": 287.22
   },
-  "cambio_pedidos_pct": 3.8,
-  "cambio_ticket_pct": 9.4,
-  "cambio_venta_pct": 13.6
+  "cambio_pedidos_pct": -10.2,
+  "cambio_ticket_pct": 12.6,
+  "cambio_venta_pct": 1.1
  },
  {
   "promo": "Combo pareja: 2 lattes + 1 postre por $209",
@@ -32,22 +32,22 @@
   "hasta": "",
   "origen": "equipo",
   "estado": "activa",
-  "dias": 5,
+  "dias": 8,
   "antes": {
-   "dias": 5,
-   "pedidos_dia": 3.8,
-   "venta_dia": 848.6,
-   "ticket": 223.32
+   "dias": 8,
+   "pedidos_dia": 3.12,
+   "venta_dia": 753.0,
+   "ticket": 240.96
   },
   "durante": {
-   "dias": 5,
-   "pedidos_dia": 5.4,
-   "venta_dia": 1589.4,
-   "ticket": 294.33
+   "dias": 8,
+   "pedidos_dia": 5.12,
+   "venta_dia": 1313.8,
+   "ticket": 256.35
   },
-  "cambio_pedidos_pct": 42.1,
-  "cambio_ticket_pct": 31.8,
-  "cambio_venta_pct": 87.3
+  "cambio_pedidos_pct": 64.1,
+  "cambio_ticket_pct": 6.4,
+  "cambio_venta_pct": 74.5
  },
  {
   "promo": "15% en cafruccinos",
@@ -57,22 +57,22 @@
   "hasta": "",
   "origen": "equipo",
   "estado": "activa",
-  "dias": 5,
+  "dias": 8,
   "antes": {
-   "dias": 5,
-   "pedidos_dia": 3.2,
-   "venta_dia": 821.4,
-   "ticket": 256.69
+   "dias": 8,
+   "pedidos_dia": 3.12,
+   "venta_dia": 730.25,
+   "ticket": 233.68
   },
   "durante": {
-   "dias": 5,
-   "pedidos_dia": 3.6,
-   "venta_dia": 857.53,
-   "ticket": 238.2
+   "dias": 8,
+   "pedidos_dia": 3.38,
+   "venta_dia": 899.68,
+   "ticket": 266.57
   },
-  "cambio_pedidos_pct": 12.5,
-  "cambio_ticket_pct": -7.2,
-  "cambio_venta_pct": 4.4
+  "cambio_pedidos_pct": 8.3,
+  "cambio_ticket_pct": 14.1,
+  "cambio_venta_pct": 23.2
  },
  {
   "promo": "15% en cafruccinos",
@@ -82,22 +82,22 @@
   "hasta": "",
   "origen": "equipo",
   "estado": "activa",
-  "dias": 5,
+  "dias": 8,
   "antes": {
-   "dias": 5,
-   "pedidos_dia": 3.2,
-   "venta_dia": 1189.6,
-   "ticket": 371.75
+   "dias": 8,
+   "pedidos_dia": 2.5,
+   "venta_dia": 863.38,
+   "ticket": 345.35
   },
   "durante": {
-   "dias": 5,
-   "pedidos_dia": 2.0,
-   "venta_dia": 552.55,
-   "ticket": 276.28
+   "dias": 8,
+   "pedidos_dia": 1.75,
+   "venta_dia": 463.31,
+   "ticket": 264.75
   },
-  "cambio_pedidos_pct": -37.5,
-  "cambio_ticket_pct": -25.7,
-  "cambio_venta_pct": -53.6
+  "cambio_pedidos_pct": -30.0,
+  "cambio_ticket_pct": -23.3,
+  "cambio_venta_pct": -46.3
  },
  {
   "promo": "2x1 (Buy 1, get 1) en artículos seleccionados, visto en Uber el 15 nov",
@@ -106,8 +106,23 @@
   "desde": "2026-11-15",
   "hasta": "",
   "origen": "equipo",
-  "estado": "en observación",
-  "dias": 1
+  "estado": "activa",
+  "dias": 4,
+  "antes": {
+   "dias": 4,
+   "pedidos_dia": 6.25,
+   "venta_dia": 1633.61,
+   "ticket": 261.38
+  },
+  "durante": {
+   "dias": 4,
+   "pedidos_dia": 2.5,
+   "venta_dia": 879.55,
+   "ticket": 351.82
+  },
+  "cambio_pedidos_pct": -60.0,
+  "cambio_ticket_pct": 34.6,
+  "cambio_venta_pct": -46.2
  },
  {
   "promo": "10% de descuento en compras de más de $199, visto en Uber el 15 nov",
@@ -116,8 +131,23 @@
   "desde": "2026-11-15",
   "hasta": "",
   "origen": "equipo",
-  "estado": "en observación",
-  "dias": 1
+  "estado": "activa",
+  "dias": 4,
+  "antes": {
+   "dias": 4,
+   "pedidos_dia": 2.25,
+   "venta_dia": 633.72,
+   "ticket": 281.65
+  },
+  "durante": {
+   "dias": 4,
+   "pedidos_dia": 1.25,
+   "venta_dia": 292.9,
+   "ticket": 234.32
+  },
+  "cambio_pedidos_pct": -44.4,
+  "cambio_ticket_pct": -16.8,
+  "cambio_venta_pct": -53.8
  },
  {
   "promo": "10% de descuento en compras de más de $199, visto en Uber el 15 nov",
@@ -126,7 +156,22 @@
   "desde": "2026-11-15",
   "hasta": "",
   "origen": "equipo",
-  "estado": "en observación",
-  "dias": 1
+  "estado": "activa",
+  "dias": 4,
+  "antes": {
+   "dias": 4,
+   "pedidos_dia": 3.5,
+   "venta_dia": 843.42,
+   "ticket": 240.98
+  },
+  "durante": {
+   "dias": 4,
+   "pedidos_dia": 3.25,
+   "venta_dia": 955.94,
+   "ticket": 294.14
+  },
+  "cambio_pedidos_pct": -7.1,
+  "cambio_ticket_pct": 22.1,
+  "cambio_venta_pct": 13.3
  }
 ]
