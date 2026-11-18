@@ -1,0 +1,132 @@
+[
+ {
+  "promo": "Galleta de zanahoria a $40",
+  "tienda": "Baristi Etu (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-11",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "activa",
+  "dias": 5,
+  "antes": {
+   "dias": 5,
+   "pedidos_dia": 5.2,
+   "venta_dia": 1374.8,
+   "ticket": 264.38
+  },
+  "durante": {
+   "dias": 5,
+   "pedidos_dia": 5.4,
+   "venta_dia": 1562.44,
+   "ticket": 289.34
+  },
+  "cambio_pedidos_pct": 3.8,
+  "cambio_ticket_pct": 9.4,
+  "cambio_venta_pct": 13.6
+ },
+ {
+  "promo": "Combo pareja: 2 lattes + 1 postre por $209",
+  "tienda": "Baristi Pacífico",
+  "segmento": "todos",
+  "desde": "2026-11-11",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "activa",
+  "dias": 5,
+  "antes": {
+   "dias": 5,
+   "pedidos_dia": 3.8,
+   "venta_dia": 848.6,
+   "ticket": 223.32
+  },
+  "durante": {
+   "dias": 5,
+   "pedidos_dia": 5.4,
+   "venta_dia": 1589.4,
+   "ticket": 294.33
+  },
+  "cambio_pedidos_pct": 42.1,
+  "cambio_ticket_pct": 31.8,
+  "cambio_venta_pct": 87.3
+ },
+ {
+  "promo": "15% en cafruccinos",
+  "tienda": "Baristi Macroplaza",
+  "segmento": "todos",
+  "desde": "2026-11-11",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "activa",
+  "dias": 5,
+  "antes": {
+   "dias": 5,
+   "pedidos_dia": 3.2,
+   "venta_dia": 821.4,
+   "ticket": 256.69
+  },
+  "durante": {
+   "dias": 5,
+   "pedidos_dia": 3.6,
+   "venta_dia": 857.53,
+   "ticket": 238.2
+  },
+  "cambio_pedidos_pct": 12.5,
+  "cambio_ticket_pct": -7.2,
+  "cambio_venta_pct": 4.4
+ },
+ {
+  "promo": "15% en cafruccinos",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-11",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "activa",
+  "dias": 5,
+  "antes": {
+   "dias": 5,
+   "pedidos_dia": 3.2,
+   "venta_dia": 1189.6,
+   "ticket": 371.75
+  },
+  "durante": {
+   "dias": 5,
+   "pedidos_dia": 2.0,
+   "venta_dia": 552.55,
+   "ticket": 276.28
+  },
+  "cambio_pedidos_pct": -37.5,
+  "cambio_ticket_pct": -25.7,
+  "cambio_venta_pct": -53.6
+ },
+ {
+  "promo": "2x1 (Buy 1, get 1) en artículos seleccionados, visto en Uber el 15 nov",
+  "tienda": "Baristi Etu (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-15",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 1
+ },
+ {
+  "promo": "10% de descuento en compras de más de $199, visto en Uber el 15 nov",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-15",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 1
+ },
+ {
+  "promo": "10% de descuento en compras de más de $199, visto en Uber el 15 nov",
+  "tienda": "Baristi Macroplaza",
+  "segmento": "todos",
+  "desde": "2026-11-15",
+  "hasta": "",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 1
+ }
+]
