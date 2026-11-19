@@ -21334,5 +21334,61 @@
   "aprobadas": 0,
   "bloqueadas": 0,
   "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-19T10:30:48-08:00|Baristi Etu (Tijuana)",
+  "corrida_at": "2026-11-19T10:30:48-08:00",
+  "hora_negocio": "2026-11-19 10:30",
+  "simulada": false,
+  "tienda": "Baristi Etu (Tijuana)",
+  "bloque": "Pico Mañana (Desayunos)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 0,
+  "aprobadas": 0,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-19T10:31:01-08:00|Baristi Macroplaza",
+  "corrida_at": "2026-11-19T10:31:01-08:00",
+  "hora_negocio": "2026-11-19 10:30",
+  "simulada": false,
+  "tienda": "Baristi Macroplaza",
+  "bloque": "Pico Mañana (Desayunos)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 0,
+  "aprobadas": 0,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-19T10:31:08-08:00|Baristi Pacífico",
+  "corrida_at": "2026-11-19T10:31:08-08:00",
+  "hora_negocio": "2026-11-19 10:30",
+  "simulada": false,
+  "tienda": "Baristi Pacífico",
+  "bloque": "Pico Mañana (Desayunos)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 0,
+  "aprobadas": 0,
+  "bloqueadas": 0,
+  "whatsapp_enviado": false
+ },
+ {
+  "corrida": "2026-11-19T10:31:18-08:00|Baristi Rosarito (Tijuana)",
+  "corrida_at": "2026-11-19T10:31:18-08:00",
+  "hora_negocio": "2026-11-19 10:30",
+  "simulada": false,
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "bloque": "Pico Mañana (Desayunos)",
+  "motor": "claude",
+  "modo": "propose",
+  "propuestas": 1,
+  "aprobadas": 0,
+  "bloqueadas": 1,
+  "whatsapp_enviado": false
  }
 ]
