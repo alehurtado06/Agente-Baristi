@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-15T08:00:38-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-15T08:00:38-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Bagel (café americano + bagel) -10%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 171.0,
-  "margen_pct": 37.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-15T08:00:38-08:00|Baristi Macroplaza|1",
   "corrida_at": "2026-11-15T08:00:38-08:00",
   "tienda": "Baristi Macroplaza",
@@ -11990,6 +11978,18 @@
  {
   "promo": "2026-11-19T17:31:38-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-19T17:31:38-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "2 lattes + postre para compartir $229",
+  "segmento": "uber_one",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 229.0,
+  "margen_pct": 30.6,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
+ },
+ {
+  "promo": "2026-11-19T18:01:36-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-19T18:01:36-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
   "mecanica": "2 lattes + postre para compartir $229",
   "segmento": "uber_one",
