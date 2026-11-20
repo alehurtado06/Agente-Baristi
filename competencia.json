@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): La categoría de Rosarito muestra \"20% en artículos seleccionados\" (antes 30%; no se abrió la página de la tienda, detalle de artículos sin confirmar); Pacífico: La categoría de Rosarito muestra \"20% en artículos seleccionados\" (antes sin etiqueta visible; no se abrió la página, detalle sin confirmar)",
+  "promo": "Rosarito (Tijuana): La categoría de Rosarito sigue mostrando \"20% en artículos seleccionados\" (sin cambios; no se abrió la página de la tienda); Pacífico: La categoría de Rosarito sigue mostrando \"20% en artículos seleccionados\" (sin cambios; no se abrió la página de la tienda)",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína, sabor Pan de Muerto), Kfreeze y brownie",
+  "promo": "Sin artículos con descuento visibles hoy (precio completo; antes 30% en Rockaccino, Kfreeze y brownie)",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Pistache, Carajillo, Proteína, sabor Pan de Muerto), Kfreeze y brownie; Vista Río además tiene 2x1 en Pan de Muerto ($59)",
+  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Carajillo), Kfreeze y brownie; Vista Río además tiene 2x1 en Pan de Muerto ($59); la categoría muestra 30% en Floresta, Jibarito y Rosarito Libre",
   "latte": 73,
   "frappe": 76
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "25% en Combo Sopa de Tortilla + Limonada ($245→$184) y Sopa de Tortilla ($150→$112.50); 19% en Combo Chilaquiles + Limonada ($245→$199); 15% en Enchiladas de Pollo ($230→$195.50); la categoría lo resume como \"15% en artículos seleccionados\". Bebidas a precio completo",
+  "promo": "25% en Combo Sopa de Tortilla + Limonada ($245→$184) y Sopa de Tortilla ($150→$112.50); 19% en Combo Chilaquiles + Limonada ($245→$199); 15% en Enchiladas de Pollo ($230→$195.50); la categoría lo resume como \"15% en artículos seleccionados\". Bebidas a precio completo (etiqueta de categoría vigente; en la página de la tienda no se vio precio con descuento al revisar, sin confirmar)",
   "latte": 105,
   "frappe": 145
  },
@@ -51,7 +51,7 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "15% en latte helado (16oz), latte grande (20oz), sándwiches y limonada cold brew; 25% en Combo Eats bagel o pollo + americano (20oz); 21% en Combo Jueves ($302→$238); la categoría de Rosarito muestra 25% en Pacífico, 15% en Barcelona y $64 en Santa Fe",
+  "promo": "15% en latte helado (16oz), latte grande (20oz), sándwiches y limonada cold brew; 25% en Combo Eats bagel o pollo + americano (20oz); 21% en Combo Jueves ($302→$238); la categoría de Rosarito muestra 25% en Pacífico, 15% en Barcelona y $64 en Santa Fe (etiqueta de categoría vigente; en la página de la tienda no se vio precio con descuento al revisar, sin confirmar)",
   "latte": 101,
   "frappe": 120
  },
@@ -59,7 +59,7 @@
   "competidor": "Nómada Coffee Crew",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en latte natural (caliente y frío), latte de vainilla caliente, latte de butterscotch frío y chai de plátano",
+  "promo": "Sin artículos con descuento visibles hoy (precio completo; antes 25% en lattes y chai de plátano)",
   "latte": 80,
   "frappe": 140
  },
@@ -67,7 +67,7 @@
   "competidor": "Carlota's Cafe & Deli (Rosarito, Calle Ensenada)",
   "zona": "Rosarito (Tijuana), Pacífico",
   "posicion": "independiente",
-  "promo": "30% en artículos seleccionados (latte, waffles, crepas, hamburguesa sencilla)",
+  "promo": "30% en artículos seleccionados (latte, waffles, crepas, hamburguesa sencilla) (etiqueta de categoría vigente; en la página de la tienda no se vio precio con descuento al revisar, sin confirmar)",
   "latte": 87.2,
   "frappe": 98.1
  },
@@ -83,7 +83,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "independiente",
-  "promo": "25% en latte natural y matcha No.2; 20% en espresso americano; 30% en galletas y panqué de plátano (ya no se ve Pumpkin Spice Latte)",
+  "promo": "25% en latte natural; espresso americano $56 y matcha No.2 $82.50 sin precio de lista visible (posible descuento vigente); 30% en galleta chocochispas; galleta Biscoff ya sin descuento ($80)",
   "latte": 95,
   "frappe": null
  },
@@ -99,7 +99,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en latte natural y matcha No.2; 20% en espresso americano; 30% en galletas y panqué de plátano (ya no se ve Pumpkin Spice Latte)",
+  "promo": "25% en latte natural; espresso americano $56 y matcha No.2 $82.50 sin precio de lista visible (posible descuento vigente); 30% en galleta chocochispas; galleta Biscoff ya sin descuento ($80)",
   "latte": 95,
   "frappe": null
  }
