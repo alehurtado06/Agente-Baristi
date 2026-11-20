@@ -1,29 +1,5 @@
 [
  {
-  "promo": "2026-11-15T08:00:39-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-15T08:00:39-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -10%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 171.0,
-  "margen_pct": 37.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
-  "promo": "2026-11-15T08:00:39-08:00|Baristi Rosarito (Tijuana)|0",
-  "corrida_at": "2026-11-15T08:00:39-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Combo Bagel (café americano + bagel) -10%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 171.0,
-  "margen_pct": 37.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-15T08:00:39-08:00|Baristi Rosarito (Tijuana)|1",
   "corrida_at": "2026-11-15T08:00:39-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
@@ -11990,6 +11966,30 @@
  {
   "promo": "2026-11-20T05:02:09-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-20T05:02:09-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Café para dos + postre $225",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 225.0,
+  "margen_pct": 30.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-20T05:30:37-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-20T05:30:37-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Café para dos con postre $229",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 229.0,
+  "margen_pct": 30.6,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-20T05:30:37-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-20T05:30:37-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
   "mecanica": "Café para dos + postre $225",
   "segmento": "recurrentes",
