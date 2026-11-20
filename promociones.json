@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-15T08:30:35-08:00|Baristi Rosarito (Tijuana)|1",
-  "corrida_at": "2026-11-15T08:30:35-08:00",
-  "tienda": "Baristi Rosarito (Tijuana)",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -10%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 171.0,
-  "margen_pct": 37.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-15T09:00:36-08:00|Baristi Etu (Tijuana)|0",
   "corrida_at": "2026-11-15T09:00:36-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -11990,6 +11978,18 @@
  {
   "promo": "2026-11-20T07:31:09-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-20T07:31:09-08:00",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "mecanica": "Desayuno para dos: 2 lattes + postre $225",
+  "segmento": "recurrentes",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 225.0,
+  "margen_pct": 30.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-20T08:00:38-08:00|Baristi Rosarito (Tijuana)|0",
+  "corrida_at": "2026-11-20T08:00:38-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
   "mecanica": "Desayuno para dos: 2 lattes + postre $225",
   "segmento": "recurrentes",
