@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-15T08:00:38-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-15T08:00:38-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo Bagel (café americano + bagel) -10%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 171.0,
-  "margen_pct": 37.4,
-  "aprobada": true,
-  "motivo": ""
- },
- {
   "promo": "2026-11-15T08:00:38-08:00|Baristi Etu (Tijuana)|1",
   "corrida_at": "2026-11-15T08:00:38-08:00",
   "tienda": "Baristi Etu (Tijuana)",
@@ -11996,6 +11984,18 @@
   "producto_id": "smoothie_mango",
   "precio": 115.0,
   "margen_pct": 34.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
+ },
+ {
+  "promo": "2026-11-19T17:00:54-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-19T17:00:54-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Café para dos con postre $225",
+  "segmento": "uber_one",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 225.0,
+  "margen_pct": 30.2,
   "aprobada": false,
   "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
  }
