@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Pacífico: Ahorra $60 gastando +$160 (visto en la categoría de Rosarito); Rosarito (Tijuana): No disponible de momento al revisar; sin promo visible (la anterior '20% en artículos seleccionados' no aparece hoy)",
+  "promo": "Pacífico: Sin promo visible en la categoría de Rosarito (abre 7:00 a.m., pedidos programados); la anterior 'Ahorra $60 gastando +$160' no aparece hoy; Rosarito (Tijuana): No disponible de momento al revisar; sin promo visible",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "Sin artículos con descuento visibles hoy (precio completo; antes 30% en Rockaccino, Kfreeze y brownie) (sin cambios: tienda cerrada al revisar)",
+  "promo": "Sin artículos con descuento visibles hoy (precio completo); la categoría muestra 30% en Elías Calles, Bellas Artes y Vía Poniente",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Carajillo), Kfreeze y brownie; Vista Río además tiene 2x1 en Pan de Muerto ($59); la categoría muestra 30% en Floresta, Jibarito y Rosarito Libre (sin cambios: tienda cerrada al revisar)",
+  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Carajillo, Pistache, Proteína, Pan de Muerto), Kfreeze y brownie; la categoría muestra 30% en Floresta, Jibarito y Rosarito Libre (Vista Río: sin 2x1 de Pan de Muerto visible hoy)",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Espresso Americano, Frappuccino Caramel y Mocha, Shaken Espressos (Avellana, Brown Sugar), Refreshers/Pink Drink, café del día y combos (Working Lunch); Latte Lunch $219 exclusivo; NUEVO 2x1 (Compra 1, obtén 1) en Merry Latte, Helado Merry Latte, Merry Frappuccino, Caramel Brulée Latte/Frappuccino; la categoría muestra 2x1 en Camino Real y Terán",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Espresso Americano, Frappuccino Caramel y Mocha, Shaken Espressos (Avellana, Brown Sugar), Refreshers/Pink Drink, café del día y combos (Working Lunch); Latte Lunch $219 exclusivo; el 2x1 de Merry/Caramel Brulée no aparece hoy en la categoría ni en el texto leído (sin confirmar); Pink Drink y Mango Dragonfruit Refresher también 30%",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Espresso Americano, Frappuccino Caramel y Mocha, Shaken Espressos (Avellana, Brown Sugar), Refreshers/Pink Drink, café del día y combos (Working Lunch); Latte Lunch $219 exclusivo; probable 2x1 de temporada en Merry/Caramel Brulée igual que Camino Real (sin confirmar en esta sucursal); categoría muestra 30% en Plaza Pacífico, Las Alondras y Rosarito",
+  "promo": "30% en Caramel Macchiato (caliente y helado), Flat White, Espresso Americano, Frappuccino Caramel y Mocha, Shaken Espressos (Avellana, Brown Sugar), Refreshers/Pink Drink, café del día y combos (Working Lunch); Latte Lunch $219 exclusivo; Vía Rápida confirmada con 30% hoy; sin 2x1 visible; categoría muestra 30% en Plaza Pacífico, Las Alondras y Rosarito",
   "latte": 94,
   "frappe": 109
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "19% en Combo Chilaquiles + Limonada ($245→$199); 25% en Combo Sopa de Tortilla + Limonada ($245→$184); la categoría muestra '$46 en artículos seleccionados' (bebidas a precio completo en tienda)",
+  "promo": "Sin descuentos visibles hoy (Combo Chilaquiles + Limonada y Combo Sopa de Tortilla + Limonada a $245 precio completo; antes 19%/25%)",
   "latte": 105,
   "frappe": 145
  },
@@ -51,7 +51,7 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "Sin descuentos visibles en la página de la tienda (Combo Eats bagel+americano $239 a precio completo); la categoría muestra 15% en Santa Fe/Río y 'Ahorra $30 gastando +$199' en Pacífico",
+  "promo": "Sin descuentos visibles en la página de la tienda (Combo Eats bagel+americano $239 a precio completo); la categoría de Rosarito muestra 15% en Blue Luna Barcelona",
   "latte": 101,
   "frappe": 120
  },
@@ -83,7 +83,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "independiente",
-  "promo": "25% en latte natural; espresso americano $56 y matcha No.2 $82.50 sin precio de lista visible (posible descuento vigente); 30% en galleta chocochispas; galleta Biscoff ya sin descuento ($80) (sin cambios: tienda cerrada al revisar)",
+  "promo": "25% en latte natural; 30% en espresso americano y latte de vainilla; 30% en galleta chocochispas; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; Biscoff sin descuento ($80)",
   "latte": 95,
   "frappe": null
  },
@@ -99,7 +99,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en latte natural; espresso americano $56 y matcha No.2 $82.50 sin precio de lista visible (posible descuento vigente); 30% en galleta chocochispas; galleta Biscoff ya sin descuento ($80) (sin cambios: tienda cerrada al revisar)",
+  "promo": "25% en latte natural; 30% en espresso americano y latte de vainilla; 30% en galleta chocochispas; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; Biscoff sin descuento ($80)",
   "latte": 95,
   "frappe": null
  },
@@ -107,7 +107,7 @@
   "competidor": "King's Court Coffee (Tijuana)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "sin datos",
-  "promo": "40% en artículos seleccionados (visto en la categoría de Tijuana; página de tienda no abierta, sin precios)",
+  "promo": "40% en artículos seleccionados (visto en la categoría de Tijuana el 22-nov; hoy no apareció en la página 1; sin precios)",
   "latte": null,
   "frappe": null
  }
