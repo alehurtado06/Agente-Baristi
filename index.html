@@ -365,7 +365,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <div class="card-title" style="margin-bottom:4px">Reporte diario de ventas</div>
       <div class="wow-vs" style="margin-bottom:12px" id="rep-texto"></div>
       <div class="filters" style="position:static;padding-top:0">
-        <div class="f-field"><label for="rep-fecha">Día</label><select id="rep-fecha"></select></div>
+        <div class="f-field"><label for="rep-vista">Reporte</label><select id="rep-vista"><option value="dia">Diario</option><option value="semana">Semanal</option></select></div>
+        <div class="f-field"><label for="rep-fecha" id="rep-fecha-lbl">Día</label><select id="rep-fecha"></select></div>
       </div>
       <div id="rep-alertas" style="margin:8px 0"></div>
       <div style="overflow-x:auto"><table class="wow-tbl" id="rep-tbl"></table></div>
@@ -660,48 +661,35 @@ function renderResultados(){
 }
 
 function renderReporte(){
-  const R=DATA.reporte_diario&&DATA.reporte_diario.reportes;
+  const D=DATA.reporte_diario||{};
   const card=document.getElementById('rep-card');
+  const vista=document.getElementById('rep-vista').value;
+  const R=vista==='semana'?D.semanas:D.reportes;
   const fechas=R?Object.keys(R).sort().reverse():[];
-  if(!fechas.length){card.style.display='none';return;}
+  if(!fechas.length){card.style.display=vista==='dia'?'none':'';if(vista==='dia')return;}
   card.style.display='';
   const sel=document.getElementById('rep-fecha');
-  if(!sel.options.length){
+  if(sel.dataset.vista!==vista){
+    sel.dataset.vista=vista;sel.innerHTML='';
+    document.getElementById('rep-fecha-lbl').textContent=vista==='semana'?'Semana':'Día';
     const hoy=new Date().toLocaleDateString('en-CA',{timeZone:'America/Tijuana'});
-    fechas.forEach(f=>{const o=document.createElement('option');o.value=f;o.textContent=f+(f===hoy?' (en curso)':'');sel.appendChild(o);});
-    sel.value=fechas.find(f=>f<hoy)||fechas[0];
-    sel.addEventListener('change',renderReporte);
+    fechas.forEach(f=>{const o=document.createElement('option');o.value=f;
+      o.textContent=vista==='semana'?('Del '+f+' al '+R[f].fin):(f+(f===hoy?' (en curso)':''));sel.appendChild(o);});
+    sel.value=vista==='semana'?fechas[0]:(fechas.find(f=>f<hoy)||fechas[0]);
   }
   const rep=R[sel.value];
+  if(!rep){document.getElementById('rep-texto').textContent='Aún no hay una semana completa con datos.';document.getElementById('rep-alertas').innerHTML='';document.getElementById('rep-tbl').innerHTML='';return;}
   const money=v=>v==null?'–':'$'+Math.round(v).toLocaleString('es-MX');
   const pct=v=>v==null?'–':'<span style="color:'+(v>=0?'#2e7d32':'#c62828')+'">'+(v>0?'+':'')+v+'%</span>';
   document.getElementById('rep-texto').textContent=rep.texto;
-  document.getElementById('rep-alertas').innerHTML=rep.alertas.length?rep.alertas.map(a=>'<div style="font-size:12px;line-height:1.5;color:#c62828;padding:2px 0">⚠ '+esc(a)+'</div>').join(''):'<div style="font-size:12px;color:#2e7d32">Sin alertas: ninguna tienda cayó más de 15% contra el mismo día de la semana pasada.</div>';
-  document.getElementById('rep-tbl').innerHTML='<tr><th>Tienda</th><th>Venta</th><th>vs ayer</th><th>vs mismo día sem. pasada</th><th>Mostrador</th><th>Uber</th><th>Rappi</th><th>Tickets</th><th>Ticket prom.</th><th>% apps</th></tr>'+
-    rep.tiendas.map(t=>'<tr'+(t.tienda==='Total'?' style="font-weight:600"':'')+'><td>'+esc(t.tienda.replace('Baristi ',''))+'</td><td>'+money(t.venta)+'</td><td>'+pct(t.vs_ayer.venta)+'</td><td>'+pct(t.vs_semana.venta)+'</td><td>'+money(t.mostrador)+'</td><td>'+money(t.uber)+'</td><td>'+money(t.rappi)+'</td><td>'+t.tickets+'</td><td>'+money(t.ticket)+'</td><td>'+(t.pct_apps==null?'–':t.pct_apps+'%')+'</td></tr>').join('');
+  const umbral=vista==='semana'?'la semana anterior':'el mismo día de la semana pasada';
+  document.getElementById('rep-alertas').innerHTML=rep.alertas.length?rep.alertas.map(a=>'<div style="font-size:12px;line-height:1.5;color:#c62828;padding:2px 0">⚠ '+esc(a)+'</div>').join(''):'<div style="font-size:12px;color:#2e7d32">Sin alertas: ninguna tienda cayó más de 15% contra '+umbral+'.</div>';
+  const cols=vista==='semana'?'<th>vs semana anterior</th>':'<th>vs ayer</th><th>vs mismo día sem. pasada</th>';
+  const cmp=t=>vista==='semana'?'<td>'+pct(t.vs_semana_anterior.venta)+'</td>':'<td>'+pct(t.vs_ayer.venta)+'</td><td>'+pct(t.vs_semana.venta)+'</td>';
+  document.getElementById('rep-tbl').innerHTML='<tr><th>Tienda</th><th>Venta</th>'+cols+'<th>Mostrador</th><th>Uber</th><th>Rappi</th><th>Tickets</th><th>Ticket prom.</th><th>% apps</th></tr>'+
+    rep.tiendas.map(t=>'<tr'+(t.tienda==='Total'?' style="font-weight:600"':'')+'><td>'+esc(t.tienda.replace('Baristi ',''))+'</td><td>'+money(t.venta)+'</td>'+cmp(t)+'<td>'+money(t.mostrador)+'</td><td>'+money(t.uber)+'</td><td>'+money(t.rappi)+'</td><td>'+t.tickets+'</td><td>'+money(t.ticket)+'</td><td>'+(t.pct_apps==null?'–':t.pct_apps+'%')+'</td></tr>').join('');
 }
-
-function renderKorona(){
-  const rows=Array.isArray(DATA.korona_ventas)?DATA.korona_ventas:[];
-  const card=document.getElementById('kor-card');
-  if(!rows.length){card.style.display='none';return;}
-  card.style.display='';
-  const dias=+document.getElementById('kor-dias').value;
-  const last=rows.map(r=>r.fecha).sort().pop();
-  const d0=new Date(last+'T12:00:00');d0.setDate(d0.getDate()-dias+1);
-  const desde=d0.toISOString().slice(0,10);
-  const g={};
-  rows.filter(r=>r.fecha>=desde).forEach(r=>{const a=g[r.tienda]=g[r.tienda]||{mostrador:0,uber:0,rappi:0,t:0};a[r.canal]=(a[r.canal]||0)+r.venta;a.t+=r.tickets;});
-  const money=v=>'$'+Math.round(v).toLocaleString('es-MX');
-  const tot={mostrador:0,uber:0,rappi:0,t:0};
-  const fila=(n,a,b)=>{const v=(a.mostrador||0)+(a.uber||0)+(a.rappi||0);const apps=(a.uber||0)+(a.rappi||0);
-    return '<tr'+(b?' style="font-weight:600"':'')+'><td>'+esc(n)+'</td><td>'+money(a.mostrador||0)+'</td><td>'+money(a.uber||0)+'</td><td>'+money(a.rappi||0)+'</td><td>'+money(v)+'</td><td>'+(v?(100*apps/v).toFixed(0)+'%':'–')+'</td><td>'+a.t+'</td></tr>';};
-  const lines=Object.keys(g).sort().map(t=>{const a=g[t];['mostrador','uber','rappi','t'].forEach(k=>tot[k]+=a[k]||0);return fila(t,a);});
-  const v=tot.mostrador+tot.uber+tot.rappi;
-  document.getElementById('kor-sub').textContent='Del '+desde+' al '+last+': '+money(v)+' en caja; las apps (Uber + Rappi) son el '+(v?(100*(tot.uber+tot.rappi)/v).toFixed(0):0)+'%.';
-  document.getElementById('kor-tbl').innerHTML='<tr><th>Tienda</th><th>Mostrador</th><th>Uber</th><th>Rappi</th><th>Total</th><th>% apps</th><th>Tickets</th></tr>'+lines.join('')+fila('Total',tot,true);
-}
-document.addEventListener('change',e=>{if(e.target&&e.target.id==='kor-dias')renderKorona();});
+document.addEventListener('change',e=>{if(e.target&&(e.target.id==='rep-fecha'||e.target.id==='rep-vista'))renderReporte();});
 
 function render(){
   renderReporte();
