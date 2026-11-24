@@ -360,6 +360,18 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">El mismo día de la semana = 52 semanas antes (364 días), para que un lunes se compare con un lunes. Usa los filtros de plataforma, tienda, estado, entrega, dispositivo y cliente; ignora "Desde/Hasta".</p>
     </div>
 
+    <!-- ── reporte diario ── -->
+    <div class="card" id="rep-card" style="margin-top:16px">
+      <div class="card-title" style="margin-bottom:4px">Reporte diario de ventas</div>
+      <div class="wow-vs" style="margin-bottom:12px" id="rep-texto"></div>
+      <div class="filters" style="position:static;padding-top:0">
+        <div class="f-field"><label for="rep-fecha">Día</label><select id="rep-fecha"></select></div>
+      </div>
+      <div id="rep-alertas" style="margin:8px 0"></div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="rep-tbl"></table></div>
+      <p class="card-note">Venta cobrada en las cajas de KORONA (con impuestos). La alerta roja compara contra el mismo día de la semana pasada, que es la comparación justa; "vs ayer" es solo informativo. El ingreso real de las apps es lo que queda después de su comisión (55% del precio).</p>
+    </div>
+
     <!-- ── KORONA: ventas por canal ── -->
     <div class="card" id="kor-card" style="margin-top:16px">
       <div class="card-title" style="margin-bottom:4px">Ventas en KORONA · por canal</div>
@@ -619,7 +631,7 @@ function getBlock(h){return BLOCKS.find(b=>h>=b.start&&h<b.end)||null;}
 
 // ── data loading ──
 let DATA={};
-const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos'];
+const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos','reporte_diario'];
 async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
@@ -647,7 +659,30 @@ function renderResultados(){
              :'<td colspan="3" style="color:var(--muted)">Aún pocos días con datos</td>')+'</tr>').join('');
 }
 
+function renderReporte(){
+  const R=DATA.reporte_diario&&DATA.reporte_diario.reportes;
+  const card=document.getElementById('rep-card');
+  const fechas=R?Object.keys(R).sort().reverse():[];
+  if(!fechas.length){card.style.display='none';return;}
+  card.style.display='';
+  const sel=document.getElementById('rep-fecha');
+  if(!sel.options.length){
+    const hoy=new Date().toLocaleDateString('en-CA',{timeZone:'America/Tijuana'});
+    fechas.forEach(f=>{const o=document.createElement('option');o.value=f;o.textContent=f+(f===hoy?' (en curso)':'');sel.appendChild(o);});
+    sel.value=fechas.find(f=>f<hoy)||fechas[0];
+    sel.addEventListener('change',renderReporte);
+  }
+  const rep=R[sel.value];
+  const money=v=>v==null?'–':'$'+Math.round(v).toLocaleString('es-MX');
+  const pct=v=>v==null?'–':'<span style="color:'+(v>=0?'#2e7d32':'#c62828')+'">'+(v>0?'+':'')+v+'%</span>';
+  document.getElementById('rep-texto').textContent=rep.texto;
+  document.getElementById('rep-alertas').innerHTML=rep.alertas.length?rep.alertas.map(a=>'<div style="font-size:12px;line-height:1.5;color:#c62828;padding:2px 0">⚠ '+esc(a)+'</div>').join(''):'<div style="font-size:12px;color:#2e7d32">Sin alertas: ninguna tienda cayó más de 15% contra el mismo día de la semana pasada.</div>';
+  document.getElementById('rep-tbl').innerHTML='<tr><th>Tienda</th><th>Venta</th><th>vs ayer</th><th>vs mismo día sem. pasada</th><th>Mostrador</th><th>Uber</th><th>Rappi</th><th>Tickets</th><th>Ticket prom.</th><th>% apps</th></tr>'+
+    rep.tiendas.map(t=>'<tr'+(t.tienda==='Total'?' style="font-weight:600"':'')+'><td>'+esc(t.tienda.replace('Baristi ',''))+'</td><td>'+money(t.venta)+'</td><td>'+pct(t.vs_ayer.venta)+'</td><td>'+pct(t.vs_semana.venta)+'</td><td>'+money(t.mostrador)+'</td><td>'+money(t.uber)+'</td><td>'+money(t.rappi)+'</td><td>'+t.tickets+'</td><td>'+money(t.ticket)+'</td><td>'+(t.pct_apps==null?'–':t.pct_apps+'%')+'</td></tr>').join('');
+}
+
 function render(){
+  renderReporte();
   renderResultados();
   renderKorona();
   renderUber();
