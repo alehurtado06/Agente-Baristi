@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Pacífico: Sin promo visible en la categoría de Rosarito (abre 7:00 a.m., pedidos programados); la anterior 'Ahorra $60 gastando +$160' no aparece hoy; Rosarito (Tijuana): No disponible de momento al revisar; sin promo visible",
+  "promo": "Pacífico: No apareció en la página 1 de la categoría de Rosarito hoy; sin promo visible (se conserva lo anterior: sin promo activa); Rosarito (Tijuana): No disponible de momento al revisar; sin promo visible",
   "latte": null,
   "frappe": null
  },
@@ -83,7 +83,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "independiente",
-  "promo": "25% en latte natural; 30% en espresso americano y latte de vainilla; 30% en galleta chocochispas; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; Biscoff sin descuento ($80)",
+  "promo": "20% en espresso americano; 30% en sándwich ciabatta de pavo y pesto; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; latte natural y latte de vainilla a precio completo",
   "latte": 95,
   "frappe": null
  },
@@ -99,7 +99,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "25% en latte natural; 30% en espresso americano y latte de vainilla; 30% en galleta chocochispas; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; Biscoff sin descuento ($80)",
+  "promo": "20% en espresso americano; 30% en sándwich ciabatta de pavo y pesto; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; latte natural y latte de vainilla a precio completo",
   "latte": 95,
   "frappe": null
  },
