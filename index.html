@@ -605,6 +605,24 @@ details.detalle-pedidos>.card{margin-top:8px!important}
     </div>
   </div>
 
+  <!-- ── comparativo contra la competencia ── -->
+  <div class="section" id="cmp-sec">
+    <div class="card" id="cmp-card">
+      <div class="card-title" style="margin-bottom:4px">Mis precios contra la competencia, producto por producto</div>
+      <div class="wow-vs" id="cmp-sub" style="margin-bottom:12px"></div>
+      <div id="cmp-chips" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"></div>
+      <div class="filters" style="position:static;padding-top:0">
+        <div class="f-field"><label for="cmp-zona">Zona</label><select id="cmp-zona"><option value="">Ambas</option></select></div>
+        <div class="f-field"><label for="cmp-cat">Categoría</label><select id="cmp-cat"><option value="">Todas</option></select></div>
+        <div class="f-field"><label for="cmp-dec">Decisión</label><select id="cmp-dec"><option value="">Todas (con comparable)</option></select></div>
+        <div class="f-field"><label for="cmp-q">Buscar</label><input type="search" id="cmp-q" placeholder="Producto…"></div>
+      </div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="cmp-tbl"></table></div>
+      <div class="tbl-foot"><span id="cmp-count"></span><button class="f-reset" id="cmp-more" type="button">Ver más</button></div>
+      <p class="card-note">Precio comparable = mediana de los precios de lista de los competidores equivalentes en la zona. Más de 10% arriba: no se autoriza la promo y se pide tu autorización. Más de 10% abajo: se propone subir el precio al 90% del comparable. Dentro del margen: promo 10% debajo del comparable, solo si el costo no pasa 30% del precio ni 48% del ingreso real. Todo es propuesta: el agente no cambia precios en Uber Eats.</p>
+    </div>
+  </div>
+
   <!-- ── competencia ── -->
   <div class="section">
     <div class="section-title">Inteligencia competitiva</div>
@@ -664,7 +682,7 @@ function getBlock(h){return BLOCKS.find(b=>h>=b.start&&h<b.end)||null;}
 
 // ── data loading ──
 let DATA={};
-const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos','reporte_diario','korona_productos'];
+const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos','reporte_diario','korona_productos','comparativo_competencia'];
 async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
@@ -781,6 +799,47 @@ function renderUtilidad(){
 }
 document.addEventListener('change',e=>{if(e.target&&['uti-dias','uti-canal','uti-tienda'].includes(e.target.id))renderUtilidad();});
 
+var cmpLimit=60;
+function renderComparativo(){
+  const D=DATA.comparativo_competencia;
+  const card=document.getElementById('cmp-card');
+  if(!D||!Array.isArray(D.filas)||!D.filas.length){card.style.display='none';return;}
+  card.style.display='';
+  const F=D.filas;
+  const col={'PROPONER PROMO':'#2e7d32','SUBIR PRECIO':'#2f72c9','NO AUTORIZAR':'#c62828','PROMO NO VIABLE':'#c77d00','SIN PROMO':'#7a6555','PROMO SIN COSTO':'#7a6555','SIN COMPARABLE':'#b3a191'};
+  const key=d=>Object.keys(col).find(k=>String(d).indexOf(k)===0)||'';
+  const money=v=>v===''||v==null?'–':'$'+(Math.round(v*10)/10);
+  const fill=(id,vals,all)=>{const s=document.getElementById(id);if(s.options.length>1)return;vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o);});};
+  fill('cmp-zona',[...new Set(F.map(r=>r.zona))].sort());
+  fill('cmp-cat',[...new Set(F.map(r=>r.categoria))].sort());
+  fill('cmp-dec',[...new Set(F.map(r=>r.decision))].sort());
+  const z=document.getElementById('cmp-zona').value, c=document.getElementById('cmp-cat').value, d=document.getElementById('cmp-dec').value, q=document.getElementById('cmp-q').value.trim().toLowerCase();
+  const conComp=F.filter(r=>r.decision!=='SIN COMPARABLE');
+  const cnt={};F.forEach(r=>{const k=key(r.decision);cnt[k]=(cnt[k]||0)+1;});
+  document.getElementById('cmp-sub').textContent='Revisión de la competencia: '+D.revisado+' (hora Tijuana). '+conComp.length+' de '+F.length+' combinaciones producto-zona tienen un comparable.';
+  document.getElementById('cmp-chips').innerHTML=Object.keys(col).filter(k=>cnt[k]).map(k=>'<span class="tag" style="background:'+col[k]+'1a;color:'+col[k]+'">'+k.charAt(0)+k.slice(1).toLowerCase()+': '+cnt[k]+'</span>').join('');
+  let rows=F.filter(r=>(!z||r.zona===z)&&(!c||r.categoria===c)&&(d?r.decision===d:r.decision!=='SIN COMPARABLE')&&(!q||r.producto.toLowerCase().indexOf(q)>=0));
+  const orden={'NO AUTORIZAR':0,'SUBIR PRECIO':1,'PROPONER PROMO':2,'PROMO NO VIABLE':3};
+  rows.sort((a,b)=>(orden[key(a.decision)]??9)-(orden[key(b.decision)]??9)||Math.abs(b.diferencia_pct||0)-Math.abs(a.diferencia_pct||0));
+  const total=rows.length;rows=rows.slice(0,cmpLimit);
+  const head='<tr><th>Producto</th><th>Zona</th><th>Mi precio</th><th>Comparable</th><th>Dif.</th><th>Decisión</th><th>Propuesta</th><th>Costo/precio</th><th>Detalle y fuente</th></tr>';
+  const fila=r=>{
+    const k=key(r.decision);
+    const prop=r.precio_propuesto!==''?'Subir a '+money(r.precio_propuesto):(k==='PROPONER PROMO'?'Promo '+money(r.precio_promo)+' ('+r.descuento_pct+'% menos)':(r.precio_promo!==''?'<span style="color:var(--muted)">'+money(r.precio_promo)+' (no viable)</span>':'–'));
+    const cp=r.costo_pct_precio_promo!==''?r.costo_pct_precio_promo+'% / '+r.costo_pct_ingreso_real+'%':'–';
+    const det='<details><summary style="cursor:pointer;color:var(--copper2)">Ver</summary><div style="font-size:12px;line-height:1.5;max-width:420px;white-space:normal;text-align:left">'+
+      '<b>Por qué:</b> '+esc(r.motivo)+'<br><b>Competidores equivalentes:</b> '+esc(r.competidores_lista||'–')+'<br><b>Promo de la competencia:</b> '+esc(r.promo_competencia||'–')+'<br><b>Fuente:</b> '+
+      String(r.fuente||'').split('; ').filter(Boolean).map(u=>'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(u.replace(/^https?:\/\/(www\.)?/,'').slice(0,42))+'…</a>').join('<br>')+'</div></details>';
+    return '<tr><td>'+esc(r.producto)+'</td><td>'+esc(r.zona)+'</td><td>'+money(r.mi_precio)+'</td><td>'+(r.precio_comparable===''?'–':money(r.precio_comparable))+'</td><td style="color:'+(r.diferencia_pct>10?'#c62828':(r.diferencia_pct<-10?'#2f72c9':'inherit'))+'">'+(r.diferencia_pct===''?'–':(r.diferencia_pct>0?'+':'')+r.diferencia_pct+'%')+'</td><td><span class="tag" style="background:'+(col[k]||'#999')+'1a;color:'+(col[k]||'#999')+'">'+esc(r.decision)+'</span></td><td>'+prop+'</td><td>'+cp+'</td><td>'+det+'</td></tr>';
+  };
+  document.getElementById('cmp-tbl').innerHTML=head+rows.map(fila).join('');
+  document.getElementById('cmp-count').textContent='Mostrando '+rows.length+' de '+total;
+  document.getElementById('cmp-more').style.display=total>rows.length?'':'none';
+}
+document.addEventListener('change',e=>{if(e.target&&['cmp-zona','cmp-cat','cmp-dec'].includes(e.target.id)){cmpLimit=60;renderComparativo();}});
+document.addEventListener('input',e=>{if(e.target&&e.target.id==='cmp-q'){cmpLimit=60;renderComparativo();}});
+document.addEventListener('click',e=>{if(e.target&&e.target.id==='cmp-more'){cmpLimit+=100;renderComparativo();}});
+
 function render(){
   renderReporte();
   renderUtilidad();
@@ -797,6 +856,7 @@ function render(){
   renderFamilias();
   renderPromos(promoFilter);
   renderCompetencia();
+  renderComparativo();
 }
 
 // ── status pill ──
@@ -1691,7 +1751,8 @@ loadAll();
     ['ventas','Ventas','Ventas por plataforma y por canal, comparativos y detalle de pedidos.'],
     ['promos','Promos','Promociones propuestas, resultados de las aplicadas y análisis del agente.'],
     ['utilidad','Utilidad','Cuánto deja cada producto y cada tienda después de costos y comisiones.'],
-    ['competencia','Competencia','Precios y promociones de la competencia y cómo responde el agente.']
+    ['competencia','Competencia','Precios y promociones de la competencia y cómo responde el agente.'],
+    ['comparativo','Comparativo','Mis precios contra la competencia, producto por producto, con la decisión propuesta para cada uno.']
   ];
   const nav=document.createElement('div');nav.className='maintabs';nav.setAttribute('role','tablist');
   const panels={};
@@ -1729,6 +1790,7 @@ loadAll();
 
   // Competencia
   put('competencia',up('comp-response','.section'));
+  put('comparativo',$('cmp-sec'));
 
   // Ventas: lo que queda de la sección de plataformas + KORONA + horas + detalle
   const detalle=up('u-body','.card');
