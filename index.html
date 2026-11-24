@@ -234,6 +234,20 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .kpi-value{font-size:22px}
   .topbar-name{font-size:16px}
 }
+
+/* ── pestañas principales ── */
+.maintabs{position:sticky;top:0;z-index:20;display:flex;gap:2px;overflow-x:auto;background:var(--bg);border-bottom:1px solid var(--border);margin:0 -16px;padding:0 16px;-webkit-overflow-scrolling:touch}
+.maintab{font:inherit;font-size:14px;font-weight:600;background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-1px;padding:14px 16px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.maintab:hover{color:var(--text)}
+.maintab.active{color:var(--copper2);border-bottom-color:var(--copper)}
+.tabpanel{display:none}
+.tabpanel.active{display:block}
+.tabpanel>.section:first-child{margin-top:24px}
+details.detalle-pedidos{margin-top:16px}
+details.detalle-pedidos>summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--copper2);padding:10px 0}
+details.detalle-pedidos>.card{margin-top:8px!important}
+.tab-intro{font-size:13px;color:var(--muted);margin:20px 0 0;line-height:1.5}
+@media(max-width:600px){.maintab{padding:12px 12px;font-size:13px}}
 </style>
 </head>
 <body>
@@ -1665,6 +1679,88 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 loadAll();
+</script>
+<script>
+// ── reorganiza el dashboard en pestañas (mueve los bloques existentes; no cambia sus datos) ──
+(function(){
+  const $=id=>document.getElementById(id);
+  const up=(id,sel)=>{const e=$(id);return e?e.closest(sel):null;};
+  const topbar=document.querySelector('.topbar');
+  const defs=[
+    ['resumen','Resumen','Cómo va el negocio hoy y qué está haciendo el agente.'],
+    ['ventas','Ventas','Ventas por plataforma y por canal, comparativos y detalle de pedidos.'],
+    ['promos','Promos','Promociones propuestas, resultados de las aplicadas y análisis del agente.'],
+    ['utilidad','Utilidad','Cuánto deja cada producto y cada tienda después de costos y comisiones.'],
+    ['competencia','Competencia','Precios y promociones de la competencia y cómo responde el agente.']
+  ];
+  const nav=document.createElement('div');nav.className='maintabs';nav.setAttribute('role','tablist');
+  const panels={};
+  defs.forEach(([k,t,intro])=>{
+    const b=document.createElement('button');b.className='maintab';b.dataset.tab=k;b.setAttribute('role','tab');b.textContent=t;nav.appendChild(b);
+    const p=document.createElement('div');p.className='tabpanel';p.id='tab-'+k;
+    const i=document.createElement('p');i.className='tab-intro';i.textContent=intro;p.appendChild(i);
+    panels[k]=p;
+  });
+  topbar.after(nav);
+  let last=nav;defs.forEach(([k])=>{last.after(panels[k]);last=panels[k];});
+
+  const wrap=el=>{ // un bloque suelto va dentro de una .section para conservar el espaciado
+    if(!el) return null;
+    if(el.classList.contains('section')) return el;
+    const s=document.createElement('div');s.className='section';s.style.marginTop='16px';s.appendChild(el);return s;
+  };
+  const put=(k,el)=>{const w=wrap(el);if(w)panels[k].appendChild(w);};
+
+  // Resumen
+  put('resumen',up('k-venta','.section'));
+  put('resumen',up('estado-info','.section'));
+  put('resumen',$('rep-card'));
+
+  // Promos
+  put('promos',$('promo-card'));
+  put('promos',$('res-card'));
+  put('promos',up('analisis-grid','.section'));
+
+  // Utilidad
+  put('utilidad',$('uti-card'));
+  put('utilidad',$('med-card'));
+  put('utilidad',up('stores-grid','.section'));
+  put('utilidad',up('chart-familias','.card'));
+
+  // Competencia
+  put('competencia',up('comp-response','.section'));
+
+  // Ventas: lo que queda de la sección de plataformas + KORONA + horas + detalle
+  const detalle=up('u-body','.card');
+  const horas=up('chart-horas','.card');
+  const horasSec=up('chart-horas','.section');
+  const kor=$('kor-card');
+  put('ventas',$('uber'));
+  put('ventas',kor);
+  put('ventas',horas);
+  if(detalle){
+    const d=document.createElement('details');d.className='detalle-pedidos';
+    const s=document.createElement('summary');s.textContent='Ver detalle de pedidos (tabla)';
+    d.appendChild(s);d.appendChild(detalle);
+    const w=document.createElement('div');w.className='section';w.style.marginTop='16px';w.appendChild(d);panels.ventas.appendChild(w);
+  }
+  if(horasSec&&!horasSec.children.length||horasSec&&!horasSec.querySelector('.card')) horasSec.remove();
+
+  // navegación
+  function show(k,fromUser){
+    if(!panels[k]) k='resumen';
+    nav.querySelectorAll('.maintab').forEach(b=>b.classList.toggle('active',b.dataset.tab===k));
+    Object.keys(panels).forEach(x=>panels[x].classList.toggle('active',x===k));
+    try{localStorage.setItem('baristi_tab',k);}catch(e){}
+    if(fromUser){try{history.replaceState(null,'','#'+k);}catch(e){}window.scrollTo({top:0});}
+    if(typeof render==='function'&&typeof DATA!=='undefined'&&DATA&&Object.keys(DATA).length){try{render();}catch(e){console.error(e);}}
+  }
+  nav.addEventListener('click',e=>{const b=e.target.closest('.maintab');if(b)show(b.dataset.tab,true);});
+  let ini=(location.hash||'').slice(1);
+  if(!panels[ini]){try{ini=localStorage.getItem('baristi_tab')||'';}catch(e){ini='';}}
+  show(panels[ini]?ini:'resumen',false);
+  window.addEventListener('hashchange',()=>{const k=location.hash.slice(1);if(panels[k])show(k,false);});
+})();
 </script>
 </body>
 </html>
