@@ -373,6 +373,24 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       <p class="card-note">Venta cobrada en las cajas de KORONA (con impuestos). La alerta roja compara contra el mismo día de la semana pasada, que es la comparación justa; "vs ayer" es solo informativo. El ingreso real de las apps es lo que queda después de su comisión (55% del precio).</p>
     </div>
 
+    <!-- ── utilidad bruta por producto ── -->
+    <div class="card" id="uti-card" style="margin-top:16px">
+      <div class="card-title" style="margin-bottom:4px">Utilidad bruta por producto</div>
+      <div class="wow-vs" style="margin-bottom:12px" id="uti-sub"></div>
+      <div class="filters" style="position:static;padding-top:0">
+        <div class="f-field"><label for="uti-dias">Periodo</label>
+          <select id="uti-dias"><option value="7">Últimos 7 días</option><option value="14">Últimos 14 días</option><option value="30" selected>Últimos 30 días</option></select></div>
+        <div class="f-field"><label for="uti-canal">Canal</label>
+          <select id="uti-canal"><option value="">Todos</option><option value="uber">Uber</option><option value="rappi">Rappi</option><option value="mostrador">Mostrador</option></select></div>
+        <div class="f-field"><label for="uti-tienda">Tienda</label><select id="uti-tienda"><option value="">Todas</option></select></div>
+      </div>
+      <div class="card-title" style="font-size:12px;margin:12px 0 4px">Los que más utilidad dejan</div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="uti-top"></table></div>
+      <div class="card-title" style="font-size:12px;margin:16px 0 4px">Los que queman margen (menor margen, con al menos 5 unidades)</div>
+      <div style="overflow-x:auto"><table class="wow-tbl" id="uti-bajo"></table></div>
+      <p class="card-note">Utilidad bruta = ingreso real − costo. En Uber y Rappi el ingreso real es el 55% de la venta; en mostrador, la venta sin IVA. El costo sale del master de costeo (o el estimado de su familia si el producto no está). La columna "costo conocido" dice qué parte de la venta tiene costo; los extras sin costo (crema batida, shots) suman venta sin costo y sobrestiman la utilidad.</p>
+    </div>
+
     <!-- ── KORONA: ventas por canal ── -->
     <div class="card" id="kor-card" style="margin-top:16px">
       <div class="card-title" style="margin-bottom:4px">Ventas en KORONA · por canal</div>
@@ -632,7 +650,7 @@ function getBlock(h){return BLOCKS.find(b=>h>=b.start&&h<b.end)||null;}
 
 // ── data loading ──
 let DATA={};
-const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos','reporte_diario'];
+const FILES=['corridas','promociones','tiendas','horas','familias','analisis','competencia','pedidos','otros_pagos','korona_ventas','resultados_promos','reporte_diario','korona_productos'];
 async function loadAll(){
   await Promise.all(FILES.map(async id=>{
     try{
@@ -713,8 +731,37 @@ function renderKorona(){
 }
 document.addEventListener('change',e=>{if(e.target&&e.target.id==='kor-dias')renderKorona();});
 
+function renderUtilidad(){
+  const rows=Array.isArray(DATA.korona_productos)?DATA.korona_productos:[];
+  const card=document.getElementById('uti-card');
+  if(!rows.length){card.style.display='none';return;}
+  card.style.display='';
+  const sel=document.getElementById('uti-tienda');
+  if(sel.options.length<2){[...new Set(rows.map(r=>r.tienda))].sort().forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t.replace('Baristi ','');sel.appendChild(o);});}
+  const dias=+document.getElementById('uti-dias').value, canal=document.getElementById('uti-canal').value, tienda=sel.value;
+  const last=rows.map(r=>r.fecha).sort().pop();
+  const d0=new Date(last+'T12:00:00');d0.setDate(d0.getDate()-dias+1);
+  const desde=d0.toISOString().slice(0,10);
+  const g={};
+  rows.forEach(r=>{
+    if(r.fecha<desde||(canal&&r.canal!==canal)||(tienda&&r.tienda!==tienda))return;
+    const a=g[r.producto]=g[r.producto]||{producto:r.producto,u:0,v:0,i:0,c:0,vc:0};
+    a.u+=r.unidades;a.v+=r.venta;a.i+=r.ingreso;a.c+=r.costo;if(r.fuente)a.vc+=r.venta;
+  });
+  const list=Object.values(g).filter(a=>a.u>=3&&a.v>0&&a.vc>0).map(a=>({...a,ut:a.i-a.c,mg:a.i?100*(a.i-a.c)/a.i:null,cob:Math.round(100*a.vc/a.v)}));
+  const money=v=>'$'+Math.round(v).toLocaleString('es-MX');
+  const tot=list.reduce((s,a)=>({v:s.v+a.v,i:s.i+a.i,c:s.c+a.c,ut:s.ut+a.ut}),{v:0,i:0,c:0,ut:0});
+  document.getElementById('uti-sub').textContent='Del '+desde+' al '+last+': '+list.length+' productos, venta '+money(tot.v)+', utilidad bruta '+money(tot.ut)+(tot.i?' ('+(100*tot.ut/tot.i).toFixed(0)+'% del ingreso real).':'.');
+  const head='<tr><th>Producto</th><th>Unidades</th><th>Venta</th><th>Ingreso real</th><th>Costo</th><th>Utilidad</th><th>Margen</th><th>Costo conocido</th></tr>';
+  const fila=a=>'<tr><td>'+esc(a.producto)+'</td><td>'+Math.round(a.u)+'</td><td>'+money(a.v)+'</td><td>'+money(a.i)+'</td><td>'+money(a.c)+'</td><td style="color:'+(a.ut>=0?'#2e7d32':'#c62828')+'">'+money(a.ut)+'</td><td>'+(a.mg==null?'–':a.mg.toFixed(0)+'%')+'</td><td>'+a.cob+'%</td></tr>';
+  document.getElementById('uti-top').innerHTML=head+list.slice().sort((a,b)=>b.ut-a.ut).slice(0,8).map(fila).join('');
+  document.getElementById('uti-bajo').innerHTML=head+list.filter(a=>a.u>=5).sort((a,b)=>(a.mg??1e9)-(b.mg??1e9)).slice(0,8).map(fila).join('');
+}
+document.addEventListener('change',e=>{if(e.target&&['uti-dias','uti-canal','uti-tienda'].includes(e.target.id))renderUtilidad();});
+
 function render(){
   renderReporte();
+  renderUtilidad();
   renderResultados();
   renderKorona();
   renderUber();
