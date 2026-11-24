@@ -671,11 +671,19 @@ function renderResultados(){
   const col=v=>v==null?'inherit':(v>=0?'#2e7d32':'#c62828');
   const cell=(a,b,c)=>a+' → '+b+' (<span style="color:'+col(c)+'">'+pct(c)+'</span>)';
   const money=v=>v==null?'–':'$'+Math.round(v);
+  const prodCell=r=>{
+    const p=r.producto;
+    if(!p) return '<td style="color:var(--muted)">Sin producto registrado</td>';
+    if(!p.antes) return '<td style="color:var(--muted)">'+esc(p.estado||'Sin datos')+'</td>';
+    const u=p.antes.unidades_dia+' → '+p.durante.unidades_dia+' (<span style="color:'+col(p.cambio_unidades_pct)+'">'+pct(p.cambio_unidades_pct)+'</span>)';
+    const ut=money(p.antes.utilidad_dia)+' → '+money(p.durante.utilidad_dia)+(p.cambio_utilidad_pct==null?'':' (<span style="color:'+col(p.cambio_utilidad_pct)+'">'+pct(p.cambio_utilidad_pct)+'</span>)');
+    return '<td>'+u+'<br><span style="color:var(--muted)">utilidad: '+ut+'</span></td>';
+  };
   const seg={todos:'Todos',nuevos:'Nuevos',recurrentes:'Recurrentes',inactivos:'Inactivos',uber_one:'Uber One'};
-  document.getElementById('res-tbl').innerHTML='<tr><th>Promo</th><th>Tienda</th><th>Público</th><th>Desde</th><th>Estado</th><th>Pedidos/día</th><th>Ticket</th><th>Venta/día</th></tr>'+
+  document.getElementById('res-tbl').innerHTML='<tr><th>Promo</th><th>Tienda</th><th>Público</th><th>Desde</th><th>Estado</th><th>Pedidos/día</th><th>Ticket</th><th>Venta/día</th><th>Producto promovido (Uber): unidades/día y utilidad/día</th></tr>'+
     rows.map(r=>'<tr><td>'+esc(r.promo)+(r.origen==='agente'?' <span class="tag">agente</span>':'')+'</td><td>'+esc(r.tienda.replace('Baristi ',''))+'</td><td>'+esc(seg[r.segmento]||r.segmento)+'</td><td>'+esc(r.desde)+'</td><td>'+esc(r.estado)+(r.dias?' · '+r.dias+' d':'')+'</td>'+
       (r.antes?'<td>'+cell(r.antes.pedidos_dia,r.durante.pedidos_dia,r.cambio_pedidos_pct)+'</td><td>'+cell(money(r.antes.ticket),money(r.durante.ticket),r.cambio_ticket_pct)+'</td><td>'+cell(money(r.antes.venta_dia),money(r.durante.venta_dia),r.cambio_venta_pct)+'</td>'
-             :'<td colspan="3" style="color:var(--muted)">Aún pocos días con datos</td>')+'</tr>').join('');
+             :'<td colspan="3" style="color:var(--muted)">Aún pocos días con datos</td>')+prodCell(r)+'</tr>').join('');
 }
 
 function renderReporte(){
