@@ -1,1 +1,1 @@
-{}
+{"ultimo_intento_korona": {"intento": "2026-11-24T09:00:42-08:00", "korona": "error", "error": "HTTPError: 401 Client Error: Unauthorized for url: https://167.koronacloud.com/web/api/v3/accounts/e99999d8-7685-446e-9c00-5f18389332f6/receipts?size=100&page=1&sort=-book"}}
