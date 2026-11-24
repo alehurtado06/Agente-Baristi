@@ -681,6 +681,28 @@ function renderReporte(){
     rep.tiendas.map(t=>'<tr'+(t.tienda==='Total'?' style="font-weight:600"':'')+'><td>'+esc(t.tienda.replace('Baristi ',''))+'</td><td>'+money(t.venta)+'</td><td>'+pct(t.vs_ayer.venta)+'</td><td>'+pct(t.vs_semana.venta)+'</td><td>'+money(t.mostrador)+'</td><td>'+money(t.uber)+'</td><td>'+money(t.rappi)+'</td><td>'+t.tickets+'</td><td>'+money(t.ticket)+'</td><td>'+(t.pct_apps==null?'–':t.pct_apps+'%')+'</td></tr>').join('');
 }
 
+function renderKorona(){
+  const rows=Array.isArray(DATA.korona_ventas)?DATA.korona_ventas:[];
+  const card=document.getElementById('kor-card');
+  if(!rows.length){card.style.display='none';return;}
+  card.style.display='';
+  const dias=+document.getElementById('kor-dias').value;
+  const last=rows.map(r=>r.fecha).sort().pop();
+  const d0=new Date(last+'T12:00:00');d0.setDate(d0.getDate()-dias+1);
+  const desde=d0.toISOString().slice(0,10);
+  const g={};
+  rows.filter(r=>r.fecha>=desde).forEach(r=>{const a=g[r.tienda]=g[r.tienda]||{mostrador:0,uber:0,rappi:0,t:0};a[r.canal]=(a[r.canal]||0)+r.venta;a.t+=r.tickets;});
+  const money=v=>'$'+Math.round(v).toLocaleString('es-MX');
+  const tot={mostrador:0,uber:0,rappi:0,t:0};
+  const fila=(n,a,b)=>{const v=(a.mostrador||0)+(a.uber||0)+(a.rappi||0);const apps=(a.uber||0)+(a.rappi||0);
+    return '<tr'+(b?' style="font-weight:600"':'')+'><td>'+esc(n)+'</td><td>'+money(a.mostrador||0)+'</td><td>'+money(a.uber||0)+'</td><td>'+money(a.rappi||0)+'</td><td>'+money(v)+'</td><td>'+(v?(100*apps/v).toFixed(0)+'%':'–')+'</td><td>'+a.t+'</td></tr>';};
+  const lines=Object.keys(g).sort().map(t=>{const a=g[t];['mostrador','uber','rappi','t'].forEach(k=>tot[k]+=a[k]||0);return fila(t,a);});
+  const v=tot.mostrador+tot.uber+tot.rappi;
+  document.getElementById('kor-sub').textContent='Del '+desde+' al '+last+': '+money(v)+' en caja; las apps (Uber + Rappi) son el '+(v?(100*(tot.uber+tot.rappi)/v).toFixed(0):0)+'%.';
+  document.getElementById('kor-tbl').innerHTML='<tr><th>Tienda</th><th>Mostrador</th><th>Uber</th><th>Rappi</th><th>Total</th><th>% apps</th><th>Tickets</th></tr>'+lines.join('')+fila('Total',tot,true);
+}
+document.addEventListener('change',e=>{if(e.target&&e.target.id==='kor-dias')renderKorona();});
+
 function render(){
   renderReporte();
   renderResultados();
