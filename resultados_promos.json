@@ -22,24 +22,7 @@
   },
   "cambio_pedidos_pct": 1.9,
   "cambio_ticket_pct": 13.4,
-  "cambio_venta_pct": 15.5,
-  "producto": {
-   "patrones": [
-    "galleta zanahoria"
-   ],
-   "antes": {
-    "unidades_dia": 0.46,
-    "venta_dia": 23.08,
-    "utilidad_dia": 4.38
-   },
-   "durante": {
-    "unidades_dia": 0.23,
-    "venta_dia": 12.69,
-    "utilidad_dia": 2.83
-   },
-   "cambio_unidades_pct": -50.0,
-   "cambio_utilidad_pct": -35.4
-  }
+  "cambio_venta_pct": 15.5
  },
  {
   "promo": "Combo pareja: 2 lattes + 1 postre por $209",
@@ -64,24 +47,7 @@
   },
   "cambio_pedidos_pct": 59.3,
   "cambio_ticket_pct": -0.1,
-  "cambio_venta_pct": 59.3,
-  "producto": {
-   "patrones": [
-    "^combo parejas"
-   ],
-   "antes": {
-    "unidades_dia": 0.0,
-    "venta_dia": 0.0,
-    "utilidad_dia": 0.0
-   },
-   "durante": {
-    "unidades_dia": 0.0,
-    "venta_dia": 0.0,
-    "utilidad_dia": 0.0
-   },
-   "cambio_unidades_pct": null,
-   "cambio_utilidad_pct": null
-  }
+  "cambio_venta_pct": 59.3
  },
  {
   "promo": "15% en cafruccinos",
@@ -106,24 +72,7 @@
   },
   "cambio_pedidos_pct": 34.3,
   "cambio_ticket_pct": -1.0,
-  "cambio_venta_pct": 32.7,
-  "producto": {
-   "patrones": [
-    "^cafruccino"
-   ],
-   "antes": {
-    "unidades_dia": 1.31,
-    "venta_dia": 185.69,
-    "utilidad_dia": 51.09
-   },
-   "durante": {
-    "unidades_dia": 1.31,
-    "venta_dia": 186.62,
-    "utilidad_dia": 52.77
-   },
-   "cambio_unidades_pct": 0.0,
-   "cambio_utilidad_pct": 3.3
-  }
+  "cambio_venta_pct": 32.7
  },
  {
   "promo": "15% en cafruccinos",
@@ -148,24 +97,7 @@
   },
   "cambio_pedidos_pct": 3.0,
   "cambio_ticket_pct": -20.9,
-  "cambio_venta_pct": -18.3,
-  "producto": {
-   "patrones": [
-    "^cafruccino"
-   ],
-   "antes": {
-    "unidades_dia": 1.62,
-    "venta_dia": 236.54,
-    "utilidad_dia": 62.56
-   },
-   "durante": {
-    "unidades_dia": 0.62,
-    "venta_dia": 91.08,
-    "utilidad_dia": 26.74
-   },
-   "cambio_unidades_pct": -61.7,
-   "cambio_utilidad_pct": -57.3
-  }
+  "cambio_venta_pct": -18.3
  },
  {
   "promo": "2x1 (Buy 1, get 1) en artículos seleccionados, visto en Uber el 15 nov",

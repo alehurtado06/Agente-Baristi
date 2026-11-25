@@ -1,17 +1,5 @@
 [
  {
-  "promo": "2026-11-21T06:00:41-08:00|Baristi Pacífico|1",
-  "corrida_at": "2026-11-21T06:00:41-08:00",
-  "tienda": "Baristi Pacífico",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -10%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 171.0,
-  "margen_pct": 13.1,
-  "aprobada": false,
-  "motivo": "Costo 76.1% del ingreso real (55% del precio), máximo 48%"
- },
- {
   "promo": "2026-11-21T06:00:41-08:00|Baristi Rosarito (Tijuana)|0",
   "corrida_at": "2026-11-21T06:00:41-08:00",
   "tienda": "Baristi Rosarito (Tijuana)",
@@ -12326,6 +12314,20 @@
   "producto_id": "combo_pareja_2_lattes_medianos_postre",
   "precio": 225.0,
   "margen_pct": 30.2,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-25T09:30:53-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-25T09:30:53-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Café para dos en la oficina $229",
+  "segmento": "recurrentes",
+  "nombre_app": "Café para dos",
+  "descripcion": "2 lattes medianos y un postre para compartir en la oficina a $229. Pídelo y arranca la mañana acompañado.",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 229.0,
+  "margen_pct": 30.6,
   "aprobada": false,
   "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
  }
