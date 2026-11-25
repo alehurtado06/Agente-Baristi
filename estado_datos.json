@@ -1,1 +1,1 @@
-{"ultimo_intento_korona": {"intento": "2026-11-24T21:23:26-08:00", "korona": "error", "error": "HTTPError: 401 Client Error: Unauthorized for url: https://167.koronacloud.com/web/api/v3/accounts/e99999d8-7685-446e-9c00-5f18389332f6/receipts?size=100&page=1&sort=-book", "diagnostico": {"endpoint_len": 38, "account_id_len": 36, "login_len": 32, "password_len": 35, "login_limpio_len": 32, "password_limpia_len": 35}}}
+{"ultimo_intento_korona": {"intento": "2026-11-25T06:00:39-08:00", "korona": "ok"}, "ultimo_ok_korona": "2026-11-25T06:00:39-08:00"}
