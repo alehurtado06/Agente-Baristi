@@ -1,29 +1,5 @@
 [
  {
-  "promo": "2026-11-21T11:00:37-08:00|Baristi Etu (Tijuana)|0",
-  "corrida_at": "2026-11-21T11:00:37-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo Bagel (café americano + bagel) -15%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 161.0,
-  "margen_pct": 21.7,
-  "aprobada": false,
-  "motivo": "Costo 60.5% del ingreso real (55% del precio), máximo 48%"
- },
- {
-  "promo": "2026-11-21T11:00:37-08:00|Baristi Etu (Tijuana)|1",
-  "corrida_at": "2026-11-21T11:00:37-08:00",
-  "tienda": "Baristi Etu (Tijuana)",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -15%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 10.5,
-  "aprobada": false,
-  "motivo": "Costo 80.8% del ingreso real (55% del precio), máximo 48%"
- },
- {
   "promo": "2026-11-21T11:00:37-08:00|Baristi Macroplaza|0",
   "corrida_at": "2026-11-21T11:00:37-08:00",
   "tienda": "Baristi Macroplaza",
@@ -12468,6 +12444,34 @@
  {
   "promo": "2026-11-25T16:30:32-08:00|Baristi Macroplaza|0",
   "corrida_at": "2026-11-25T16:30:32-08:00",
+  "tienda": "Baristi Macroplaza",
+  "mecanica": "Agrega un pay de limón $59",
+  "segmento": "recurrentes",
+  "nombre_app": "Antojo de la tarde: Pay de limón",
+  "descripcion": "Cierra tu pedido con un pay de limón cremoso por solo $59. El toque dulce perfecto para tu café de la tarde.",
+  "producto_id": "pay_de_limon",
+  "precio": 59.0,
+  "margen_pct": 55.0,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
+ },
+ {
+  "promo": "2026-11-25T17:01:18-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-25T17:01:18-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Pay de limón $55",
+  "segmento": "recurrentes",
+  "nombre_app": "Antojo de la tarde",
+  "descripcion": "Cierra tu tarde con un pay de limón cremoso y fresco. Agrégalo a tu latte o smoothie favorito por solo $55.",
+  "producto_id": "pay_de_limon",
+  "precio": 55.0,
+  "margen_pct": 55.0,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
+ },
+ {
+  "promo": "2026-11-25T17:01:54-08:00|Baristi Macroplaza|0",
+  "corrida_at": "2026-11-25T17:01:54-08:00",
   "tienda": "Baristi Macroplaza",
   "mecanica": "Agrega un pay de limón $59",
   "segmento": "recurrentes",
