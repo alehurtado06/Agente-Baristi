@@ -434,6 +434,7 @@ details.detalle-pedidos>.card{margin-top:8px!important}
         <div style="display:flex;gap:6px;flex-wrap:wrap" id="promo-filters">
           <button class="chip active" data-filter="all">Todas</button>
           <button class="chip" data-filter="ok">Aprobadas</button>
+          <button class="chip" data-filter="auth">Por autorizar</button>
           <button class="chip" data-filter="bad">Bloqueadas</button>
         </div>
       </div>
@@ -619,7 +620,7 @@ details.detalle-pedidos>.card{margin-top:8px!important}
       </div>
       <div style="overflow-x:auto"><table class="wow-tbl" id="cmp-tbl"></table></div>
       <div class="tbl-foot"><span id="cmp-count"></span><button class="f-reset" id="cmp-more" type="button">Ver más</button></div>
-      <p class="card-note">Precio comparable = mediana de los precios de lista de los competidores equivalentes en la zona. Más de 10% arriba: no se autoriza la promo y se pide tu autorización. Más de 10% abajo: se propone subir el precio al 90% del comparable. Dentro del margen: promo 10% debajo del comparable, solo si el costo no pasa 30% del precio ni 48% del ingreso real. Todo es propuesta: el agente no cambia precios en Uber Eats.</p>
+      <p class="card-note">Precio comparable = mediana de los precios de lista de los competidores equivalentes en la zona. Más de 10% arriba: no se autoriza la promo y se pide tu autorización. Más de 10% abajo: se propone subir el precio al 90% del comparable. Dentro del margen: promo 10% debajo del comparable; si el costo pasa el 30% del precio, queda "Requiere tu autorización" para que tú decidas. Todo es propuesta: el agente no cambia precios en Uber Eats.</p>
     </div>
   </div>
 
@@ -806,7 +807,7 @@ function renderComparativo(){
   if(!D||!Array.isArray(D.filas)||!D.filas.length){card.style.display='none';return;}
   card.style.display='';
   const F=D.filas;
-  const col={'PROPONER PROMO':'#2e7d32','SUBIR PRECIO':'#2f72c9','NO AUTORIZAR':'#c62828','PROMO NO VIABLE':'#c77d00','SIN PROMO':'#7a6555','PROMO SIN COSTO':'#7a6555','SIN COMPARABLE':'#b3a191'};
+  const col={'PROPONER PROMO':'#2e7d32','REQUIERE TU AUTORIZACIÓN':'#c77d00','SUBIR PRECIO':'#2f72c9','NO AUTORIZAR':'#c62828','PROMO NO VIABLE':'#c77d00','SIN PROMO':'#7a6555','PROMO SIN COSTO':'#7a6555','SIN COMPARABLE':'#b3a191'};
   const key=d=>Object.keys(col).find(k=>String(d).indexOf(k)===0)||'';
   const money=v=>v===''||v==null?'–':'$'+(Math.round(v*10)/10);
   const fill=(id,vals,all)=>{const s=document.getElementById(id);if(s.options.length>1)return;vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o);});};
@@ -825,7 +826,7 @@ function renderComparativo(){
   const head='<tr><th>Producto</th><th>Zona</th><th>Mi precio</th><th>Comparable</th><th>Dif.</th><th>Decisión</th><th>Propuesta</th><th>Costo/precio</th><th>Detalle y fuente</th></tr>';
   const fila=r=>{
     const k=key(r.decision);
-    const prop=r.precio_propuesto!==''?'Subir a '+money(r.precio_propuesto):(k==='PROPONER PROMO'?'Promo '+money(r.precio_promo)+' ('+r.descuento_pct+'% menos)':(r.precio_promo!==''?'<span style="color:var(--muted)">'+money(r.precio_promo)+' (no viable)</span>':'–'));
+    const prop=r.precio_propuesto!==''?'Subir a '+money(r.precio_propuesto):((k==='PROPONER PROMO'||k==='REQUIERE TU AUTORIZACIÓN')?'Promo '+money(r.precio_promo)+' ('+r.descuento_pct+'% menos)':(r.precio_promo!==''?'<span style="color:var(--muted)">'+money(r.precio_promo)+' (no viable)</span>':'–'));
     const cp=r.costo_pct_precio_promo!==''?r.costo_pct_precio_promo+'% / '+r.costo_pct_ingreso_real+'%':'–';
     const det='<details><summary style="cursor:pointer;color:var(--copper2)">Ver</summary><div style="font-size:12px;line-height:1.5;max-width:420px;white-space:normal;text-align:left">'+
       '<b>Por qué:</b> '+esc(r.motivo)+'<br><b>Competidores equivalentes:</b> '+esc(r.competidores_lista||'–')+'<br><b>Promo de la competencia:</b> '+esc(r.promo_competencia||'–')+'<br><b>Fuente:</b> '+
@@ -1076,6 +1077,7 @@ function toggleAnalysis(id,btn){
 // ── promos ──
 let promoFilter='all';
 const isOk=r=>r.aprobada===true||r.aprobada==='true';
+const isAuth=r=>!isOk(r)&&String(r.motivo||'').indexOf('Requiere tu autorización')===0;
 const promoBlock=r=>getBlock(new Date(r.corrida_at).toLocaleString('en-US',{timeZone:TZ,hour:'numeric',hourCycle:'h23'})|0);
 let promoCtrlsReady=false;
 function setupPromoCtrls(all){
@@ -1096,7 +1098,7 @@ function renderPromos(f){
   setupPromoCtrls(all);
   const tienda=$('p-tienda').value,min=$('p-min').value,bloque=$('p-bloque').value,
         q=$('p-q').value.trim().toLowerCase(),orden=$('p-orden').value,agrupar=$('p-agrupar').checked;
-  let rows=all.filter(r=>(f==='all'||(f==='ok'&&isOk(r))||(f==='bad'&&!isOk(r)))&&
+  let rows=all.filter(r=>(f==='all'||(f==='ok'&&isOk(r))||(f==='auth'&&isAuth(r))||(f==='bad'&&!isOk(r)&&!isAuth(r)))&&
     (!tienda||r.tienda===tienda)&&(!min||(r.margen_pct!=null&&r.margen_pct>=+min))&&
     (!bloque||(promoBlock(r)||{}).name===bloque)&&
     (!q||(r.mecanica||'').toLowerCase().includes(q)||(r.producto_id||'').replace(/_/g,' ').includes(q)));
@@ -1133,7 +1135,7 @@ function renderPromos(f){
     const ok=isOk(r);
     const b=promoBlock(r);
     return `<div class="promo-item">
-      <div class="promo-badge ${ok?'ok':'bad'}">${ok?'✓':'✗'}</div>
+      <div class="promo-badge ${ok?'ok':(isAuth(r)?'':'bad')}" ${isAuth(r)?'style="background:rgba(199,125,0,.15);color:#c77d00"':''}>${ok?'✓':(isAuth(r)?'?':'✗')}</div>
       <div>
         <div class="promo-text">${r.mecanica||'—'}</div>
         <div class="promo-meta">
