@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): Promoción de 2x1 visible en la categoría de Rosarito; tienda 'No disponible de momento' al revisar; Pacífico: Aparece en la categoría de Rosarito (abre 7:00 a.m., pedidos programados) sin promo visible",
+  "promo": "Rosarito (Tijuana): 20% en artículos seleccionados visible en la categoría de Rosarito (ayer mostraba 2x1); tienda disponible (18 min); Pacífico: No apareció en la página 1 de la categoría hoy; se conserva: abre 7:00 a.m., sin promo visible",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "Sin artículos con descuento visibles hoy (precio completo); la categoría muestra 30% en Elías Calles, Bellas Artes, Vía Poniente, Benítez López y Alba Roja",
+  "promo": "Sin artículos con descuento visibles hoy (precio completo)",
   "latte": 73,
   "frappe": 76
  },
@@ -19,7 +19,7 @@
   "competidor": "CAFFENIO (Floresta, Rosarito Libre, Jibarito)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "económico ($)",
-  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Carajillo, Pistache, Proteína, Pan de Muerto), Kfreeze y brownie (Vista Río); la categoría muestra 30% en Rosarito Libre (Floresta y Jibarito aparecen cerrados, sin promo en categoría hoy)",
+  "promo": "30% en Rockaccino (clásico, Nutella, Biscoff, Carajillo, Pistache, Proteína, Pan de Muerto), Kfreeze y brownie (Vista Río); la categoría de Rosarito muestra 30% en Rosarito Libre (Floresta y Jibarito abren 7:00 a.m., sin promo en categoría)",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Frappuccinos (Caramel, Mocha, Chip, Mocha Blanco, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; Latte Lunch $219 exclusivo; no se confirmó descuento hoy en Espresso Americano/Flat White; sin 2x1; la categoría muestra 30% en Camino Real, Vía Rápida, Terán, Plaza Pacífico, Rosarito, Paseo de los Héroes, Alameda Otay, Playas, Otay",
+  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; NUEVO: 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Latte Lunch $219 sin descuento; Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Frappuccinos (Caramel, Mocha, Chip, Mocha Blanco, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; Latte Lunch $219 exclusivo; no se confirmó descuento hoy en Espresso Americano/Flat White; sin 2x1; la categoría muestra 30% en Camino Real, Vía Rápida, Terán, Plaza Pacífico, Rosarito, Paseo de los Héroes, Alameda Otay, Playas, Otay",
+  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; NUEVO: 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Latte Lunch $219 sin descuento; Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
   "latte": 94,
   "frappe": 109
  },
@@ -43,7 +43,7 @@
   "competidor": "Café de la Flor (Pacífico)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "premium ($$$$)",
-  "promo": "Sin descuentos visibles hoy (Combo Chilaquiles + Limonada y Combo Sopa de Tortilla + Limonada a $245 precio completo; antes 19%/25%)",
+  "promo": "Sin descuentos visibles hoy (Combo Chilaquiles + Limonada y Combo Sopa de Tortilla + Limonada a $245 precio completo)",
   "latte": 105,
   "frappe": 145
  },
@@ -51,7 +51,7 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "Sin descuentos visibles en la página de la tienda Pacífico (precio completo); la categoría de Rosarito muestra 25% en Blue Luna Pacífico y '$90 en artículos seleccionados' en Blue Luna Barcelona",
+  "promo": "Sin descuentos visibles en la página de la tienda Pacífico (precio completo; cerrada, abre 7:00 a.m.); la categoría de Rosarito muestra 20% en Blue Luna Barcelona",
   "latte": 101,
   "frappe": 120
  },
