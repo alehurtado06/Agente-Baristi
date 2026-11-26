@@ -1,29 +1,5 @@
 [
  {
-  "promo": "2026-11-21T11:00:37-08:00|Baristi Macroplaza|0",
-  "corrida_at": "2026-11-21T11:00:37-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo Bagel (café americano + bagel) -15%",
-  "segmento": "todos",
-  "producto_id": "combo_bagel_cafe_americano_bagel",
-  "precio": 161.0,
-  "margen_pct": 21.7,
-  "aprobada": false,
-  "motivo": "Costo 60.5% del ingreso real (55% del precio), máximo 48%"
- },
- {
-  "promo": "2026-11-21T11:00:37-08:00|Baristi Macroplaza|1",
-  "corrida_at": "2026-11-21T11:00:37-08:00",
-  "tienda": "Baristi Macroplaza",
-  "mecanica": "Combo americano 16 oz - bagel - galleta -15%",
-  "segmento": "todos",
-  "producto_id": "combo_americano_16_oz_bagel_galleta",
-  "precio": 161.0,
-  "margen_pct": 10.5,
-  "aprobada": false,
-  "motivo": "Costo 80.8% del ingreso real (55% del precio), máximo 48%"
- },
- {
   "promo": "2026-11-21T11:00:38-08:00|Baristi Pacífico|0",
   "corrida_at": "2026-11-21T11:00:38-08:00",
   "tienda": "Baristi Pacífico",
@@ -12482,5 +12458,33 @@
   "margen_pct": 55.0,
   "aprobada": false,
   "motivo": "Categoría 'bebida' no permitida en Tarde / Antojo (Liquidación de Merma)"
+ },
+ {
+  "promo": "2026-11-26T05:00:49-08:00|Baristi Etu (Tijuana)|0",
+  "corrida_at": "2026-11-26T05:00:49-08:00",
+  "tienda": "Baristi Etu (Tijuana)",
+  "mecanica": "Café para dos con postre $224",
+  "segmento": "recurrentes",
+  "nombre_app": "Café para dos",
+  "descripcion": "2 lattes medianos y un postre para compartir en la oficina. Caliente, completo y a precio redondo.",
+  "producto_id": "combo_pareja_2_lattes_medianos_postre",
+  "precio": 224.0,
+  "margen_pct": 30.0,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
+ },
+ {
+  "promo": "2026-11-26T05:01:18-08:00|Baristi Pacífico|0",
+  "corrida_at": "2026-11-26T05:01:18-08:00",
+  "tienda": "Baristi Pacífico",
+  "mecanica": "Agrega un pay de limón $65",
+  "segmento": "recurrentes",
+  "nombre_app": "Pay de limón para tu café",
+  "descripcion": "Complementa tu café de la mañana con un pay de limón fresco por solo $65.",
+  "producto_id": "pay_de_limon",
+  "precio": 65.0,
+  "margen_pct": 55.0,
+  "aprobada": false,
+  "motivo": "Categoría 'bebida' no permitida en Pico Mañana (Desayunos)"
  }
 ]
