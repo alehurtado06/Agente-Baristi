@@ -22,13 +22,7 @@
   },
   "cambio_pedidos_pct": -33.3,
   "cambio_ticket_pct": 10.3,
-  "cambio_venta_pct": -26.5,
-  "producto": {
-   "estado": "sin historial antes de la promo",
-   "patrones": [
-    "galleta zanahoria"
-   ]
-  }
+  "cambio_venta_pct": -26.5
  },
  {
   "promo": "Combo pareja: 2 lattes + 1 postre por $209",
@@ -53,13 +47,7 @@
   },
   "cambio_pedidos_pct": -13.9,
   "cambio_ticket_pct": -12.3,
-  "cambio_venta_pct": -24.5,
-  "producto": {
-   "estado": "sin historial antes de la promo",
-   "patrones": [
-    "^combo parejas"
-   ]
-  }
+  "cambio_venta_pct": -24.5
  },
  {
   "promo": "15% en cafruccinos",
@@ -84,13 +72,7 @@
   },
   "cambio_pedidos_pct": -7.0,
   "cambio_ticket_pct": -1.8,
-  "cambio_venta_pct": -8.7,
-  "producto": {
-   "estado": "sin historial antes de la promo",
-   "patrones": [
-    "^cafruccino"
-   ]
-  }
+  "cambio_venta_pct": -8.7
  },
  {
   "promo": "15% en cafruccinos",
@@ -115,13 +97,7 @@
   },
   "cambio_pedidos_pct": -16.5,
   "cambio_ticket_pct": -19.5,
-  "cambio_venta_pct": -32.9,
-  "producto": {
-   "estado": "sin historial antes de la promo",
-   "patrones": [
-    "^cafruccino"
-   ]
-  }
+  "cambio_venta_pct": -32.9
  },
  {
   "promo": "2x1 (Buy 1, get 1) en artículos seleccionados, visto en Uber el 15 nov",
@@ -197,5 +173,45 @@
   "cambio_pedidos_pct": 122.0,
   "cambio_ticket_pct": 6.1,
   "cambio_venta_pct": 135.8
+ },
+ {
+  "promo": "Black Friday para dos: $26 de descuento en pedidos de $259 o más (Combo Pareja queda en ~$233). Activada en Uber Eats Manager el 27 nov; sin descuentos dinámicos.",
+  "tienda": "Baristi Etu (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-27",
+  "hasta": "2026-11-30",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 0
+ },
+ {
+  "promo": "Black Friday para dos: $26 de descuento en pedidos de $259 o más (Combo Pareja queda en ~$233). Activada en Uber Eats Manager el 27 nov; sin descuentos dinámicos.",
+  "tienda": "Baristi Macroplaza",
+  "segmento": "todos",
+  "desde": "2026-11-27",
+  "hasta": "2026-11-30",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 0
+ },
+ {
+  "promo": "Black Friday para dos: $26 de descuento en pedidos de $259 o más (Combo Pareja queda en ~$233). Activada en Uber Eats Manager el 27 nov; sin descuentos dinámicos.",
+  "tienda": "Baristi Pacífico",
+  "segmento": "todos",
+  "desde": "2026-11-27",
+  "hasta": "2026-11-30",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 0
+ },
+ {
+  "promo": "Black Friday para dos: $26 de descuento en pedidos de $259 o más (Combo Pareja queda en ~$233). Activada en Uber Eats Manager el 27 nov; sin descuentos dinámicos.",
+  "tienda": "Baristi Rosarito (Tijuana)",
+  "segmento": "todos",
+  "desde": "2026-11-27",
+  "hasta": "2026-11-30",
+  "origen": "equipo",
+  "estado": "en observación",
+  "dias": 0
  }
 ]

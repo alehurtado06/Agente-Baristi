@@ -3,7 +3,7 @@
   "competidor": "Baristi (tus precios promedio)",
   "zona": "Todas",
   "posicion": "tu cadena",
-  "promo": "Rosarito (Tijuana): 20% en artículos seleccionados visible en la categoría de Rosarito (ayer mostraba 2x1); tienda disponible (18 min); Pacífico: No apareció en la página 1 de la categoría hoy; se conserva: abre 7:00 a.m., sin promo visible",
+  "promo": "Rosarito (Tijuana): 20% en artículos seleccionados visible en la categoría de Rosarito (sin cambios); tienda disponible (19 min); Pacífico: Sin promo visible en la categoría de Rosarito; abre 7:00 a.m. (pedidos programados)",
   "latte": null,
   "frappe": null
  },
@@ -11,7 +11,7 @@
   "competidor": "CAFFENIO (Agua Caliente, Vía Poniente, Elías Calles, Bellas Artes)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "económico ($)",
-  "promo": "Sin artículos con descuento visibles hoy (precio completo)",
+  "promo": "Sin artículos con descuento visibles en la página de Agua Caliente (precio completo); la categoría de Tijuana muestra 30% en Bellas Artes, Elías Calles, Vía Poniente, Benítez López y Alba Roja",
   "latte": 73,
   "frappe": 76
  },
@@ -27,7 +27,7 @@
   "competidor": "Starbucks (Camino Real, Vía Rápida, Terán)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "medio ($$)",
-  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; NUEVO: 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Latte Lunch $219 sin descuento; Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
+  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Playas de Tijuana aparece como 2x1 en la categoría; Latte Lunch $219 (en Vía Rápida hoy con 30%: $153.30); Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
   "latte": 94,
   "frappe": 109
  },
@@ -35,7 +35,7 @@
   "competidor": "Starbucks (Plaza Pacífico, Rosarito, Las Alondras)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "medio ($$)",
-  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; NUEVO: 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Latte Lunch $219 sin descuento; Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
+  "promo": "30% en artículos seleccionados: Caramel Macchiato (caliente y helado), Caramel Latte, Helado Mocha, Helado Chocolate, Frappuccinos (Caramel Cream, Mocha, Chip, Chocolate Mexicano), chocolates calientes, Working Lunch y Pastel con Latte; 2x1 ('Compra 1, obtén 1 sin costo') en bebidas de temporada (Merry Latte/Frappuccino, Caramel Brulée Latte/Frappuccino/Cream Frappuccino); Playas de Tijuana aparece como 2x1 en la categoría; Latte Lunch con 30% hoy en Vía Rápida ($153.30, antes $219); Espresso Americano/Flat White sin descuento confirmado; la categoría de Rosarito muestra 30% en Plaza Pacífico DT y Rosarito",
   "latte": 94,
   "frappe": 109
  },
@@ -51,7 +51,7 @@
   "competidor": "Blue Luna (Pacífico, Santa Fe)",
   "zona": "Pacífico, Rosarito (Tijuana)",
   "posicion": "alto ($$$)",
-  "promo": "Sin descuentos visibles en la página de la tienda Pacífico (precio completo; cerrada, abre 7:00 a.m.); la categoría de Rosarito muestra 20% en Blue Luna Barcelona",
+  "promo": "Sin descuentos visibles en la página de la tienda Pacífico (precio completo; cerrada, abre 7:00 a.m.); la categoría de Rosarito muestra '$90 en artículos seleccionados' en Blue Luna Barcelona (ayer 20%)",
   "latte": 101,
   "frappe": 120
  },
@@ -83,7 +83,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Macroplaza, Etu (Tijuana)",
   "posicion": "independiente",
-  "promo": "20% en espresso americano; 30% en sándwich ciabatta de pavo y pesto; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; latte natural y latte de vainilla a precio completo; la categoría de Tijuana lo muestra con 30%",
+  "promo": "25% en latte natural; 30% en latte de vainilla, latte de caramelo, galleta chocochispas y sándwich ciabatta de pavo y pesto; 20% en espresso americano; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.",
   "latte": 95,
   "frappe": null
  },
@@ -99,7 +99,7 @@
   "competidor": "Náufrago Café (Leos Montoya)",
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "independiente",
-  "promo": "20% en espresso americano; 30% en sándwich ciabatta de pavo y pesto; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.; latte natural y latte de vainilla a precio completo; la categoría de Tijuana lo muestra con 30%",
+  "promo": "25% en latte natural; 30% en latte de vainilla, latte de caramelo, galleta chocochispas y sándwich ciabatta de pavo y pesto; 20% en espresso americano; 30% en pedidos de $250 o más; Happy Hour de 2 a 5 p.m.",
   "latte": 95,
   "frappe": null
  },
@@ -108,6 +108,14 @@
   "zona": "Etu (Tijuana), Macroplaza",
   "posicion": "sin datos",
   "promo": "40% en artículos seleccionados (visto en la categoría de Tijuana el 22-nov; hoy no apareció en la página 1; sin precios)",
+  "latte": null,
+  "frappe": null
+ },
+ {
+  "competidor": "Vertical Coffee Bar (Tijuana)",
+  "zona": "Etu (Tijuana), Macroplaza",
+  "posicion": "alto ($$$)",
+  "promo": "30% en artículos seleccionados (visto en la categoría de Tijuana el 27-nov, 15 min; página de tienda no revisada); sin precios",
   "latte": null,
   "frappe": null
  }
