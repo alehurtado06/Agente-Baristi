@@ -22,7 +22,13 @@
   },
   "cambio_pedidos_pct": -33.3,
   "cambio_ticket_pct": 10.3,
-  "cambio_venta_pct": -26.5
+  "cambio_venta_pct": -26.5,
+  "producto": {
+   "estado": "sin historial antes de la promo",
+   "patrones": [
+    "galleta zanahoria"
+   ]
+  }
  },
  {
   "promo": "Combo pareja: 2 lattes + 1 postre por $209",
@@ -47,7 +53,13 @@
   },
   "cambio_pedidos_pct": -13.9,
   "cambio_ticket_pct": -12.3,
-  "cambio_venta_pct": -24.5
+  "cambio_venta_pct": -24.5,
+  "producto": {
+   "estado": "sin historial antes de la promo",
+   "patrones": [
+    "^combo parejas"
+   ]
+  }
  },
  {
   "promo": "15% en cafruccinos",
@@ -72,7 +84,13 @@
   },
   "cambio_pedidos_pct": -7.0,
   "cambio_ticket_pct": -1.8,
-  "cambio_venta_pct": -8.7
+  "cambio_venta_pct": -8.7,
+  "producto": {
+   "estado": "sin historial antes de la promo",
+   "patrones": [
+    "^cafruccino"
+   ]
+  }
  },
  {
   "promo": "15% en cafruccinos",
@@ -97,7 +115,13 @@
   },
   "cambio_pedidos_pct": -16.5,
   "cambio_ticket_pct": -19.5,
-  "cambio_venta_pct": -32.9
+  "cambio_venta_pct": -32.9,
+  "producto": {
+   "estado": "sin historial antes de la promo",
+   "patrones": [
+    "^cafruccino"
+   ]
+  }
  },
  {
   "promo": "2x1 (Buy 1, get 1) en artículos seleccionados, visto en Uber el 15 nov",
